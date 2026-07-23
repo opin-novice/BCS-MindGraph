@@ -21,7 +21,7 @@ import threading
 import time
 import uuid
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
 import requests
 
@@ -275,7 +275,7 @@ def call_llm(
 # JSON parsing  (FIXED — replaces old fragile extract_json)
 # ---------------------------------------------------------------------------
 
-def safe_parse_json(raw: str) -> Optional[Dict]:
+def safe_parse_json(raw: str) -> Optional[Union[Dict, List]]:
     """
     Robustly extract and parse the first JSON object from an LLM response.
 
@@ -436,8 +436,11 @@ Return JSON:
             log.warning("Challenger: could not parse JSON.")
             return []
 
+        raw_list = parsed if isinstance(parsed, list) else parsed.get("mcqs", [])
+        if isinstance(raw_list, dict):
+            raw_list = [raw_list]
         mcqs = []
-        for item in parsed.get("mcqs", []):
+        for item in raw_list:
             try:
                 opts_raw = item.get("options", {})
                 options  = [MCQOption(key=k, text=v) for k, v in opts_raw.items()]
@@ -520,7 +523,10 @@ Return JSON: {{"answers":[{{"mcq_id":"MCQ_xx","chosen_answer":"ক","confidence"
         if not parsed:
             return []
 
-        return parsed.get("answers", [])
+        raw_answers = parsed if isinstance(parsed, list) else parsed.get("answers", [])
+        if isinstance(raw_answers, dict):
+            raw_answers = [raw_answers]
+        return raw_answers
 
 
 # ---------------------------------------------------------------------------
@@ -623,7 +629,10 @@ Return JSON: {{"evaluations":[{{"mcq_id":"MCQ_xx","passed":true,"reasoner_correc
         if not parsed:
             return []
 
-        return parsed.get("evaluations", [])
+        raw_evals = parsed if isinstance(parsed, list) else parsed.get("evaluations", [])
+        if isinstance(raw_evals, dict):
+            raw_evals = [raw_evals]
+        return raw_evals
 
 
 # ---------------------------------------------------------------------------
@@ -686,7 +695,19 @@ class MCQGenerator:
             return [], [], 0
 
         unique, dupes = self.dedup.filter_duplicates(candidates)
-        return unique, [], len(dupes)
+        dup_count = len(dupes)
+        if not unique:
+            return [], [], dup_count
+
+        evaluations = []
+        try:
+            reasoner_answers = self.reasoner.answer(unique, facts)
+            if reasoner_answers:
+                evaluations = self.judge.evaluate(unique, facts, reasoner_answers)
+        except Exception as exc:
+            log.warning("CRJ Reasoner/Judge skipped (%s) — accepting MCQs with default score.", str(exc)[:80])
+
+        return unique, evaluations, dup_count
 
     def generate_from_facts(
         self,
@@ -735,6 +756,29 @@ class MCQGenerator:
                     continue
 
                 for mcq in candidates:
+                    if evaluations:
+                        eval_map = {e["mcq_id"]: e for e in evaluations}
+                        ev = eval_map.get(mcq.mcq_id)
+                        if ev:
+                            mcq.quality_score = ev.get("overall_score", 0.0)
+                            mcq.regeneration_round = round_num
+                            dim = ev.get("dimension_scores", {})
+                            mcq._grounding_score = float(dim.get("grounding_score", 0.0))
+                            mcq._distractor_score = float(dim.get("distractor_score", 0.0))
+                            mcq._clarity_score = float(dim.get("clarity_score", 0.0))
+
+                            if ev.get("passed", False):
+                                gs = float(dim.get("grounding_score", 0.0))
+                                mcq.grounded = gs >= 0.80
+                                accepted_mcqs.append(mcq)
+                                self.dedup.register(mcq)
+                                log.info("  + MCQ %s passed (score=%.2f).", mcq.mcq_id, mcq.quality_score)
+                            else:
+                                reasons = ev.get("failure_reasons", ["UNKNOWN"])
+                                all_failure_reasons.extend(reasons)
+                                log.info("  x MCQ %s failed - %s.", mcq.mcq_id, ", ".join(reasons))
+                        continue
+
                     mcq.quality_score = 0.80
                     mcq.regeneration_round = round_num
                     mcq.grounded = True

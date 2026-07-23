@@ -1,6 +1,11 @@
+import threading
+import time
 from fastapi import APIRouter, HTTPException
 from pathlib import Path
 from typing import List
+
+from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
+from starlette.responses import Response
 
 from bcs.api.schemas import (
     GenerateRequest, GenerateResponse, MCQOut, OptionOut, TopicOut, HealthResponse,
@@ -10,16 +15,23 @@ from bcs.generators.mcq_generator import facts_from_kg
 
 router = APIRouter()
 
+mcq_generated = Counter("mcq_generated_total", "Total MCQs generated")
+mcq_accepted = Counter("mcq_accepted_total", "Total MCQs accepted by judge")
+pipeline_duration = Histogram("pipeline_duration_seconds", "Pipeline run duration", buckets=(1, 5, 10, 30, 60, 120, 300))
+
 _pipeline: Pipeline = None
+_pipeline_lock = threading.Lock()
 
 
 def get_pipeline() -> Pipeline:
     global _pipeline
     if _pipeline is None:
-        _pipeline = Pipeline(
-            data_dir=str(Path(__file__).resolve().parent.parent.parent.parent / "data"),
-            db_path=str(Path(__file__).resolve().parent.parent.parent.parent / "runtime" / "memory.db"),
-        )
+        with _pipeline_lock:
+            if _pipeline is None:
+                _pipeline = Pipeline(
+                    data_dir=str(Path(__file__).resolve().parent.parent.parent.parent / "data"),
+                    db_path=str(Path(__file__).resolve().parent.parent.parent.parent / "runtime" / "memory.db"),
+                )
     return _pipeline
 
 
@@ -54,9 +66,15 @@ def topics():
     return [TopicOut(topic=t, fact_count=c) for t, c in sorted(topic_map.items(), key=lambda x: -x[1])]
 
 
+@router.get("/metrics")
+def metrics():
+    return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
+
+
 @router.post("/generate", response_model=GenerateResponse)
 def generate(req: GenerateRequest):
     p = get_pipeline()
+    t0 = time.time()
     try:
         result = p.run(topic=req.topic, difficulty=req.difficulty, count=req.count, max_facts=req.max_facts)
         mcqs = []
@@ -73,6 +91,14 @@ def generate(req: GenerateRequest):
                 quality_score=m.get("quality_score", 0.0),
                 explanation=m.get("explanation", ""),
             ))
+        elapsed = time.time() - t0
+        pipeline_duration.observe(elapsed)
+        mcq_generated.inc(len(mcqs))
+        for m in mcqs:
+            if m.quality_score >= 0.7:
+                mcq_accepted.inc()
+
+        grounding_facts = result.get("mcqs", [])[:3] if result.get("mcqs") else []
         return GenerateResponse(
             mcqs=mcqs,
             topic=result["topic"],
@@ -81,6 +107,10 @@ def generate(req: GenerateRequest):
             error=result.get("error"),
             kg_size=result.get("kg_size"),
             memory_size=result.get("memory_size"),
+            generation_duration_ms=int(elapsed * 1000),
+            grounding_facts=[m.get("explanation", "") for m in result.get("mcqs", [])[:3]] if result.get("mcqs") else None,
         )
     except Exception as e:
+        elapsed = time.time() - t0
+        pipeline_duration.observe(elapsed)
         raise HTTPException(status_code=500, detail=str(e)[:500])

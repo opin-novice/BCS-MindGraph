@@ -15,6 +15,8 @@ from bcs.pipeline.episodic_store import EpisodicMemory
 from bcs.generators.mcq_generator import MCQGenerator, facts_from_kg
 from bcs.logging_config import get_logger
 
+SNAPSHOT_PATH = "runtime/kg_snapshot.gpickle"
+
 log = get_logger(__name__)
 
 
@@ -84,7 +86,10 @@ class Pipeline:
         self.kg = KnowledgeGraphBuilder()
         self.memory = EpisodicMemory(db_path=db_path)
 
-        load_data_to_kg(self.kg, data_dir)
+        if os.path.exists(SNAPSHOT_PATH):
+            self.kg.load_snapshot(SNAPSHOT_PATH)
+        else:
+            load_data_to_kg(self.kg, data_dir)
 
         self.mcq_gen = MCQGenerator(
             hf_api_key=hf_api_key or "",
@@ -194,6 +199,15 @@ class Pipeline:
     def close(self):
         self.mcq_gen.save_seen_questions()
         self.memory.close()
+        try:
+            os.makedirs(os.path.dirname(SNAPSHOT_PATH), exist_ok=True)
+            snapshot = {"graph": self.kg.graph, "topic_stats": dict(getattr(self.kg, "topic_stats", {}))}
+            import pickle
+            with open(SNAPSHOT_PATH, "wb") as f:
+                pickle.dump(snapshot, f)
+            log.info("KG snapshot saved to %s", SNAPSHOT_PATH)
+        except Exception as exc:
+            log.warning("KG snapshot save failed: %s", str(exc)[:100])
 
 
 def main():

@@ -31,6 +31,8 @@ class GenerateResponse(BaseModel):
     error: Optional[str] = None
     kg_size: Optional[int] = None
     memory_size: Optional[int] = None
+    generation_duration_ms: Optional[int] = None
+    grounding_facts: Optional[List[str]] = None
 
 
 class TopicOut(BaseModel):
