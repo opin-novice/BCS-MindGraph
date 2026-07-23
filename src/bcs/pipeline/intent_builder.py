@@ -30,6 +30,7 @@ load_dotenv()
 
 from bcs.pipeline.input_normalizer import BANGLA_DIGIT_MAP
 from bcs.rate_limiter import wait_for_rate_limit
+from bcs.cache import llm_cache, make_cache_key
 
 log = logging.getLogger("intent_builder")
 logging.basicConfig(
@@ -386,49 +387,59 @@ JSON ফরম্যাট:
   "english_query": "Best English web search query for this topic"
 }}
 """
-        wait_for_rate_limit()
-        try:
-            response = requests.post(
-                self.GROQ_API_URL,
-                headers={
-                    "Authorization": f"Bearer {self.api_key}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": self.GROQ_MODEL,
-                    "messages": [
-                        {"role": "system", "content": self.SYSTEM_PROMPT},
-                        {"role": "user",   "content": prompt},
-                    ],
-                    "temperature": 0.1,
-                    "max_tokens": 512,
-                },
-                timeout=60,
-            )
-            response.raise_for_status()
-            raw = response.json()["choices"][0]["message"]["content"].strip()
-            raw = re.sub(r'```(?:json)?\s*', '', raw).strip('` \n')
-            match = re.search(r'\{.*\}', raw, re.DOTALL)
-            if not match:
-                return None
-            data = json.loads(match.group())
-            return Blueprint(
-                normalized_question=normalized_text,
-                intent=data.get("intent", "factual_recall"),
-                question_type=data.get("question_type", "what_question"),
-                topic=data.get("topic", "General"),
-                sub_topic=data.get("sub_topic", ""),
-                entities=data.get("entities", []),
-                time_hints=data.get("time_hints", []),
-                search_keywords=data.get("search_keywords", []),
-                bangla_query=data.get("bangla_query", normalized_text),
-                english_query=data.get("english_query", normalized_text),
-                confidence=0.92,
-                extraction_method="llm",
-            )
-        except Exception as exc:
-            log.warning("CraftX extraction failed: %s — falling back to rule-based.", exc)
+        cache_key = make_cache_key(self.SYSTEM_PROMPT, prompt, self.GROQ_MODEL, "0.1")
+        raw = None
+        cached = llm_cache.get(cache_key)
+        if cached is not None:
+            raw = cached
+        else:
+            wait_for_rate_limit()
+            try:
+                response = requests.post(
+                    self.GROQ_API_URL,
+                    headers={
+                        "Authorization": f"Bearer {self.api_key}",
+                        "Content-Type": "application/json",
+                    },
+                    json={
+                        "model": self.GROQ_MODEL,
+                        "messages": [
+                            {"role": "system", "content": self.SYSTEM_PROMPT},
+                            {"role": "user",   "content": prompt},
+                        ],
+                        "temperature": 0.1,
+                        "max_tokens": 512,
+                    },
+                    timeout=60,
+                )
+                response.raise_for_status()
+                raw = response.json()["choices"][0]["message"]["content"].strip()
+                if raw:
+                    llm_cache.set(cache_key, raw)
+            except Exception as exc:
+                log.warning("LLM extract failed: %s", exc)
+        if not raw:
+            log.warning("CraftX extraction failed — falling back to rule-based.")
             return None
+        raw = re.sub(r'```(?:json)?\s*', '', raw).strip('` \n')
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if not match:
+            return None
+        data = json.loads(match.group())
+        return Blueprint(
+            normalized_question=normalized_text,
+            intent=data.get("intent", "factual_recall"),
+            question_type=data.get("question_type", "what_question"),
+            topic=data.get("topic", "General"),
+            sub_topic=data.get("sub_topic", ""),
+            entities=data.get("entities", []),
+            time_hints=data.get("time_hints", []),
+            search_keywords=data.get("search_keywords", []),
+            bangla_query=data.get("bangla_query", normalized_text),
+            english_query=data.get("english_query", normalized_text),
+            confidence=0.92,
+            extraction_method="llm",
+        )
 
 # ---------------------------------------------------------------------------
 # IntentBuilder — public API

@@ -43,6 +43,7 @@ BATCH_SIZE                   = 10
 BATCH_REST_SECONDS           = 20
 
 from bcs.rate_limiter import wait_for_rate_limit
+from bcs.cache import cached_llm_call, make_cache_key
 
 DIFFICULTY_CONFIG = {
     "easy":   {"distractors": "clearly wrong but plausible",    "context": "direct fact recall"},
@@ -232,7 +233,12 @@ def call_llm(
     max_tokens:   int   = 4096,
     max_retries:  int   = 5,
 ) -> str:
-    """Call LLM via Groq API with rate-limit awareness and backoff."""
+    """Call LLM via Groq API with rate-limit awareness, backoff, and caching."""
+    cache_key = make_cache_key(system_prompt, user_prompt, model, str(temperature))
+    cached = cached_llm_call(cache_key, lambda: "")
+    if cached:
+        return cached
+
     last_exc: Exception = RuntimeError("LLM call failed with no exception captured")
     for attempt in range(max_retries):
         wait_for_rate_limit()
@@ -262,7 +268,11 @@ def call_llm(
                     time.sleep(retry_after)
                 continue
             response.raise_for_status()
-            return response.json()["choices"][0]["message"]["content"].strip()
+            text = response.json()["choices"][0]["message"]["content"].strip()
+            if text:
+                from bcs.cache import llm_cache
+                llm_cache.set(cache_key, text)
+            return text
         except Exception as exc:
             last_exc = exc
             log.warning("LLM call attempt %d/%d failed: %s",
@@ -900,6 +910,11 @@ def facts_from_kg(kg_builder, topic: str) -> List[Dict]:
     -------
     List of fact dicts suitable for MCQGenerator.generate_from_facts()
     """
+    from bcs.cache import kg_cache
+    cache_key = make_cache_key("facts_from_kg", topic)
+    cached = kg_cache.get(cache_key)
+    if cached is not None:
+        return cached
     fact_ids = kg_builder.get_facts_by_topic(topic)
     facts    = []
     for fid in fact_ids:
@@ -923,6 +938,8 @@ def facts_from_kg(kg_builder, topic: str) -> List[Dict]:
             "composite_score": data.get("composite_score", 0.0),
             "source_reliability": data.get("source_reliability", 0.5),
         })
+    if facts:
+        kg_cache.set(cache_key, facts)
     return facts
 
 
