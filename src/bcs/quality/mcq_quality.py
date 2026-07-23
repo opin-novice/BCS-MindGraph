@@ -78,7 +78,7 @@ def call_llm(
     user:        str,
     api_url:     str   = DEFAULT_API_URL,
     temperature: float = 0.2,
-    max_tokens:  int   = 1024,
+    max_tokens:  int   = 2048,
     max_retries: int   = MAX_LLM_RETRIES,
 ) -> Optional[str]:
     payload = {

@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 from typing import List, Optional
 
@@ -349,6 +350,7 @@ def main():
             difficulty=args.difficulty,
             count=args.count,
         )
+        sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', closefd=False)
         print(json.dumps(result, ensure_ascii=False, indent=2))
     finally:
         pipeline.close()

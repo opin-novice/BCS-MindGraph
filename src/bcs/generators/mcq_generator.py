@@ -41,6 +41,7 @@ MIN_PASS_SCORE               = 0.70
 DISTRACTOR_QUALITY_THRESHOLD = 0.65
 BATCH_SIZE                   = 10
 BATCH_REST_SECONDS           = 20
+CRJ_BATCH_SIZE               = 1
 
 from bcs.rate_limiter import wait_for_rate_limit
 from bcs.cache import cached_llm_call, make_cache_key
@@ -230,7 +231,7 @@ def call_llm(
     system_prompt: str,
     user_prompt:  str,
     temperature:  float = 0.7,
-    max_tokens:   int   = 4096,
+    max_tokens:   int   = 8192,
     max_retries:  int   = 5,
 ) -> str:
     """Call LLM via Groq API with rate-limit awareness, backoff, and caching."""
@@ -333,19 +334,39 @@ def safe_parse_json(raw: str) -> Optional[Union[Dict, List]]:
     # brackets/braces. Handles gateway timeout mid-response.
     try:
         partial = repaired
-        open_braces   = partial.count("{") - partial.count("}")
-        open_brackets = partial.count("[") - partial.count("]")
         # Close any open string first (look for lone " that isn't escaped)
         if partial.count('"') % 2 != 0:
             partial += '"'
-        # Trim to the last complete key-value pair to avoid broken values
-        partial = re.sub(r',\s*"[^"]*"\s*:\s*$', "", partial)
+        # Trim broken trailing key-value pairs
         partial = re.sub(r',\s*"[^"]*"\s*:\s*"[^"]*$', "", partial)
-        partial += "]" * max(open_brackets, 0)
-        partial += "}" * max(open_braces, 0)
+        partial = re.sub(r',\s*"[^"]*"\s*:\s*$', "", partial)
+        # Reconstruct valid JSON by tracking open/close order
+        stack = []
+        for ch in partial:
+            if ch in ('{', '['):
+                stack.append(ch)
+            elif ch == '}' and stack and stack[-1] == '{':
+                stack.pop()
+            elif ch == ']' and stack and stack[-1] == '[':
+                stack.pop()
+        # Close in reverse order
+        for ch in reversed(stack):
+            partial += '}' if ch == '{' else ']'
+        # Remove trailing commas before the now-added closing brackets/braces
+        partial = re.sub(r",\s*([}\]])", r"\1", partial)
         result = json.loads(partial)
         log.warning("safe_parse_json: used truncation repair — response may be incomplete.")
         return result
+    except Exception:
+        pass
+
+    # Step 5 — also try extracting outermost array/object after repair
+    try:
+        for pattern in [r"(\{.*\})", r"(\[.*\])"]:
+            m = re.search(pattern, repaired, re.DOTALL)
+            if m:
+                candidate = re.sub(r",\s*([}\]])", r"\1", m.group(1))
+                return json.loads(candidate)
     except Exception:
         pass
 
@@ -451,7 +472,7 @@ Return JSON:
 
         parsed = safe_parse_json(raw)
         if not parsed:
-            log.warning("Challenger: could not parse JSON.")
+            log.warning("Challenger: could not parse JSON. Raw response: %s", raw[:200])
             return []
 
         raw_list = parsed if isinstance(parsed, list) else parsed.get("mcqs", [])
@@ -718,12 +739,20 @@ class MCQGenerator:
             return [], [], dup_count
 
         evaluations = []
-        try:
-            reasoner_answers = self.reasoner.answer(unique, facts)
-            if reasoner_answers:
-                evaluations = self.judge.evaluate(unique, facts, reasoner_answers)
-        except Exception as exc:
-            log.warning("CRJ Reasoner/Judge skipped (%s) — accepting MCQs with default score.", str(exc)[:80])
+        for batch_start in range(0, len(unique), CRJ_BATCH_SIZE):
+            batch = unique[batch_start:batch_start + CRJ_BATCH_SIZE]
+            batch_fact_ids = {m.fact_id for m in batch}
+            batch_facts = [f for f in facts if f["fact_id"] in batch_fact_ids]
+            try:
+                reasoner_answers = self.reasoner.answer(batch, batch_facts)
+                if reasoner_answers:
+                    batch_evals = self.judge.evaluate(batch, batch_facts, reasoner_answers)
+                    evaluations.extend(batch_evals)
+            except Exception as exc:
+                log.warning("CRJ batch %d: Reasoner/Judge failed (%s) — accepting batch with default score.",
+                            batch_start // CRJ_BATCH_SIZE, str(exc)[:80])
+            if batch_start + CRJ_BATCH_SIZE < len(unique):
+                time.sleep(0.5)
 
         return unique, evaluations, dup_count
 
