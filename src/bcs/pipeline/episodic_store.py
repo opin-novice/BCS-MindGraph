@@ -159,8 +159,31 @@ class EpisodicMemory:
             );
         """)
 
+        # ---- Table 5: feedback -----------------------------------------
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS feedback (
+                id              INTEGER PRIMARY KEY AUTOINCREMENT,
+                episode_id      TEXT NOT NULL,
+                mcq_id          TEXT NOT NULL,
+                fact_ids        TEXT,
+                rating          INTEGER NOT NULL CHECK(rating >= 1 AND rating <= 5),
+                category        TEXT,
+                comment         TEXT,
+                created_at      TEXT NOT NULL,
+                FOREIGN KEY (episode_id) REFERENCES episodes(episode_id)
+            );
+        """)
+        cur.execute("""
+            CREATE INDEX IF NOT EXISTS idx_feedback_episode
+            ON feedback(episode_id);
+        """)
+        cur.execute("""
+            CREATE INDEX IF NOT EXISTS idx_feedback_rating
+            ON feedback(rating);
+        """)
+
         self._conn.commit()
-        log.debug("Schema initialized (4 tables ready).")
+        log.debug("Schema initialized (5 tables ready).")
 
     # ------------------------------------------------------------------
     # 5.1  write_episode()
@@ -728,6 +751,67 @@ class EpisodicMemory:
         print(f"  Accepted episodes   : {accepted}")
         print(f"  Avg overall_score   : {avg_score}")
         print("-------------------------------------\n")
+
+    def write_feedback(
+        self,
+        episode_id: str,
+        mcq_id: str,
+        fact_ids: Optional[List[str]] = None,
+        rating: int = 3,
+        category: Optional[str] = None,
+        comment: Optional[str] = None,
+    ) -> int:
+        now_str = datetime.datetime.now().isoformat()
+        cur = self._conn.cursor()
+        cur.execute("""
+            INSERT INTO feedback
+                (episode_id, mcq_id, fact_ids, rating, category, comment, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (
+            episode_id, mcq_id,
+            json.dumps(fact_ids or [], ensure_ascii=False),
+            rating, category, comment, now_str,
+        ))
+        self._conn.commit()
+        log.debug("Feedback written: episode=%s mcq=%s rating=%d", episode_id[:8], mcq_id[:12], rating)
+        return cur.lastrowid
+
+    def get_feedback_stats(self) -> Dict[str, Any]:
+        cur = self._conn.cursor()
+        cur.execute("SELECT COUNT(*) AS cnt FROM feedback")
+        total = cur.fetchone()["cnt"]
+        cur.execute("SELECT ROUND(AVG(rating), 2) AS avg FROM feedback")
+        avg_row = cur.fetchone()
+        avg = avg_row["avg"] if avg_row["avg"] else 0.0
+        cur.execute("""
+            SELECT rating, COUNT(*) AS cnt FROM feedback
+            GROUP BY rating ORDER BY rating
+        """)
+        dist = {str(r["rating"]): r["cnt"] for r in cur.fetchall()}
+        cur.execute("SELECT category, COUNT(*) AS cnt FROM feedback WHERE category IS NOT NULL GROUP BY category ORDER BY cnt DESC")
+        cats = [dict(r) for r in cur.fetchall()]
+        return {"total": total, "avg_rating": avg, "distribution": dist, "categories": cats}
+
+    def get_feedback_for_fact(self, fact_id: str) -> List[Dict[str, Any]]:
+        cur = self._conn.cursor()
+        cur.execute("""
+            SELECT f.* FROM feedback f
+            WHERE f.fact_ids LIKE ?
+            ORDER BY f.created_at DESC
+        """, (f"%{fact_id}%",))
+        return [dict(r) for r in cur.fetchall()]
+
+    def get_feedback_by_rating(self, min_rating: int = 1, limit: int = 50) -> List[Dict[str, Any]]:
+        cur = self._conn.cursor()
+        cur.execute("""
+            SELECT f.*, e.topic, e.input_question
+            FROM feedback f
+            JOIN episodes e ON f.episode_id = e.episode_id
+            WHERE f.rating <= ?
+            ORDER BY f.created_at DESC
+            LIMIT ?
+        """, (min_rating, limit))
+        return [dict(r) for r in cur.fetchall()]
 
     def close(self) -> None:
         """Close the database connection."""

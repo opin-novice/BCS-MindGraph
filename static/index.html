@@ -39,6 +39,15 @@
   .footer { text-align: center; color: #999; font-size: 0.8rem; padding: 20px 0; }
   .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
   .toast.show { opacity: 1; }
+  .feedback-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid #e0e0e0; }
+  .feedback-label { font-size: 0.82rem; color: #666; display: block; margin-bottom: 4px; }
+  .feedback-stars { display: flex; gap: 4px; }
+  .star { font-size: 1.4rem; cursor: pointer; color: #ccc; transition: color 0.15s; user-select: none; }
+  .star:hover, .star.active { color: #f39c12; }
+  .star.selected { color: #f39c12; }
+  .btn-feedback { background: #27ae60; color: white; border: none; padding: 6px 16px; border-radius: 6px; font-size: 0.82rem; cursor: pointer; margin-top: 6px; }
+  .btn-feedback:hover { background: #219a52; }
+  .btn-feedback:disabled { background: #999; cursor: not-allowed; }
 </style>
 </head>
 <body>
@@ -114,6 +123,60 @@ function showToast(msg) {
   setTimeout(() => t.className = 'toast', 3000);
 }
 
+function submitFeedback(el) {
+  const container = el.closest('.mcq');
+  const stars = container.querySelectorAll('.star');
+  const rating = parseInt(el.dataset.rating);
+  stars.forEach(s => {
+    s.classList.toggle('selected', parseInt(s.dataset.rating) <= rating);
+  });
+  const extra = container.querySelector('.feedback-extra');
+  extra.style.display = 'block';
+  extra.dataset.rating = rating;
+}
+
+async function sendFeedback(el) {
+  const container = el.closest('.mcq');
+  const mcqId = container.dataset.mcqId;
+  const episodeId = container.dataset.episodeId;
+  const factIds = JSON.parse(container.dataset.factIds || '[]');
+  const rating = parseInt(container.querySelector('.feedback-extra').dataset.rating || '3');
+  const category = container.querySelector('.feedback-cat').value || null;
+  const comment = container.querySelector('.feedback-comment').value.trim() || null;
+  const msgDiv = container.querySelector('.feedback-msg');
+
+  if (!mcqId || !episodeId) {
+    msgDiv.textContent = 'MCQ ID পাওয়া যায়নি';
+    return;
+  }
+
+  el.disabled = true;
+  el.textContent = 'জমা হচ্ছে...';
+
+  try {
+    const res = await fetch(API_BASE + '/feedback', {
+      method: 'POST',
+      body: JSON.stringify({
+        episode_id: episodeId,
+        mcq_id: mcqId,
+        fact_ids: factIds.length > 0 ? factIds : undefined,
+        rating: rating,
+        category: category,
+        comment: comment,
+      }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error((await res.text()).slice(0, 200));
+    msgDiv.textContent = '⭐ ধন্যবাদ! আপনার মতামত রেকর্ড করা হয়েছে।';
+    container.querySelector('.feedback-extra').style.display = 'none';
+    container.querySelectorAll('.star').forEach(s => s.style.pointerEvents = 'none');
+  } catch (e) {
+    msgDiv.textContent = 'ব্যর্থ: ' + e.message;
+    el.disabled = false;
+    el.textContent = 'জমা দিন';
+  }
+}
+
 async function loadTopics() {
   try {
     const topics = await fetchJSON(API_BASE + '/topics');
@@ -170,7 +233,7 @@ document.getElementById('generateForm').addEventListener('submit', async (e) => 
 
     resultsDiv.innerHTML = data.mcqs.map((m, i) => {
       const correctKey = m.correct_answer.split(')')[0].trim();
-      return `<div class="mcq">
+      return `<div class="mcq" data-mcq-id="${m.mcq_id || ''}" data-episode-id="${m.episode_id || ''}" data-fact-ids='${JSON.stringify(m.fact_ids || [])}'>
         <div class="question">${i+1}. ${m.question}</div>
         <ul class="options">${m.options.map(o =>
           `<li${o.key === correctKey ? ' class="correct"' : ''}>${o.key}) ${o.text}</li>`
@@ -180,6 +243,26 @@ document.getElementById('generateForm').addEventListener('submit', async (e) => 
           <span>স্কোর: ${(m.quality_score * 100).toFixed(0)}%</span>
         </div>
         ${m.explanation ? `<div class="explanation">${m.explanation}</div>` : ''}
+        <div class="feedback-section">
+          <span class="feedback-label">এই MCQ টি কেমন লাগলো?</span>
+          <div class="feedback-stars">
+            ${[1,2,3,4,5].map(s => `<span class="star" data-rating="${s}" onclick="submitFeedback(this)">★</span>`).join('')}
+          </div>
+          <div class="feedback-extra" style="display:none;margin-top:8px;">
+            <select class="feedback-cat">
+              <option value="">বিভাগ নির্বাচন করুন</option>
+              <option value="correct_clear">সঠিক ও পরিষ্কার</option>
+              <option value="unclear_stem">প্রশ্ন অস্পষ্ট</option>
+              <option value="wrong_answer">উত্তর ভুল</option>
+              <option value="bad_distractors">বিকল্পগুলো দুর্বল</option>
+              <option value="too_easy">অতিরিক্ত সহজ</option>
+              <option value="too_hard">অতিরিক্ত কঠিন</option>
+            </select>
+            <textarea class="feedback-comment" rows="2" placeholder="মন্তব্য..." style="width:100%;margin-top:6px;padding:6px;border:1px solid #ddd;border-radius:6px;font-size:0.85rem;"></textarea>
+            <button class="btn-feedback" onclick="sendFeedback(this)">জমা দিন</button>
+          </div>
+          <div class="feedback-msg" style="margin-top:4px;font-size:0.8rem;color:#27ae60;"></div>
+        </div>
       </div>`;
     }).join('');
 

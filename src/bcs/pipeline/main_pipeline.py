@@ -172,11 +172,13 @@ class Pipeline:
                     accepted=int(result.accepted),
                     generation_config=result.generation_config,
                 )
+                result.episode_id = episode_id
                 log.info("Episode written: %s", episode_id)
             results.append(result)
 
         mcqs_output = []
         for r in results:
+            episode_id = getattr(r, "episode_id", None)
             for m in r.mcqs:
                 mcqs_output.append({
                     "question": m.question,
@@ -185,6 +187,9 @@ class Pipeline:
                     "difficulty": m.difficulty,
                     "quality_score": m.quality_score,
                     "explanation": m.explanation,
+                    "mcq_id": m.mcq_id,
+                    "episode_id": episode_id,
+                    "fact_ids": r.fact_ids if hasattr(r, "fact_ids") else None,
                 })
 
         return {

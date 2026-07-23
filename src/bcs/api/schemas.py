@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 
 
 class GenerateRequest(BaseModel):
@@ -21,6 +21,9 @@ class MCQOut(BaseModel):
     difficulty: str
     quality_score: float
     explanation: str
+    mcq_id: Optional[str] = None
+    episode_id: Optional[str] = None
+    fact_ids: Optional[List[str]] = None
 
 
 class GenerateResponse(BaseModel):
@@ -46,3 +49,24 @@ class HealthResponse(BaseModel):
     kg_facts: int
     memory_size: int
     model: str
+
+
+class FeedbackRequest(BaseModel):
+    episode_id: str
+    mcq_id: str
+    fact_ids: Optional[List[str]] = None
+    rating: int = 3
+    category: Optional[str] = None
+    comment: Optional[str] = None
+
+
+class FeedbackResponse(BaseModel):
+    id: int
+    message: str
+
+
+class FeedbackStatsResponse(BaseModel):
+    total: int
+    avg_rating: float
+    distribution: Dict[str, int]
+    categories: List[Dict[str, Any]]

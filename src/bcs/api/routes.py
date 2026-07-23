@@ -4,11 +4,16 @@ from fastapi import APIRouter, HTTPException
 from pathlib import Path
 from typing import List
 
+from bcs.logging_config import get_logger
+
+log = get_logger(__name__)
+
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 from starlette.responses import Response
 
 from bcs.api.schemas import (
     GenerateRequest, GenerateResponse, MCQOut, OptionOut, TopicOut, HealthResponse,
+    FeedbackRequest, FeedbackResponse, FeedbackStatsResponse,
 )
 from bcs.pipeline.main_pipeline import Pipeline
 from bcs.generators.mcq_generator import facts_from_kg
@@ -18,6 +23,7 @@ router = APIRouter()
 mcq_generated = Counter("mcq_generated_total", "Total MCQs generated")
 mcq_accepted = Counter("mcq_accepted_total", "Total MCQs accepted by judge")
 pipeline_duration = Histogram("pipeline_duration_seconds", "Pipeline run duration", buckets=(1, 5, 10, 30, 60, 120, 300))
+feedback_received = Counter("feedback_received_total", "Total user feedback entries", ["rating"])
 
 _pipeline: Pipeline = None
 _pipeline_lock = threading.Lock()
@@ -71,6 +77,41 @@ def metrics():
     return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
 
+@router.post("/feedback", response_model=FeedbackResponse)
+def submit_feedback(req: FeedbackRequest):
+    if req.rating < 1 or req.rating > 5:
+        raise HTTPException(status_code=422, detail="Rating must be between 1 and 5")
+    p = get_pipeline()
+    feedback_id = p.memory.write_feedback(
+        episode_id=req.episode_id,
+        mcq_id=req.mcq_id,
+        fact_ids=req.fact_ids,
+        rating=req.rating,
+        category=req.category,
+        comment=req.comment,
+    )
+    feedback_received.labels(rating=str(req.rating)).inc()
+
+    if req.rating <= 2 and req.fact_ids:
+        for fid in req.fact_ids:
+            node = p.kg.get_fact(fid)
+            if node:
+                current = node.get("composite_score", 0.5)
+                penalty = 0.1 * (3 - req.rating)
+                new_score = max(0.0, current - penalty)
+                p.kg.update_fact_attribute(fid, "composite_score", new_score)
+                p.kg.update_fact_attribute(fid, "user_feedback_low", req.rating)
+                log.info("Fact %s composite_score adjusted: %.3f -> %.3f (rating=%d)", fid, current, new_score, req.rating)
+
+    return FeedbackResponse(id=feedback_id, message="Feedback recorded")
+
+
+@router.get("/feedback/stats", response_model=FeedbackStatsResponse)
+def feedback_stats():
+    p = get_pipeline()
+    return p.memory.get_feedback_stats()
+
+
 @router.post("/generate", response_model=GenerateResponse)
 def generate(req: GenerateRequest):
     p = get_pipeline()
@@ -78,7 +119,8 @@ def generate(req: GenerateRequest):
     try:
         result = p.run(topic=req.topic, difficulty=req.difficulty, count=req.count, max_facts=req.max_facts)
         mcqs = []
-        for m in result["mcqs"]:
+        raw_mcqs = result.get("mcqs", [])
+        for i, m in enumerate(raw_mcqs):
             opts = []
             for o in m["options"]:
                 key_text = o.split(") ", 1)
@@ -90,6 +132,9 @@ def generate(req: GenerateRequest):
                 difficulty=m["difficulty"],
                 quality_score=m.get("quality_score", 0.0),
                 explanation=m.get("explanation", ""),
+                mcq_id=m.get("mcq_id"),
+                episode_id=m.get("episode_id"),
+                fact_ids=m.get("fact_ids"),
             ))
         elapsed = time.time() - t0
         pipeline_duration.observe(elapsed)
@@ -98,7 +143,6 @@ def generate(req: GenerateRequest):
             if m.quality_score >= 0.7:
                 mcq_accepted.inc()
 
-        grounding_facts = result.get("mcqs", [])[:3] if result.get("mcqs") else []
         return GenerateResponse(
             mcqs=mcqs,
             topic=result["topic"],
@@ -108,7 +152,7 @@ def generate(req: GenerateRequest):
             kg_size=result.get("kg_size"),
             memory_size=result.get("memory_size"),
             generation_duration_ms=int(elapsed * 1000),
-            grounding_facts=[m.get("explanation", "") for m in result.get("mcqs", [])[:3]] if result.get("mcqs") else None,
+            grounding_facts=[m.get("explanation", "") for m in raw_mcqs[:3]] if raw_mcqs else None,
         )
     except Exception as e:
         elapsed = time.time() - t0
