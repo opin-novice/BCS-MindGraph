@@ -5,7 +5,6 @@ from fastapi.testclient import TestClient
 
 from bcs.api.main import app
 from bcs.api.routes import get_pipeline
-from bcs.pipeline.main_pipeline import Pipeline
 from bcs.pipeline.kg_builder import KnowledgeGraphBuilder
 from bcs.pipeline.episodic_store import EpisodicMemory
 
@@ -23,12 +22,7 @@ def test_pipeline():
         source_url="https://example.com",
     )
     mem = EpisodicMemory(db_path=tmp.name)
-    p = Pipeline.__new__(Pipeline)
-    p.kg = kg
-    p.memory = mem
-    p.mcq_gen = None
-    p.normalizer = None
-    p.intent_builder = None
+    p = type("FakePipeline", (), {"kg": kg, "memory": mem, "mcq_gen": None, "normalizer": None, "intent_builder": None})()
     yield p
     mem.close()
     os.unlink(tmp.name)
@@ -36,14 +30,10 @@ def test_pipeline():
 
 @pytest.fixture
 def client(test_pipeline):
-    app.dependency_overrides = {}
-
-    def override():
-        return test_pipeline
-
-    app.dependency_overrides[get_pipeline] = override
+    app.dependency_overrides[get_pipeline] = lambda: test_pipeline
     with TestClient(app) as c:
         yield c
+    app.dependency_overrides.clear()
 
 
 def test_health(client):
@@ -59,6 +49,7 @@ def test_topics(client):
     assert resp.status_code == 200
     data = resp.json()
     assert isinstance(data, list)
+    assert any(t["topic"] == "History" for t in data)
 
 
 def test_metrics(client):

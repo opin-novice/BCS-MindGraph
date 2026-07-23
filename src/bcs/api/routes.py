@@ -1,7 +1,7 @@
 import os
 import threading
 import time
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from pathlib import Path
 from typing import List
 
@@ -44,8 +44,7 @@ def get_pipeline() -> Pipeline:
 
 
 @router.get("/health", response_model=HealthResponse)
-def health():
-    p = get_pipeline()
+def health(p: Pipeline = Depends(get_pipeline)):
     kg_nodes = p.kg.graph.number_of_nodes()
     kg_facts = len([n for n, d in p.kg.graph.nodes(data=True) if d.get("type") == "FACT"])
     memory_size = len([e for e in p.memory.get_high_performing_topics()])
@@ -59,8 +58,7 @@ def health():
 
 
 @router.get("/topics", response_model=List[TopicOut])
-def topics():
-    p = get_pipeline()
+def topics(p: Pipeline = Depends(get_pipeline)):
     topic_map = {}
     for nid, data in p.kg.graph.nodes(data=True):
         if data.get("type") == "FACT":
@@ -80,10 +78,9 @@ def metrics():
 
 
 @router.post("/feedback", response_model=FeedbackResponse)
-def submit_feedback(req: FeedbackRequest):
+def submit_feedback(req: FeedbackRequest, p: Pipeline = Depends(get_pipeline)):
     if req.rating < 1 or req.rating > 5:
         raise HTTPException(status_code=422, detail="Rating must be between 1 and 5")
-    p = get_pipeline()
     feedback_id = p.memory.write_feedback(
         episode_id=req.episode_id,
         mcq_id=req.mcq_id,
@@ -109,14 +106,12 @@ def submit_feedback(req: FeedbackRequest):
 
 
 @router.get("/feedback/stats", response_model=FeedbackStatsResponse)
-def feedback_stats():
-    p = get_pipeline()
+def feedback_stats(p: Pipeline = Depends(get_pipeline)):
     return p.memory.get_feedback_stats()
 
 
 @router.post("/generate", response_model=GenerateResponse)
-def generate(req: GenerateRequest):
-    p = get_pipeline()
+def generate(req: GenerateRequest, p: Pipeline = Depends(get_pipeline)):
     t0 = time.time()
     try:
         result = p.run(topic=req.topic, difficulty=req.difficulty, count=req.count, max_facts=req.max_facts)
