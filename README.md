@@ -3,42 +3,7 @@
 Generate high-quality Bengali MCQs for Bangladesh Civil Service (BCS) exams using an LLM-powered agent pipeline with a knowledge graph.
 
 ## Architecture
-
-```
-User Input (topic, difficulty)
-        │
-        ▼
-┌─────────────────────────────────────────────────────┐
-│                  PIPELINE                           │
-│                                                     │
-│  ┌──────────┐   ┌──────────┐   ┌────────────────┐  │
-│  │ Intent   │──▶│   KG     │──▶│  MCQ Generator  │  │
-│  │ Builder  │   │ Retrieval│   │  (CRJ Loop)     │  │
-│  └──────────┘   └──────────┘   └────────────────┘  │
-│       │                            │                │
-│       ▼                            ▼                │
-│  ┌──────────┐               ┌──────────┐            │
-│  │ Web      │               │ Quality  │            │
-│  │ Scraper  │               │ Metrics  │            │
-│  └──────────┘               └──────────┘            │
-│       │                            │                │
-│       ▼                            ▼                │
-│  ┌──────────┐               ┌──────────┐            │
-│  │ Episodic │◀──────────────│  Output  │            │
-│  │ Memory   │               │  MCQs    │            │
-│  └──────────┘               └──────────┘            │
-└─────────────────────────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────────────────────────┐
-│              FASTAPI SERVER (api/)                   │
-│  GET  /api/v1/health  — system status               │
-│  GET  /api/v1/topics  — available KG topics         │
-│  POST /api/v1/generate — generate MCQs              │
-│                                                     │
-│  Frontend: static/index.html (Bengali UI)           │
-└─────────────────────────────────────────────────────┘
-```
+![BCS Batighor System Architecture](docs/BCS_Architecture.png)
 
 ## Project Structure
 
