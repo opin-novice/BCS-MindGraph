@@ -3,7 +3,7 @@ import threading
 import time
 from fastapi import APIRouter, Depends, HTTPException
 from pathlib import Path
-from typing import List
+from typing import List, Any, Dict
 
 from bcs.logging_config import get_logger
 
@@ -19,6 +19,7 @@ from bcs.api.schemas import (
 from bcs.pipeline.main_pipeline import Pipeline
 from bcs.generators.mcq_generator import facts_from_kg
 from bcs.generators.mcq_generator import DEFAULT_MODEL as MCQ_MODEL
+from bcs.pipeline_logger import get_pipeline_logger
 
 router = APIRouter()
 
@@ -70,6 +71,16 @@ def topics(p: Pipeline = Depends(get_pipeline)):
             else:
                 topic_map["General"] = topic_map.get("General", 0) + 1
     return [TopicOut(topic=t, fact_count=c) for t, c in sorted(topic_map.items(), key=lambda x: -x[1])]
+
+
+@router.get("/logs")
+def get_logs(limit: int = 50):
+    return get_pipeline_logger().get_recent_logs(limit=limit)
+
+
+@router.get("/logs/{run_id}")
+def get_run_logs(run_id: str):
+    return get_pipeline_logger().get_run_logs(run_id)
 
 
 @router.get("/metrics")
@@ -150,6 +161,7 @@ def generate(req: GenerateRequest, p: Pipeline = Depends(get_pipeline)):
             memory_size=result.get("memory_size"),
             generation_duration_ms=int(elapsed * 1000),
             grounding_facts=[m.get("explanation", "") for m in raw_mcqs[:3]] if raw_mcqs else None,
+            pipeline_run_id=result.get("pipeline_run_id"),
         )
     except Exception as e:
         elapsed = time.time() - t0

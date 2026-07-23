@@ -14,6 +14,7 @@ from bcs.pipeline.kg_builder import KnowledgeGraphBuilder
 from bcs.pipeline.episodic_store import EpisodicMemory
 from bcs.generators.mcq_generator import MCQGenerator, facts_from_kg
 from bcs.logging_config import get_logger
+from bcs.pipeline_logger import get_pipeline_logger
 
 SNAPSHOT_PATH = "runtime/kg_snapshot.gpickle"
 
@@ -103,10 +104,14 @@ class Pipeline:
         count: int = 1,
         max_facts: int = 5,
     ) -> dict:
-        log.info("Pipeline run: topic=%s difficulty=%s count=%d", topic, difficulty, count)
+        plog = get_pipeline_logger()
+        run_id = plog.start_run(topic=topic, difficulty=difficulty, count=count, max_facts=max_facts)
+        log.info("Pipeline run: topic=%s difficulty=%s count=%d [%s]", topic, difficulty, count, run_id)
 
         normalized = self.normalizer.normalize(topic)
         blueprint = self.intent_builder.build_blueprint(normalized)
+        plog.log_stage("intent", input_data={"raw_topic": topic},
+                        output_data={"resolved_topic": blueprint.topic, "intent": blueprint.intent})
 
         resolved_topic = blueprint.topic
         facts = facts_from_kg(self.kg, resolved_topic)
@@ -134,7 +139,11 @@ class Pipeline:
                     })
             facts = all_facts
 
+        plog.log_stage("kg_retrieval", input_data={"topic": resolved_topic},
+                        output_data={"fact_count": len(facts)})
+
         if not facts:
+            plog.log_complete(output_data={"mcq_count": 0}, failure_mode="no_facts")
             return {
                 "mcqs": [],
                 "topic": blueprint.topic,
@@ -143,14 +152,20 @@ class Pipeline:
                 "error": "No facts found in KG for the given topic.",
                 "kg_size": self.kg.graph.number_of_nodes(),
                 "memory_size": 0,
+                "pipeline_run_id": run_id,
             }
 
         results = []
+        total_crj_rounds = 0
+        total_duplicates = 0
         for _ in range(count):
             try:
                 result = self.mcq_gen.generate_from_facts(facts, difficulty=difficulty, topic=resolved_topic, max_facts=max_facts)
+                total_crj_rounds += result.crj_rounds
+                total_duplicates += result.duplicate_count
             except Exception as e:
                 log.error("MCQ generation failed: %s", str(e)[:200])
+                plog.log_stage("mcq_generation", metrics={"error": str(e)[:200]}, failure_mode="generation_error")
                 return {
                     "mcqs": [],
                     "topic": blueprint.topic,
@@ -176,6 +191,10 @@ class Pipeline:
                 log.info("Episode written: %s", episode_id)
             results.append(result)
 
+        plog.log_stage("mcq_generation",
+                        metrics={"total_crj_rounds": total_crj_rounds, "duplicates": total_duplicates,
+                                 "mcqs_produced": sum(len(r.mcqs) for r in results)})
+
         mcqs_output = []
         for r in results:
             episode_id = getattr(r, "episode_id", None)
@@ -192,6 +211,21 @@ class Pipeline:
                     "fact_ids": r.fact_ids if hasattr(r, "fact_ids") else None,
                 })
 
+        avg_score = sum(r.overall_score for r in results) / max(len(results), 1)
+        failure_mode = "none"
+        if len(mcqs_output) < count:
+            failure_mode = "partial_output"
+        plog.log_complete(
+            output_data={"mcq_count": len(mcqs_output), "topic": resolved_topic},
+            metrics={
+                "avg_quality_score": round(avg_score, 4),
+                "total_crj_rounds": total_crj_rounds,
+                "total_duplicates": total_duplicates,
+                "kg_facts_used": len(facts),
+            },
+            failure_mode=failure_mode,
+        )
+
         return {
             "mcqs": mcqs_output,
             "topic": resolved_topic,
@@ -199,6 +233,7 @@ class Pipeline:
             "count": len(mcqs_output),
             "kg_size": self.kg.graph.number_of_nodes(),
             "memory_size": len([e for e in self.memory.get_high_performing_topics()]),
+            "pipeline_run_id": run_id,
         }
 
     def close(self):

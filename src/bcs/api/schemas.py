@@ -36,6 +36,7 @@ class GenerateResponse(BaseModel):
     memory_size: Optional[int] = None
     generation_duration_ms: Optional[int] = None
     grounding_facts: Optional[List[str]] = None
+    pipeline_run_id: Optional[str] = None
 
 
 class TopicOut(BaseModel):
