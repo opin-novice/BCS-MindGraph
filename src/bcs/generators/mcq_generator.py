@@ -32,8 +32,9 @@ log = get_logger("mcq_generator")
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DEFAULT_MODEL    = "llama-3.1-8b-instant"
-GROQ_API_URL     = "https://api.groq.com/openai/v1/chat/completions"
+import os
+DEFAULT_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+GROQ_API_URL  = os.getenv("GROQ_API_URL", "https://api.groq.com/openai/v1/chat/completions")
 
 MAX_REGENERATION_ROUNDS      = 3
 MIN_PASS_SCORE               = 0.70

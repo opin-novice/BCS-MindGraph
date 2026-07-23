@@ -1,3 +1,4 @@
+import os
 import threading
 import time
 from fastapi import APIRouter, HTTPException
@@ -17,6 +18,7 @@ from bcs.api.schemas import (
 )
 from bcs.pipeline.main_pipeline import Pipeline
 from bcs.generators.mcq_generator import facts_from_kg
+from bcs.generators.mcq_generator import DEFAULT_MODEL as MCQ_MODEL
 
 router = APIRouter()
 
@@ -52,7 +54,7 @@ def health():
         kg_nodes=kg_nodes,
         kg_facts=kg_facts,
         memory_size=memory_size,
-        model="llama-3.1-8b-instant",
+        model=os.getenv("GROQ_MODEL", MCQ_MODEL),
     )
 
 
