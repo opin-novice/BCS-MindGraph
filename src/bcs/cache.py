@@ -73,6 +73,8 @@ llm_cache = TTLCache(maxsize=128, ttl_seconds=600)
 
 kg_cache = TTLCache(maxsize=64, ttl_seconds=300)
 
+web_cache = TTLCache(maxsize=32, ttl_seconds=3600)
+
 
 def make_cache_key(*parts: str) -> str:
     raw = "|".join(parts)

@@ -47,10 +47,11 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 from bcs.logging_config import get_logger
+from bcs.cache import web_cache, make_cache_key, TTLCache
 
 # Optional: duckduckgo_search
 try:
-    from ddgs import DDGS
+    from duckduckgo_search import DDGS
     DDGS_AVAILABLE = True
 except ImportError:
     DDGS_AVAILABLE = False
@@ -273,9 +274,21 @@ class WebScraper:
     # Public API
     # ------------------------------------------------------------------
 
+    def _make_cache_key(self, blueprint) -> str:
+        parts = [
+            blueprint.topic,
+            blueprint.bangla_query or "",
+            blueprint.english_query or "",
+            " ".join(blueprint.search_keywords or []),
+        ]
+        return make_cache_key(*parts)
+
     def scrape_for_blueprint(self, blueprint) -> ScrapedResult:
         """
         Full pipeline: queries → URLs → scrape → sentences.
+
+        Results are cached per blueprint (TTL: 1 hour) to avoid
+        redundant network calls for repeated topics.
 
         Parameters
         ----------
@@ -285,6 +298,13 @@ class WebScraper:
         -------
         ScrapedResult
         """
+        cache_key = self._make_cache_key(blueprint)
+        cached = web_cache.get(cache_key)
+        if cached is not None:
+            log.info("[Scraper] Cache HIT for topic='%s' (%d sentences)", blueprint.topic, len(cached.sentences))
+            self._seen_hashes = {s.sentence_hash for s in cached.sentences}
+            return cached
+
         qgen    = WebQueryGenerator()
         queries = qgen.generate(blueprint)
 
@@ -331,7 +351,7 @@ class WebScraper:
             len(urls_searched), total_raw, len(all_sentences), len(errors),
         )
 
-        return ScrapedResult(
+        result = ScrapedResult(
             query_bangla=blueprint.bangla_query,
             query_english=blueprint.english_query,
             topic=blueprint.topic,
@@ -340,6 +360,9 @@ class WebScraper:
             errors=errors,
             total_raw=total_raw,
         )
+        web_cache.set(cache_key, result)
+        log.info("[Scraper] Cache MISS for topic='%s' — stored %d sentences for 1h", blueprint.topic, len(all_sentences))
+        return result
 
     def scrape_urls(self, urls: List[str], topic: str = "General") -> ScrapedResult:
         """
@@ -396,18 +419,37 @@ class WebScraper:
         return []
 
     def _ddg_search(self, query: str) -> List[WebSearchResult]:
-        """Search DuckDuckGo using duckduckgo_search package."""
-        results = []
-        with DDGS() as ddgs:
-            for i, r in enumerate(ddgs.text(query, max_results=self._max_results)):
-                results.append(WebSearchResult(
-                    url=r.get("href", ""),
-                    title=r.get("title", ""),
-                    snippet=r.get("body", ""),
-                    rank=i + 1,
-                    source="duckduckgo",
-                ))
-        return results
+        """Search DuckDuckGo using duckduckgo_search package with retry."""
+        max_attempts = 3
+        last_exc = None
+        for attempt in range(max_attempts):
+            try:
+                results = []
+                with DDGS() as ddgs:
+                    for i, r in enumerate(ddgs.text(query, max_results=self._max_results)):
+                        results.append(WebSearchResult(
+                            url=r.get("href", ""),
+                            title=r.get("title", ""),
+                            snippet=r.get("body", ""),
+                            rank=i + 1,
+                            source="duckduckgo",
+                        ))
+                return results
+            except Exception as exc:
+                last_exc = exc
+                status = getattr(exc, "status_code", 0) or getattr(getattr(exc, "response", None), "status_code", 0)
+                if status == 429 or "ratelimit" in str(exc).lower() or "rate limit" in str(exc).lower():
+                    backoff = 3 * (2 ** attempt)
+                    log.warning("[Search] DDG rate limited (attempt %d/%d) — retrying in %ds", attempt + 1, max_attempts, backoff)
+                    time.sleep(backoff)
+                    continue
+                log.warning("[Search] DDG attempt %d/%d failed: %s", attempt + 1, max_attempts, str(exc)[:100])
+                if attempt < max_attempts - 1:
+                    time.sleep(2 * (2 ** attempt))
+                    continue
+                break
+        log.warning("[Search] DDG failed after %d attempts: %s", max_attempts, str(last_exc)[:100])
+        return []
 
     def _google_search(self, query: str) -> List[WebSearchResult]:
         """Search Google Custom Search API."""
