@@ -34,10 +34,10 @@
   .stat { background: white; padding: 16px 24px; border-radius: 10px; text-align: center; flex: 1; min-width: 100px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
   .stat .num { font-size: 1.6rem; font-weight: 700; color: #0f3460; }
   .stat .lbl { font-size: 0.78rem; color: #777; margin-top: 2px; }
-  .error { background: #fdeded; color: #b71c1c; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 4px solid #b71c1c; }
+  .error { background: #fdeded; color: #b71c1c; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 4px solid #b71c1c; font-size: 0.92rem; }
   .empty { text-align: center; color: #999; padding: 40px 0; }
   .footer { text-align: center; color: #999; font-size: 0.8rem; padding: 20px 0; }
-  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 100; }
   .toast.show { opacity: 1; }
   .feedback-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid #e0e0e0; }
   .feedback-label { font-size: 0.82rem; color: #666; display: block; margin-bottom: 4px; }
@@ -48,6 +48,38 @@
   .btn-feedback { background: #27ae60; color: white; border: none; padding: 6px 16px; border-radius: 6px; font-size: 0.82rem; cursor: pointer; margin-top: 6px; }
   .btn-feedback:hover { background: #219a52; }
   .btn-feedback:disabled { background: #999; cursor: not-allowed; }
+  .feedback-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 0.78rem; padding: 3px 10px; border-radius: 10px; margin-top: 4px; }
+  .topic-error { padding: 10px 14px; background: #fff3e0; color: #e65100; border-radius: 8px; font-size: 0.85rem; margin-bottom: 6px; }
+  .loading-skeleton { padding: 20px; }
+  .skeleton-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .skeleton-line { height: 14px; background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%); background-size: 200% 100%; animation: shimmer 1.4s ease-in-out infinite; border-radius: 6px; margin-bottom: 10px; }
+  .skeleton-line.wide { width: 80%; }
+  .skeleton-line.medium { width: 55%; }
+  .skeleton-line.narrow { width: 35%; }
+  .skeleton-options { margin-top: 14px; }
+  .skeleton-options .skeleton-line { height: 12px; margin-bottom: 8px; background: linear-gradient(90deg, #e8e8e8 25%, #f5f5f5 50%, #e8e8e8 75%); background-size: 200% 100%; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .progress-step { text-align: center; color: #555; font-size: 0.92rem; padding: 8px 0; }
+  .progress-step .step-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin: 0 4px; background: #ddd; }
+  .progress-step .step-dot.active { background: #0f3460; animation: pulse 1s ease-in-out infinite; }
+  .progress-step .step-dot.done { background: #27ae60; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    header h1 { font-size: 1.5rem; }
+    header p { font-size: 0.85rem; }
+    .card { padding: 16px; }
+    .form-row { flex-direction: column; gap: 10px; }
+    .form-group { min-width: 100%; }
+    .btn { width: 100%; text-align: center; padding: 14px 28px; font-size: 1.05rem; }
+    select, input { padding: 12px; font-size: 1rem; }
+    .star { font-size: 1.8rem; }
+    .mcq { padding: 12px; }
+    .summary { gap: 10px; }
+    .stat { padding: 12px 16px; min-width: calc(50% - 10px); }
+    .stat .num { font-size: 1.3rem; }
+    .footer { font-size: 0.72rem; }
+  }
 </style>
 </head>
 <body>
@@ -65,6 +97,7 @@
         <div class="form-group">
           <label for="topic">বিষয়</label>
           <select id="topic" required></select>
+          <div id="topicError" class="topic-error" style="display:none"></div>
         </div>
         <div class="form-group">
           <label for="difficulty">কঠিনতা</label>
@@ -98,6 +131,34 @@
   </div>
 
   <div id="statusMessage"></div>
+  <div id="loadingIndicator" style="display:none">
+    <div class="progress-step">
+      <span class="step-dot" id="step1"></span>
+      <span class="step-dot" id="step2"></span>
+      <span class="step-dot" id="step3"></span>
+      <span id="stepLabel">তথ্য সংগ্রহ ও MCQ তৈরি হচ্ছে...</span>
+    </div>
+    <div class="loading-skeleton">
+      <div class="skeleton-card">
+        <div class="skeleton-line wide"></div>
+        <div class="skeleton-line medium"></div>
+        <div class="skeleton-options">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line narrow"></div>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line wide"></div>
+        <div class="skeleton-line medium"></div>
+        <div class="skeleton-options">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line narrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="results"></div>
 
   <div class="footer">Powered by Groq Llama-3.1-8B · BCS Batighor v1.0</div>
@@ -108,11 +169,30 @@
 <script>
 const API_BASE = '/api/v1';
 
+const ERROR_MESSAGES = {
+  'Failed to fetch': 'সার্ভারে সংযোগ করা যায়নি। ইন্টারনেট সংযোগ পরীক্ষা করুন।',
+  'NetworkError': 'নেটওয়ার্ক সমস্যা। দয়া করে আবার চেষ্টা করুন।',
+  '500': 'সার্ভার內部 ত্রুটি। কিছুক্ষণ পর আবার চেষ্টা করুন।',
+  '503': 'সার্ভার ব্যস্ত। একটু পর আবার চেষ্টা করুন।',
+  '429': 'অনুরোধের সীমা অতিক্রান্ত। একটু পর আবার চেষ্টা করুন।',
+  'timeout': 'অনুরোধের সময় শেষ। ধীর গতির ইন্টারনেট সংযোগ।',
+};
+
+function friendlyError(raw) {
+  if (!raw) return 'অজানা ত্রুটি।';
+  const msg = raw.message || raw.toString();
+  for (const [key, val] of Object.entries(ERROR_MESSAGES)) {
+    if (msg.includes(key) || msg.includes(key.toLowerCase())) return val;
+  }
+  return msg.length > 120 ? msg.slice(0, 120) + '...' : msg;
+}
+
 async function fetchJSON(url, opts = {}) {
   const res = await fetch(url, { headers: { 'Content-Type': 'application/json' }, ...opts });
   if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(body ? body.slice(0, 200) : res.statusText);
+    let detail = '';
+    try { const j = await res.json(); detail = j.detail || ''; } catch { detail = await res.text().catch(() => ''); }
+    throw new Error(detail || `${res.status}: ${res.statusText}`);
   }
   return res.json();
 }
@@ -120,7 +200,7 @@ async function fetchJSON(url, opts = {}) {
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg; t.className = 'toast show';
-  setTimeout(() => t.className = 'toast', 3000);
+  setTimeout(() => t.className = 'toast', 4000);
 }
 
 function submitFeedback(el) {
@@ -166,27 +246,77 @@ async function sendFeedback(el) {
       }),
       headers: { 'Content-Type': 'application/json' },
     });
-    if (!res.ok) throw new Error((await res.text()).slice(0, 200));
-    msgDiv.textContent = '⭐ ধন্যবাদ! আপনার মতামত রেকর্ড করা হয়েছে।';
+    if (!res.ok) {
+      let detail = '';
+      try { const j = await res.json(); detail = j.detail || ''; } catch { detail = await res.text().catch(() => ''); }
+      throw new Error(detail || `${res.status}: ${res.statusText}`);
+    }
     container.querySelector('.feedback-extra').style.display = 'none';
     container.querySelectorAll('.star').forEach(s => s.style.pointerEvents = 'none');
+    const existing = container.querySelector('.feedback-badge');
+    if (!existing) {
+      const badge = document.createElement('div');
+      badge.className = 'feedback-badge';
+      badge.textContent = '⭐ মতামত রেকর্ড করা হয়েছে';
+      container.querySelector('.feedback-section').appendChild(badge);
+    }
+    showToast('মতামতের জন্য ধন্যবাদ!');
   } catch (e) {
-    msgDiv.textContent = 'ব্যর্থ: ' + e.message;
+    msgDiv.textContent = 'ব্যর্থ: ' + friendlyError(e);
     el.disabled = false;
     el.textContent = 'জমা দিন';
   }
 }
 
 async function loadTopics() {
+  const topicError = document.getElementById('topicError');
   try {
     const topics = await fetchJSON(API_BASE + '/topics');
     const sel = document.getElementById('topic');
+    if (!topics || topics.length === 0) {
+      sel.innerHTML = '<option value="">কোনো বিষয় পাওয়া যায়নি</option>';
+      return;
+    }
     sel.innerHTML = topics.map(t =>
       `<option value="${t.topic}">${t.topic} (${t.fact_count}টি তথ্য)</option>`
     ).join('');
+    topicError.style.display = 'none';
   } catch (e) {
-    showToast('বিষয় তালিকা লোড করতে ব্যর্থ: ' + e.message);
+    const sel = document.getElementById('topic');
+    sel.innerHTML = '<option value="">বিষয় তালিকা লোড করা যায়নি</option>';
+    topicError.textContent = '⚠️ ' + friendlyError(e);
+    topicError.style.display = 'block';
   }
+}
+
+function showLoading() {
+  const loading = document.getElementById('loadingIndicator');
+  const results = document.getElementById('results');
+  const status = document.getElementById('statusMessage');
+  loading.style.display = 'block';
+  results.innerHTML = '';
+  status.innerHTML = '';
+  ['step1','step2','step3'].forEach(id => document.getElementById(id).className = 'step-dot');
+  document.getElementById('stepLabel').textContent = 'তথ্য সংগ্রহ ও MCQ তৈরি হচ্ছে...';
+  let step = 0;
+  const labels = [
+    'তথ্য সংগ্রহ ও MCQ তৈরি হচ্ছে...',
+    'MCQ জেনারেট হচ্ছে...',
+    'চূড়ান্ত পর্যায়...',
+  ];
+  const interval = setInterval(() => {
+    step++;
+    if (step >= 3) { clearInterval(interval); return; }
+    for (let i = 0; i <= step; i++) document.getElementById('step' + (i+1)).className = 'step-dot done';
+    if (step < 3) document.getElementById('step' + (step+1)).className = 'step-dot active';
+    document.getElementById('stepLabel').textContent = labels[step] || labels[0];
+  }, 4000);
+  return interval;
+}
+
+function hideLoading(interval) {
+  clearInterval(interval);
+  document.getElementById('loadingIndicator').style.display = 'none';
 }
 
 document.getElementById('generateForm').addEventListener('submit', async (e) => {
@@ -207,11 +337,15 @@ document.getElementById('generateForm').addEventListener('submit', async (e) => 
   resultsDiv.innerHTML = '';
   summaryDiv.style.display = 'none';
 
+  const progressInterval = showLoading();
+
   try {
     const data = await fetchJSON(API_BASE + '/generate', {
       method: 'POST',
       body: JSON.stringify({ topic, difficulty, count, max_facts }),
     });
+
+    hideLoading(progressInterval);
 
     if (data.error) {
       statusDiv.innerHTML = `<div class="error">${data.error}</div>`;
@@ -268,7 +402,8 @@ document.getElementById('generateForm').addEventListener('submit', async (e) => 
 
     showToast(`${data.count}টি MCQ তৈরি হয়েছে!`);
   } catch (e) {
-    statusDiv.innerHTML = `<div class="error">${e.message}</div>`;
+    hideLoading(progressInterval);
+    statusDiv.innerHTML = `<div class="error">${friendlyError(e)}</div>`;
   } finally {
     btn.disabled = false;
     btn.innerHTML = 'জেনারেট করুন';

@@ -12,6 +12,8 @@ from bcs.pipeline.input_normalizer import InputNormalizer
 from bcs.pipeline.intent_builder import IntentBuilder
 from bcs.pipeline.kg_builder import KnowledgeGraphBuilder
 from bcs.pipeline.episodic_store import EpisodicMemory
+from bcs.pipeline.fact_quality import FactQualityGate
+from bcs.pipeline.web_scraper import WebScraper
 from bcs.generators.mcq_generator import MCQGenerator, facts_from_kg
 from bcs.logging_config import get_logger
 from bcs.pipeline_logger import get_pipeline_logger
@@ -78,6 +80,10 @@ class Pipeline:
         hf_api_key: Optional[str] = None,
         db_path: str = "runtime/memory.db",
         data_dir: str = "data",
+        web_search_enabled: bool = True,
+        web_min_facts: int = 5,
+        web_quality_threshold: float = 0.50,
+        web_max_sentences: int = 20,
     ):
         if hf_api_key is None:
             hf_api_key = os.getenv("GROQ_API_KEY") or os.getenv("HF_API_KEY")
@@ -86,6 +92,11 @@ class Pipeline:
         self.intent_builder = IntentBuilder(hf_api_key=hf_api_key)
         self.kg = KnowledgeGraphBuilder()
         self.memory = EpisodicMemory(db_path=db_path)
+        self.web_search_enabled = web_search_enabled
+        self.web_min_facts = web_min_facts
+        self.web_quality_threshold = web_quality_threshold
+        self.web_max_sentences = web_max_sentences
+        self.quality_gate = FactQualityGate(self.kg)
 
         if os.path.exists(SNAPSHOT_PATH):
             self.kg.load_snapshot(SNAPSHOT_PATH)
@@ -96,6 +107,57 @@ class Pipeline:
             hf_api_key=hf_api_key or "",
             seen_questions_path="runtime/seen_questions.json",
         )
+
+    def _web_search_and_integrate(self, blueprint, plog) -> int:
+        if not self.web_search_enabled:
+            return 0
+        try:
+            scraper = WebScraper()
+            scraped = scraper.scrape_for_blueprint(blueprint)
+        except Exception:
+            log.warning("Web search failed — skipping", exc_info=True)
+            return 0
+
+        if not scraped or not scraped.sentences:
+            log.info("Web search returned no sentences for topic '%s'", blueprint.topic)
+            return 0
+
+        fact_dicts = scraped.as_fact_dicts()
+        sentences = fact_dicts if fact_dicts else [
+            {"text": s, "source_url": "", "publisher": "", "extraction_date": None}
+            for s in scraped.sentences[:self.web_max_sentences]
+        ]
+
+        added = 0
+        for fd in sentences:
+            text = fd.get("text", "").strip()
+            if not text:
+                continue
+
+            scores = self.quality_gate.score_fact(
+                text=text,
+                source_url=fd.get("source_url", ""),
+                publisher=fd.get("publisher", ""),
+                extraction_date=fd.get("extraction_date"),
+            )
+            if scores.get("composite_score", 0) < self.web_quality_threshold:
+                continue
+
+            self.kg.insert_fact_pipeline(
+                fact_text=text,
+                subject_entities=[],
+                object_entities=[],
+                topic=blueprint.topic,
+                source_url=fd.get("source_url", ""),
+                publisher=fd.get("publisher", ""),
+            )
+            added += 1
+
+        plog.log_stage("web_search",
+                        input_data={"topic": blueprint.topic},
+                        output_data={"scraped_count": len(sentences), "integrated": added})
+        log.info("Web search integrated %d new facts for topic '%s'", added, blueprint.topic)
+        return added
 
     def run(
         self,
@@ -118,6 +180,12 @@ class Pipeline:
         if not facts:
             resolved_topic = topic
             facts = facts_from_kg(self.kg, resolved_topic)
+
+        if len(facts) < self.web_min_facts:
+            added = self._web_search_and_integrate(blueprint, plog)
+            if added > 0:
+                facts = facts_from_kg(self.kg, resolved_topic)
+
         if not facts:
             log.warning("No facts found for topic '%s' — falling back to all facts.", topic)
             all_facts = []

@@ -1,12 +1,13 @@
-# BCS Batighor Configuration
-# Copy to config.yaml and fill in your values.
-
 web:
   search_api: "duckduckgo"
   timeout_seconds: 10
+  enabled: true
+  min_facts_for_topic: 5
+  max_sentences_to_score: 20
+  quality_threshold: 0.50
 
 kg:
-  storage: "networkx"  # networkx | duckdb | postgresql
+  storage: "networkx"
   data_dir: "data"
 
 mcq_gen:

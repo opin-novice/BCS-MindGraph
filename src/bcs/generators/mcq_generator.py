@@ -387,6 +387,7 @@ class ChallengerAgent:
     ) -> List[MCQ]:
         """
         Generate MCQs for a list of KG fact dicts.
+        Generates up to 2 MCQs per fact by targeting different question types.
 
         Parameters
         ----------
@@ -425,15 +426,21 @@ class ChallengerAgent:
                 "সম্পূর্ণ ভিন্ন প্রশ্ন তৈরি করো।\n"
             )
 
-        n_facts    = len(facts)
-        n_factual  = max(1, round(n_facts * 0.75))
-        n_who      = max(1, round(n_facts * 0.15))
+        n_facts  = len(facts)
+        mcqs_per_fact = 2
+        total_mcqs    = n_facts * mcqs_per_fact
+        n_factual     = max(1, round(total_mcqs * 0.75))
+        n_who         = max(1, round(total_mcqs * 0.15))
 
-        prompt = f"""Generate {n_facts} MCQs in Bengali from these facts:
+        prompt = f"""Generate {total_mcqs} MCQs in Bengali from these facts — exactly {mcqs_per_fact} different MCQs per fact, each testing a different aspect:
 
 {fact_block}
 {failure_block}{avoid_block}
-Distribute types: {n_factual}x numeric_ranking/analytical, {n_who}x who_question, max 1x when/where.
+Rules:
+- For each fact, create {mcqs_per_fact} MCQs targeting different question types (e.g. if the fact mentions a person AND a date, make one who_question and one when_question).
+- Total type distribution: {n_factual}x numeric_ranking/analytical, {n_who}x who_question, max {round(total_mcqs * 0.10)}x when/where.
+- Every MCQ must be based strictly on the fact. No outside knowledge.
+- 4 options (ক/খ/গ/ঘ). Distractors must be plausible.
 
 Return JSON:
 {{"mcqs":[{{"fact_id":"FACT_xx","question":"...","options":{{"ক":"...","খ":"...","গ":"...","ঘ":"..."}},"correct_answer":"ক","difficulty":"{difficulty}","question_type":"...","explanation":"..."}}]}}"""
