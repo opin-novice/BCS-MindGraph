@@ -1,0 +1,10 @@
+services:
+  bcs-batighor:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.env:/app/.env
+      - ./data:/app/data
+      - ./runtime:/app/runtime
+    restart: unless-stopped

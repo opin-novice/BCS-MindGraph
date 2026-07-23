@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCS বাতিঘর — MCQ Generator</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f0f2f5; color: #1a1a2e; padding: 20px; }
+  .container { max-width: 800px; margin: 0 auto; }
+  header { text-align: center; padding: 30px 0; }
+  header h1 { font-size: 2rem; color: #16213e; }
+  header p { color: #555; font-size: 0.95rem; }
+  .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .form-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+  .form-group { flex: 1; min-width: 150px; }
+  label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.85rem; color: #333; }
+  select, input { width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; }
+  .btn { background: #0f3460; color: white; border: none; padding: 10px 28px; border-radius: 8px; font-size: 1rem; cursor: pointer; font-weight: 600; transition: background 0.2s; white-space: nowrap; }
+  .btn:hover { background: #1a5276; }
+  .btn:disabled { background: #999; cursor: not-allowed; }
+  .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .mcq { border-left: 4px solid #0f3460; padding: 16px; margin-bottom: 14px; background: #fafafa; border-radius: 0 8px 8px 0; }
+  .mcq .question { font-size: 1.05rem; font-weight: 600; margin-bottom: 10px; }
+  .mcq .options { list-style: none; }
+  .mcq .options li { padding: 6px 0; font-size: 0.95rem; }
+  .mcq .options .correct { color: #27ae60; font-weight: 700; }
+  .mcq .options .correct::after { content: " ✓"; }
+  .mcq .meta { margin-top: 10px; font-size: 0.82rem; color: #666; display: flex; gap: 16px; flex-wrap: wrap; }
+  .mcq .meta .tag { background: #e8eaf6; padding: 2px 10px; border-radius: 12px; }
+  .mcq .explanation { margin-top: 8px; font-size: 0.88rem; color: #444; background: #fef9e7; padding: 8px 12px; border-radius: 6px; }
+  .summary { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
+  .stat { background: white; padding: 16px 24px; border-radius: 10px; text-align: center; flex: 1; min-width: 100px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .stat .num { font-size: 1.6rem; font-weight: 700; color: #0f3460; }
+  .stat .lbl { font-size: 0.78rem; color: #777; margin-top: 2px; }
+  .error { background: #fdeded; color: #b71c1c; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; border-left: 4px solid #b71c1c; }
+  .empty { text-align: center; color: #999; padding: 40px 0; }
+  .footer { text-align: center; color: #999; font-size: 0.8rem; padding: 20px 0; }
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🏛️ BCS বাতিঘর</h1>
+    <p>BCS প্রস্তুতির জন্য স্বয়ংক্রিয় MCQ জেনারেটর</p>
+  </header>
+
+  <div id="summaryStats" class="summary" style="display:none"></div>
+
+  <div class="card">
+    <form id="generateForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="topic">বিষয়</label>
+          <select id="topic" required></select>
+        </div>
+        <div class="form-group">
+          <label for="difficulty">কঠিনতা</label>
+          <select id="difficulty">
+            <option value="easy">সহজ</option>
+            <option value="medium" selected>মাঝারি</option>
+            <option value="hard">কঠিন</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="count">সংখ্যা</label>
+          <select id="count">
+            <option value="1">১টি</option>
+            <option value="3">৩টি</option>
+            <option value="5">৫টি</option>
+            <option value="10">১০টি</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="max_facts">সর্বোচ্চ তথ্য</label>
+          <select id="max_facts">
+            <option value="5">৫টি</option>
+            <option value="10">১০টি</option>
+            <option value="20">২০টি</option>
+            <option value="0">সবগুলো</option>
+          </select>
+        </div>
+        <button type="submit" class="btn" id="generateBtn">জেনারেট করুন</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="statusMessage"></div>
+  <div id="results"></div>
+
+  <div class="footer">Powered by Groq Llama-3.1-8B · BCS Batighor v1.0</div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script>
+const API_BASE = '/api/v1';
+
+async function fetchJSON(url, opts = {}) {
+  const res = await fetch(url, { headers: { 'Content-Type': 'application/json' }, ...opts });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(body ? body.slice(0, 200) : res.statusText);
+  }
+  return res.json();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.className = 'toast show';
+  setTimeout(() => t.className = 'toast', 3000);
+}
+
+async function loadTopics() {
+  try {
+    const topics = await fetchJSON(API_BASE + '/topics');
+    const sel = document.getElementById('topic');
+    sel.innerHTML = topics.map(t =>
+      `<option value="${t.topic}">${t.topic} (${t.fact_count}টি তথ্য)</option>`
+    ).join('');
+  } catch (e) {
+    showToast('বিষয় তালিকা লোড করতে ব্যর্থ: ' + e.message);
+  }
+}
+
+document.getElementById('generateForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('generateBtn');
+  const statusDiv = document.getElementById('statusMessage');
+  const resultsDiv = document.getElementById('results');
+  const summaryDiv = document.getElementById('summaryStats');
+
+  const topic = document.getElementById('topic').value;
+  const difficulty = document.getElementById('difficulty').value;
+  const count = parseInt(document.getElementById('count').value);
+  const max_facts = parseInt(document.getElementById('max_facts').value) || undefined;
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> জেনারেট হচ্ছে...';
+  statusDiv.innerHTML = '';
+  resultsDiv.innerHTML = '';
+  summaryDiv.style.display = 'none';
+
+  try {
+    const data = await fetchJSON(API_BASE + '/generate', {
+      method: 'POST',
+      body: JSON.stringify({ topic, difficulty, count, max_facts }),
+    });
+
+    if (data.error) {
+      statusDiv.innerHTML = `<div class="error">${data.error}</div>`;
+      return;
+    }
+
+    if (data.mcqs.length === 0) {
+      resultsDiv.innerHTML = '<div class="empty">কোনো MCQ জেনারেট করা যায়নি</div>';
+      return;
+    }
+
+    summaryDiv.style.display = 'flex';
+    summaryDiv.innerHTML = `
+      <div class="stat"><div class="num">${data.count}</div><div class="lbl">MCQ</div></div>
+      <div class="stat"><div class="num">${data.topic}</div><div class="lbl">বিষয়</div></div>
+      <div class="stat"><div class="num">${difficulty === 'easy' ? 'সহজ' : difficulty === 'medium' ? 'মাঝারি' : 'কঠিন'}</div><div class="lbl">কঠিনতা</div></div>
+      <div class="stat"><div class="num">${data.kg_size || '-'}</div><div class="lbl">KG নোড</div></div>
+    `;
+
+    resultsDiv.innerHTML = data.mcqs.map((m, i) => {
+      const correctKey = m.correct_answer.split(')')[0].trim();
+      return `<div class="mcq">
+        <div class="question">${i+1}. ${m.question}</div>
+        <ul class="options">${m.options.map(o =>
+          `<li${o.key === correctKey ? ' class="correct"' : ''}>${o.key}) ${o.text}</li>`
+        ).join('')}</ul>
+        <div class="meta">
+          <span class="tag">${m.difficulty}</span>
+          <span>স্কোর: ${(m.quality_score * 100).toFixed(0)}%</span>
+        </div>
+        ${m.explanation ? `<div class="explanation">${m.explanation}</div>` : ''}
+      </div>`;
+    }).join('');
+
+    showToast(`${data.count}টি MCQ তৈরি হয়েছে!`);
+  } catch (e) {
+    statusDiv.innerHTML = `<div class="error">${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'জেনারেট করুন';
+  }
+});
+
+loadTopics();
+</script>
+</body>
+</html>

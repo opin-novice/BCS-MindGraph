@@ -1,0 +1,22 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="bcs-batighor",
+    version="1.0.0",
+    description="Automatic BCS MCQ generation from a knowledge graph using LLM agents",
+    packages=find_packages("src"),
+    package_dir={"": "src"},
+    python_requires=">=3.10",
+    install_requires=[
+        "requests>=2.31.0",
+        "python-dotenv>=1.0.0",
+        "networkx>=3.0",
+        "beautifulsoup4>=4.12.0",
+        "lxml>=5.0.0",
+        "tqdm>=4.66.0",
+        "duckduckgo-search>=6.0.0",
+        "fastapi>=0.110.0",
+        "uvicorn[standard]>=0.29.0",
+        "pydantic>=2.5.0",
+    ],
+)

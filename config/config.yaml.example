@@ -1,0 +1,24 @@
+# BCS Batighor Configuration
+# Copy to config.yaml and fill in your values.
+
+web:
+  search_api: "duckduckgo"
+  timeout_seconds: 10
+
+kg:
+  storage: "networkx"  # networkx | duckdb | postgresql
+  data_dir: "data"
+
+mcq_gen:
+  model: "llama-3.1-8b-instant"
+  batch_size: 10
+  min_pass_score: 0.70
+  max_regeneration_rounds: 3
+
+quality:
+  pass_threshold: 0.70
+  grounding_minimum: 0.80
+
+memory:
+  db_path: "runtime/memory.db"
+  decay_lambda: 0.05
