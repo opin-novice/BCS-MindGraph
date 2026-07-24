@@ -71,3 +71,55 @@ class FeedbackStatsResponse(BaseModel):
     avg_rating: float
     distribution: Dict[str, int]
     categories: List[Dict[str, Any]]
+
+
+class DatasetRecord(BaseModel):
+    mcq_id: str
+    episode_id: str
+    question: str
+    options: Any
+    correct_answer: str
+    difficulty: str
+    quality_score: float
+    format_score: float
+    grounding_score: float
+    clarity_score: float
+    distractor_score: float
+    regeneration_round: int
+    topic: str
+    timestamp: str
+    avg_rating: Optional[float] = None
+    rating_count: Optional[int] = None
+
+
+class DatasetResponse(BaseModel):
+    total: int
+    min_quality: float
+    records: List[DatasetRecord]
+
+
+class AuthRegisterRequest(BaseModel):
+    email: str
+    password: str
+    display_name: Optional[str] = None
+
+
+class AuthLoginRequest(BaseModel):
+    email: str
+    password: str
+
+
+class AuthResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user_id: str
+    email: str
+    display_name: Optional[str] = None
+
+
+class UserOut(BaseModel):
+    user_id: str
+    email: str
+    display_name: Optional[str] = None
+    created_at: str
+    is_active: bool

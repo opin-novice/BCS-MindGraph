@@ -14,7 +14,12 @@ from starlette.responses import Response
 
 from bcs.api.schemas import (
     GenerateRequest, GenerateResponse, MCQOut, OptionOut, TopicOut, HealthResponse,
-    FeedbackRequest, FeedbackResponse, FeedbackStatsResponse,
+    FeedbackRequest, FeedbackResponse, FeedbackStatsResponse, DatasetResponse,
+    AuthRegisterRequest, AuthLoginRequest, AuthResponse, UserOut,
+)
+from bcs.api.auth import (
+    create_user, get_user_by_email, verify_password,
+    create_access_token, get_current_user, require_user,
 )
 from bcs.pipeline.main_pipeline import Pipeline
 from bcs.generators.mcq_generator import facts_from_kg
@@ -89,7 +94,7 @@ def metrics():
 
 
 @router.post("/feedback", response_model=FeedbackResponse)
-def submit_feedback(req: FeedbackRequest, p: Pipeline = Depends(get_pipeline)):
+def submit_feedback(req: FeedbackRequest, p: Pipeline = Depends(get_pipeline), user: Dict = Depends(get_current_user)):
     if req.rating < 1 or req.rating > 5:
         raise HTTPException(status_code=422, detail="Rating must be between 1 and 5")
     feedback_id = p.memory.write_feedback(
@@ -116,13 +121,60 @@ def submit_feedback(req: FeedbackRequest, p: Pipeline = Depends(get_pipeline)):
     return FeedbackResponse(id=feedback_id, message="Feedback recorded")
 
 
+# ---------------------------------------------------------------------------
+# Auth endpoints  (Priority 4)
+# ---------------------------------------------------------------------------
+
+@router.post("/auth/register", response_model=AuthResponse, status_code=201)
+def register(req: AuthRegisterRequest):
+    if len(req.password) < 6:
+        raise HTTPException(status_code=422, detail="Password must be at least 6 characters")
+    user = create_user(email=req.email, password=req.password, display_name=req.display_name)
+    token = create_access_token({"sub": user["user_id"], "email": user["email"]})
+    return AuthResponse(access_token=token, user_id=user["user_id"], email=user["email"], display_name=user.get("display_name"))
+
+
+@router.post("/auth/login", response_model=AuthResponse)
+def login(req: AuthLoginRequest):
+    user = get_user_by_email(req.email)
+    if not user or not verify_password(req.password, user["hashed_pass"]):
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    token = create_access_token({"sub": user["user_id"], "email": user["email"]})
+    return AuthResponse(access_token=token, user_id=user["user_id"], email=user["email"], display_name=user.get("display_name"))
+
+
+@router.get("/auth/me", response_model=UserOut)
+def me(user: Dict = Depends(require_user)):
+    return UserOut(
+        user_id=user["user_id"],
+        email=user["email"],
+        display_name=user.get("display_name"),
+        created_at=user["created_at"],
+        is_active=bool(user["is_active"]),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Dataset endpoint  (Priority 3)
+# ---------------------------------------------------------------------------
+
+@router.get("/dataset", response_model=DatasetResponse)
+def get_dataset(p: Pipeline = Depends(get_pipeline), min_quality: float = 0.70, limit: int = 100):
+    records = p.memory.export_dataset(min_quality=min_quality, limit=limit)
+    return DatasetResponse(total=len(records), min_quality=min_quality, records=records)
+
+
+# ---------------------------------------------------------------------------
+# MCQ generation & feedback
+# ---------------------------------------------------------------------------
+
 @router.get("/feedback/stats", response_model=FeedbackStatsResponse)
 def feedback_stats(p: Pipeline = Depends(get_pipeline)):
     return p.memory.get_feedback_stats()
 
 
 @router.post("/generate", response_model=GenerateResponse)
-def generate(req: GenerateRequest, p: Pipeline = Depends(get_pipeline)):
+def generate(req: GenerateRequest, p: Pipeline = Depends(get_pipeline), user: Dict = Depends(get_current_user)):
     t0 = time.time()
     try:
         result = p.run(topic=req.topic, difficulty=req.difficulty, count=req.count, max_facts=req.max_facts)

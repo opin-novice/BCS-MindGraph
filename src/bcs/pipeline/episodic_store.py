@@ -91,6 +91,7 @@ class EpisodicMemory:
         self._conn.row_factory = sqlite3.Row
         self._conn.execute("PRAGMA journal_mode=WAL;")
         self._create_schema()
+        self._migrate_schema()
         log.debug("Connected to database: %s", os.path.abspath(db_path))
 
     def _create_schema(self):
@@ -142,6 +143,10 @@ class EpisodicMemory:
                 correct_answer      TEXT,
                 difficulty          TEXT,
                 quality_score       REAL DEFAULT 0.0,
+                format_score        REAL DEFAULT 0.0,
+                grounding_score     REAL DEFAULT 0.0,
+                clarity_score       REAL DEFAULT 0.0,
+                distractor_score    REAL DEFAULT 0.0,
                 regeneration_round  INTEGER DEFAULT 0,
                 FOREIGN KEY (episode_id) REFERENCES episodes(episode_id)
             );
@@ -184,6 +189,16 @@ class EpisodicMemory:
 
         self._conn.commit()
         log.debug("Schema initialized (5 tables ready).")
+
+    def _migrate_schema(self):
+        """Add dimension score columns to episode_mcqs if missing (schema v1 → v2)."""
+        cur = self._conn.cursor()
+        existing = {row[1] for row in cur.execute("PRAGMA table_info(episode_mcqs)").fetchall()}
+        for col in ("format_score", "grounding_score", "clarity_score", "distractor_score"):
+            if col not in existing:
+                cur.execute(f"ALTER TABLE episode_mcqs ADD COLUMN {col} REAL DEFAULT 0.0")
+                log.info("Schema migration: added column %s to episode_mcqs", col)
+        self._conn.commit()
 
     # ------------------------------------------------------------------
     # 5.1  write_episode()
@@ -273,8 +288,10 @@ class EpisodicMemory:
             cur.execute("""
                 INSERT INTO episode_mcqs
                     (mcq_id, episode_id, question, options, correct_answer,
-                     difficulty, quality_score, regeneration_round)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                     difficulty, quality_score,
+                     format_score, grounding_score, clarity_score, distractor_score,
+                     regeneration_round)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 mcq_id, episode_id,
                 mcq.get("question", ""),
@@ -282,6 +299,10 @@ class EpisodicMemory:
                 mcq.get("correct_answer", ""),
                 mcq.get("difficulty", "medium"),
                 mcq.get("quality_score", 0.0),
+                mcq.get("format_score", 0.0),
+                mcq.get("grounding_score", 0.0),
+                mcq.get("clarity_score", 0.0),
+                mcq.get("distractor_score", 0.0),
                 mcq.get("regeneration_round", 0),
             ))
 
@@ -812,6 +833,94 @@ class EpisodicMemory:
             LIMIT ?
         """, (min_rating, limit))
         return [dict(r) for r in cur.fetchall()]
+
+    # ------------------------------------------------------------------
+    # Dataset export  (for Priority 3: fine-tuning data)
+    # ------------------------------------------------------------------
+
+    def export_dataset(
+        self,
+        min_quality: float = 0.70,
+        limit: int = 1000,
+        include_feedback: bool = True,
+    ) -> List[Dict[str, Any]]:
+        """
+        Export accepted MCQs as a structured dataset suitable for
+        fine-tuning a judge model.
+
+        Each record joins:
+          - episode_mcqs (question, options, scores, difficulty)
+          - episodes    (topic, timestamp)
+          - feedback    (avg user rating, count)
+
+        Parameters
+        ----------
+        min_quality : float
+            Minimum quality_score to include (default 0.70).
+        limit : int
+            Maximum rows to return.
+        include_feedback : bool
+            If True, join user feedback and include avg_rating/rating_count.
+
+        Returns
+        -------
+        list of dict
+        """
+        cur = self._conn.cursor()
+
+        query = """
+            SELECT
+                m.mcq_id,
+                m.episode_id,
+                m.question,
+                m.options,
+                m.correct_answer,
+                m.difficulty,
+                m.quality_score,
+                m.format_score,
+                m.grounding_score,
+                m.clarity_score,
+                m.distractor_score,
+                m.regeneration_round,
+                e.topic,
+                e.timestamp
+            FROM episode_mcqs m
+            JOIN episodes e ON m.episode_id = e.episode_id
+            WHERE m.quality_score >= ?
+            ORDER BY e.timestamp DESC
+            LIMIT ?
+        """
+        cur.execute(query, (min_quality, limit))
+        rows = [dict(r) for r in cur.fetchall()]
+
+        # Parse options JSON string back to dict
+        for row in rows:
+            if isinstance(row.get("options"), str):
+                try:
+                    row["options"] = json.loads(row["options"])
+                except (json.JSONDecodeError, TypeError):
+                    row["options"] = {}
+
+        # Augment with feedback stats if requested
+        if include_feedback and rows:
+            mcq_ids = [r["mcq_id"] for r in rows]
+            placeholders = ",".join("?" * len(mcq_ids))
+            cur.execute(f"""
+                SELECT mcq_id,
+                       ROUND(AVG(rating), 2) AS avg_rating,
+                       COUNT(*)              AS rating_count
+                FROM feedback
+                WHERE mcq_id IN ({placeholders})
+                GROUP BY mcq_id
+            """, mcq_ids)
+            feedback_map = {r["mcq_id"]: r for r in cur.fetchall()}
+            for row in rows:
+                fb = feedback_map.get(row["mcq_id"], {})
+                row["avg_rating"] = fb.get("avg_rating")
+                row["rating_count"] = fb.get("rating_count", 0)
+
+        log.debug("export_dataset: %d rows (min_quality=%.2f)", len(rows), min_quality)
+        return rows
 
     def close(self) -> None:
         """Close the database connection."""

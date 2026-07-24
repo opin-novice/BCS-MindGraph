@@ -1,11 +1,14 @@
+import os
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
+from typing import Optional
 
 from bcs.api.routes import router
 from bcs.api.rate_limiter import check_rate_limit
+from bcs.api.auth import verify_access_token
 
 app = FastAPI(title="BCS Batighor MCQ API", version="1.0.0")
 
@@ -23,6 +26,16 @@ async def rate_limit_middleware(request: Request, call_next):
     ip = forwarded.split(",")[0].strip() if forwarded else (request.client.host if request.client else "unknown")
     path = request.url.path
 
+    # Extract user_id from Bearer token if present (for per-user rate limits)
+    user_id: Optional[str] = None
+    auth_header = request.headers.get("Authorization", "")
+    if auth_header.startswith("Bearer "):
+        try:
+            payload = verify_access_token(auth_header[7:])
+            user_id = payload.get("sub")
+        except Exception:
+            pass
+
     if path.startswith("/api/v1/generate"):
         zone = "generate"
     elif path.startswith("/api/v1/feedback"):
@@ -32,7 +45,7 @@ async def rate_limit_middleware(request: Request, call_next):
     else:
         return await call_next(request)
 
-    allowed, retry_after = check_rate_limit(ip, zone)
+    allowed, retry_after = check_rate_limit(ip, zone, user_id=user_id)
     if not allowed:
         return JSONResponse(
             status_code=429,

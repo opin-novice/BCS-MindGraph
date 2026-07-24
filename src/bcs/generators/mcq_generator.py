@@ -155,18 +155,23 @@ class MCQ:
     quality_score:     float = 0.0
     regeneration_round: int  = 0
     grounded:          bool  = False
+    _format_score:     float = 0.0
     _grounding_score:  float = 0.0
     _distractor_score: float = 0.0
     _clarity_score:    float = 0.0
 
     def to_episode_dict(self) -> Dict:
         return {
-            "question":           self.question,
-            "options":            [f"{o.key}) {o.text}" for o in self.options],
-            "correct_answer":     self.correct_answer,
-            "difficulty":         self.difficulty,
-            "quality_score":      self.quality_score,
-            "regeneration_round": self.regeneration_round,
+            "question":            self.question,
+            "options":             [f"{o.key}) {o.text}" for o in self.options],
+            "correct_answer":      self.correct_answer,
+            "difficulty":          self.difficulty,
+            "quality_score":       self.quality_score,
+            "regeneration_round":  self.regeneration_round,
+            "format_score":        round(self._format_score, 3),
+            "grounding_score":     round(self._grounding_score, 3),
+            "clarity_score":       round(self._clarity_score, 3),
+            "distractor_score":    round(self._distractor_score, 3),
         }
 
     def display(self) -> str:
@@ -810,6 +815,7 @@ class MCQGenerator:
                             mcq.quality_score = ev.get("overall_score", 0.0)
                             mcq.regeneration_round = round_num
                             dim = ev.get("dimension_scores", {})
+                            mcq._format_score = float(dim.get("format_score", 0.0))
                             mcq._grounding_score = float(dim.get("grounding_score", 0.0))
                             mcq._distractor_score = float(dim.get("distractor_score", 0.0))
                             mcq._clarity_score = float(dim.get("clarity_score", 0.0))
