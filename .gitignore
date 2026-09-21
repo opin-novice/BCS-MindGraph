@@ -1,59 +1,35 @@
-# Draft .gitignore for the first commit. Nothing has been committed yet, so
-# whatever is not excluded here enters history on the first `git add -A` and
-# is painful to remove afterwards. Review before committing.
-
-# ---------------------------------------------------------------------------
-# Secrets. This is the one that matters.
-# ---------------------------------------------------------------------------
+# Secrets
 .env
 .env.*
 !.env.example
 
-# ---------------------------------------------------------------------------
-# Local state and caches -- regenerated, machine-specific, or both.
-# ---------------------------------------------------------------------------
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+dist/
+build/
 memory.db
 .serena/
 
-# Virtual environments. `venv/` was built on macOS and does not run on
-# Windows; `.venv/` is the local Windows one. Neither belongs in history —
-# rebuild from requirements.txt instead.
+# Virtual environments
 venv/
 .venv/
 
-# ---------------------------------------------------------------------------
-# OS and Office noise.
-# `~$...docx` is a Word lock file, present only while the document is open.
-# ---------------------------------------------------------------------------
+# Runtime & Logs
+runtime/
+!runtime/.gitkeep
+*.log
+*.log.*
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
 ~$*
 
-# ---------------------------------------------------------------------------
-# Corpus backups. The timestamped ones are written on every
-# `verify_temporal_corpus.py triage-unlisted --apply` run and accumulate.
-#
-# bcs_gk_facts.json.pre-triage.bak is deliberately NOT ignored: it is the only
-# copy of the corpus as it stood before the 135-fact triage, and the handover
-# cites it.
-# ---------------------------------------------------------------------------
+# Corpus backups
 bcs_gk_facts.json.*.bak
-
-# ---------------------------------------------------------------------------
-# DECIDE BEFORE COMMITTING: snapshots/
-#
-# 1,620 cached MediaWiki revisions, 36 MB. Arguments both ways:
-#
-#   Keep it   -- it is the evidence cache. Every excerpt in the ledgers was
-#                drawn from these exact revisions, and re-fetching depends on
-#                Wikipedia still serving those oldids. Committing makes the
-#                evidence trail reproducible offline.
-#   Ignore it -- 36 MB of third-party text in a research repo, fully
-#                re-fetchable via `verify_temporal_corpus.py fetch` and
-#                `resource_corpus.py`, and it will keep growing.
-#
-# Left UNIGNORED by default, because the provenance argument is the stronger
-# one for this project. Uncomment the next line to exclude it.
-# snapshots/
