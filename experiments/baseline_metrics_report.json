@@ -1,0 +1,43 @@
+{
+  "benchmark_name": "BCSBatighor GK 36-Question Comparative Benchmark Set",
+  "cutoff_date": "2023-04-19",
+  "eval_timestamp": "2026-09-18T21:39:01.703163",
+  "metrics_by_system": {
+    "generic_llm": {
+      "baseline_name": "generic_llm",
+      "total_mcqs": 36,
+      "factual_validity": 1.0,
+      "temporal_correctness": 0.6111,
+      "exam_relevance": 1.0,
+      "distractor_quality": 0.6667,
+      "rejection_rate": 0.0
+    },
+    "static_rag": {
+      "baseline_name": "static_rag",
+      "total_mcqs": 36,
+      "factual_validity": 1.0,
+      "temporal_correctness": 0.6944,
+      "exam_relevance": 1.0,
+      "distractor_quality": 0.7222,
+      "rejection_rate": 0.0
+    },
+    "web_rag": {
+      "baseline_name": "web_rag",
+      "total_mcqs": 36,
+      "factual_validity": 1.0,
+      "temporal_correctness": 0.8333,
+      "exam_relevance": 1.0,
+      "distractor_quality": 0.7778,
+      "rejection_rate": 0.0
+    },
+    "proposed_temporal_kg": {
+      "baseline_name": "proposed_temporal_kg",
+      "total_mcqs": 36,
+      "factual_validity": 1.0,
+      "temporal_correctness": 1.0,
+      "exam_relevance": 1.0,
+      "distractor_quality": 0.9444,
+      "rejection_rate": 0.0556
+    }
+  }
+}

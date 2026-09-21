@@ -1,0 +1,5 @@
+{"basis": "normalized subject|predicate|object exact match", "duplicate_candidate_id": "DUP_0f7aa2c2f4", "fact_ids": ["BCSGK-0019", "BCSGK-0035", "BCSGK-0036", "BCSGK-0037", "BCSGK-0059", "BCSGK-0064", "BCSGK-0077", "BCSGK-0092", "BCSGK-0093", "BCSGK-0096", "BCSGK-0110", "BCSGK-0112", "BCSGK-0115"], "review_status": "unreviewed"}
+{"basis": "normalized subject|predicate|object exact match", "duplicate_candidate_id": "DUP_2a415fe466", "fact_ids": ["BCSGK-0067", "BCSGK-0113"], "review_status": "unreviewed"}
+{"basis": "normalized subject|predicate|object exact match", "duplicate_candidate_id": "DUP_1c278ad880", "fact_ids": ["BCSGK-0363", "BCSGK-0369"], "review_status": "unreviewed"}
+{"basis": "normalized subject|predicate|object exact match", "duplicate_candidate_id": "DUP_92da0978cb", "fact_ids": ["BCSGK-0303", "BCSGK-0304"], "review_status": "unreviewed"}
+{"basis": "normalized subject|predicate|object exact match", "duplicate_candidate_id": "DUP_609a7510fe", "fact_ids": ["BCSGK-0301", "BCSGK-0308"], "review_status": "unreviewed"}

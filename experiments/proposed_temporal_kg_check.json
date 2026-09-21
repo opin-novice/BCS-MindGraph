@@ -1,0 +1,1007 @@
+{
+  "baseline_id": "proposed_temporal_kg",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "cutoff_date": "2023-04-19",
+  "context_augmentation": true,
+  "knowledge_graph_used": true,
+  "bitemporal_snapshot_used": true,
+  "episodic_store_used": true,
+  "screener_used": true,
+  "total_mcqs_generated": 36,
+  "benchmark_demand_satisfied": true,
+  "topic_summary": {
+    "Appointments": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution": {
+      "requested": 1,
+      "generated": 1,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution & Law": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Culture": {
+      "requested": 5,
+      "generated": 5,
+      "elapsed_seconds": 0.0
+    },
+    "Economy": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Flora & Fauna": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Geography": {
+      "requested": 2,
+      "generated": 2,
+      "elapsed_seconds": 0.0
+    },
+    "Government": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "History": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Language": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Liberation War": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    }
+  },
+  "mcqs": [
+    {
+      "mcq_id": "PROPOSED_MOCK_APPO_01",
+      "topic": "Appointments",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_7fe6ff26",
+      "fact_text": "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265140"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_APPO_02",
+      "topic": "Appointments",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_569855c8",
+      "fact_text": "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971.",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265148"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_APPO_03",
+      "topic": "Appointments",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_7fe6ff26",
+      "fact_text": "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265152"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_APPO_04",
+      "topic": "Appointments",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_569855c8",
+      "fact_text": "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971.",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265154"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CONS_01",
+      "topic": "Constitution",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_4dc5d209",
+      "fact_text": "বাংলাদেশ সংবিধানের ৫(১) অনুচ্ছেদ অনুযায়ী ঢাকা বাংলাদেশের রাজধানী.",
+      "question": "[Constitution Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265269"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_5015002a",
+      "fact_text": "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265394"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_159e9f4b",
+      "fact_text": "The Jatiya Sangsad (National Parliament) of Bangladesh is a unicameral legislature with 350 seats.",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265397"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_52c49eac",
+      "fact_text": "Article 44 of the Bangladesh Constitution guarantees the right of citizens to enforce fundamental rights through the High Court Division.",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265399"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_5015002a",
+      "fact_text": "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265402"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CULT_01",
+      "topic": "Culture",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_a036c2f8",
+      "fact_text": "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265550"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CULT_02",
+      "topic": "Culture",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_2266ef9e",
+      "fact_text": "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement.",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265553"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CULT_03",
+      "topic": "Culture",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_751fab56",
+      "fact_text": "The National Museum of Bangladesh, located in Shahbag, Dhaka, was established in 1913 and is one of the largest museums in South Asia.",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265555"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CULT_04",
+      "topic": "Culture",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_81d179cd",
+      "fact_text": "Mangal Shobhajatra, the Pohela Boishakh procession organized by Dhaka University, was inscribed on UNESCO's Intangible Cultural Heritage list in 2016.",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265557"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_CULT_05",
+      "topic": "Culture",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_9d474fed",
+      "fact_text": "Kazi Nazrul Islam, the national poet of Bangladesh, was born on 24 May 1899 in Churulia, West Bengal.",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265559"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_ECON_01",
+      "topic": "Economy",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_59ff4b7b",
+      "fact_text": "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265669"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_ECON_02",
+      "topic": "Economy",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_32af7984",
+      "fact_text": "Grameen Bank, founded by Muhammad Yunus in 1983, pioneered the concept of microcredit.",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265672"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_ECON_03",
+      "topic": "Economy",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_8502a34d",
+      "fact_text": "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন'। এটি মূলধন বাজার নিয়ন্ত্রণকারী প্রতিষ্ঠান। ১৯৯৩ সালের ৮ জুন এটি প্রতিষ্ঠিত হয়। বাংলাদেশে দুইটি স্টক এক্সচেঞ্জ রয়েছে— (১) ঢাকা স্টক এক্সচেঞ্জ লিমিটেড (১৯৫৪) এবং (২) চট্টগ্রাম স্টক এক্সচেঞ্জ লিমিটেড (১৯৯৫)।",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265674"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_ECON_04",
+      "topic": "Economy",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_59ff4b7b",
+      "fact_text": "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265676"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_cae7c218",
+      "fact_text": "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production.",
+      "question": "[Flora & Fauna Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265780"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_cae7c218",
+      "fact_text": "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production.",
+      "question": "[Flora & Fauna Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265783"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_cae7c218",
+      "fact_text": "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production.",
+      "question": "[Flora & Fauna Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265785"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_GEOG_01",
+      "topic": "Geography",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_5a3d44fe",
+      "fact_text": "The capital of Bangladesh is Dhaka, located on the banks of the Buriganga River.",
+      "question": "[Geography Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265926"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_GEOG_02",
+      "topic": "Geography",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_2026dd78",
+      "fact_text": "Bangladesh is divided into 8 administrative divisions: Barishal, Chattogram, Dhaka, Khulna, Mymensingh, Rajshahi, Rangpur, and Sylhet.",
+      "question": "[Geography Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.265929"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_GOVE_01",
+      "topic": "Government",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_b20f8f11",
+      "fact_text": "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।",
+      "question": "[Government Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266025"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_GOVE_02",
+      "topic": "Government",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_b20f8f11",
+      "fact_text": "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।",
+      "question": "[Government Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266028"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_GOVE_03",
+      "topic": "Government",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_b20f8f11",
+      "fact_text": "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।",
+      "question": "[Government Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266030"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_HIST_01",
+      "topic": "History",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_fb82a4e5",
+      "fact_text": "Sheikh Mujibur Rahman is known as the Father of the Nation of Bangladesh.",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266272"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_HIST_02",
+      "topic": "History",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_89458a0e",
+      "fact_text": "Bangladesh achieved independence on 26 March 1971 after a nine-month Liberation War against Pakistan.",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266275"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_HIST_03",
+      "topic": "History",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_08759d94",
+      "fact_text": "The Lahore Resolution of 1940 demanded separate Muslim-majority states in eastern and northwestern India.",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266277"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_HIST_04",
+      "topic": "History",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_caa2f1eb",
+      "fact_text": "The Awami League was founded in 1949 in Dhaka by Maulana Abdul Hamid Khan Bhashani.",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266280"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LANG_01",
+      "topic": "Language",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_197dec2a",
+      "fact_text": "International Mother Language Day on 21 February was declared by UNESCO in 1999 to honor the 1952 Language Movement in Bangladesh.",
+      "question": "[Language Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266385"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LANG_02",
+      "topic": "Language",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_4981fd3f",
+      "fact_text": "Bengali is the 7th most spoken language in the world, with approximately 230 million native speakers.",
+      "question": "[Language Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266387"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LANG_03",
+      "topic": "Language",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_197dec2a",
+      "fact_text": "International Mother Language Day on 21 February was declared by UNESCO in 1999 to honor the 1952 Language Movement in Bangladesh.",
+      "question": "[Language Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266390"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_4ee2cd72",
+      "fact_text": "২৩ ফেব্রুয়ারি, ১৯৪৮ কুমিল্লার ধীরেন্দ্রনাথ দত্ত পাকিস্তান গণপরিষদে বাংলাকে রাষ্ট্রভাষা করার প্রস্তাব উত্থাপন করেন।",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266516"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_48671f89",
+      "fact_text": "১৪ ডিসেম্বর বাংলাদেশে শহীদ বুদ্ধিজীবী দিবস পালিত হয়।",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266518"
+    },
+    {
+      "mcq_id": "PROPOSED_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "baseline": "proposed_temporal_kg",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "bitemporal_snapshot_used": true,
+      "kg_fact_id": "FACT_191eff6f",
+      "fact_text": "মুজিবনগর মেহেরপুর জেলায় অবস্থিত.",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "screener_verdict": {
+        "screener_score": 1.0,
+        "passed": true,
+        "failure_codes": []
+      },
+      "generated_at": "2026-09-18T18:20:36.266521"
+    }
+  ]
+}

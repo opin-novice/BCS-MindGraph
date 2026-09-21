@@ -1,0 +1,917 @@
+{
+  "baseline_id": "static_rag_baseline",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "cutoff_date": "2023-04-19",
+  "context_augmentation": true,
+  "knowledge_graph_used": false,
+  "bitemporal_snapshot_used": false,
+  "screener_used": false,
+  "total_mcqs_generated": 36,
+  "benchmark_demand_satisfied": true,
+  "topic_summary": {
+    "Appointments": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution": {
+      "requested": 1,
+      "generated": 1,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution & Law": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Culture": {
+      "requested": 5,
+      "generated": 5,
+      "elapsed_seconds": 0.0
+    },
+    "Economy": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Flora & Fauna": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Geography": {
+      "requested": 2,
+      "generated": 2,
+      "elapsed_seconds": 0.0
+    },
+    "Government": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "History": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Language": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Liberation War": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    }
+  },
+  "mcqs": [
+    {
+      "mcq_id": "STATIC_RAG_MOCK_APPO_01",
+      "topic": "Appointments",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+        "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971."
+      ],
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140515"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_APPO_02",
+      "topic": "Appointments",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+        "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971."
+      ],
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140538"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_APPO_03",
+      "topic": "Appointments",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+        "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971."
+      ],
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140541"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_APPO_04",
+      "topic": "Appointments",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Hasina served as the Prime Minister of Bangladesh from 2009 to 2024.",
+        "Syed Nazrul Islam served as the Acting President of Bangladesh during the Liberation War in 1971."
+      ],
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140544"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CONS_01",
+      "topic": "Constitution",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "বাংলাদেশ সংবিধানের ৫(১) অনুচ্ছেদ অনুযায়ী ঢাকা বাংলাদেশের রাজধানী।",
+        "বাংলাদেশের সংবিধানের ত্রয়োদশ সংশোধনীর মূল বিষয়বস্তু হলো নিরপেক্ষ-নির্দলীয় তত্ত্বাবধায়ক সরকার ব্যবস্থা প্রবর্তন করা।"
+      ],
+      "question": "[Constitution Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Constitution বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140582"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Bangladesh Constitution originally had four fundamental principles: nationalism, socialism, democracy, and secularism.",
+        "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+        "Article 44 of the Bangladesh Constitution guarantees the right of citizens to enforce fundamental rights through the High Court Division."
+      ],
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140631"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Bangladesh Constitution originally had four fundamental principles: nationalism, socialism, democracy, and secularism.",
+        "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+        "Article 44 of the Bangladesh Constitution guarantees the right of citizens to enforce fundamental rights through the High Court Division."
+      ],
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140634"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Bangladesh Constitution originally had four fundamental principles: nationalism, socialism, democracy, and secularism.",
+        "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+        "Article 44 of the Bangladesh Constitution guarantees the right of citizens to enforce fundamental rights through the High Court Division."
+      ],
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140636"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Bangladesh Constitution originally had four fundamental principles: nationalism, socialism, democracy, and secularism.",
+        "The Constitution of Bangladesh was adopted on 4 November 1972 and came into effect on 16 December 1972.",
+        "Article 44 of the Bangladesh Constitution guarantees the right of citizens to enforce fundamental rights through the High Court Division."
+      ],
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140638"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CULT_01",
+      "topic": "Culture",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The national anthem of Bangladesh, 'Amar Sonar Bangla', was written by Rabindranath Tagore.",
+        "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+        "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement."
+      ],
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140701"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CULT_02",
+      "topic": "Culture",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The national anthem of Bangladesh, 'Amar Sonar Bangla', was written by Rabindranath Tagore.",
+        "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+        "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement."
+      ],
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140703"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CULT_03",
+      "topic": "Culture",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The national anthem of Bangladesh, 'Amar Sonar Bangla', was written by Rabindranath Tagore.",
+        "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+        "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement."
+      ],
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140705"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CULT_04",
+      "topic": "Culture",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The national anthem of Bangladesh, 'Amar Sonar Bangla', was written by Rabindranath Tagore.",
+        "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+        "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement."
+      ],
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140707"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_CULT_05",
+      "topic": "Culture",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The national anthem of Bangladesh, 'Amar Sonar Bangla', was written by Rabindranath Tagore.",
+        "Pohela Boishakh (Bengali New Year) is celebrated on 14 April each year as the largest secular festival in Bangladesh.",
+        "The Shaheed Minar in Dhaka was built to commemorate the martyrs of the 1952 Language Movement."
+      ],
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140709"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_ECON_01",
+      "topic": "Economy",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+        "Grameen Bank, founded by Muhammad Yunus in 1983, pioneered the concept of microcredit.",
+        "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন'। এটি মূলধন বাজার নিয়ন্ত্রণকারী প্রতিষ্ঠান। ১৯৯৩ সালের ৮ জুন এটি প্রতিষ্ঠিত হয়। বাংলাদেশে দুইটি স্টক এক্সচেঞ্জ রয়েছে— (১) ঢাকা স্টক এক্সচেঞ্জ লিমিটেড (১৯৫৪) এবং (২) চট্টগ্রাম স্টক এক্সচেঞ্জ লিমিটেড (১৯৯৫)।"
+      ],
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140754"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_ECON_02",
+      "topic": "Economy",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+        "Grameen Bank, founded by Muhammad Yunus in 1983, pioneered the concept of microcredit.",
+        "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন'। এটি মূলধন বাজার নিয়ন্ত্রণকারী প্রতিষ্ঠান। ১৯৯৩ সালের ৮ জুন এটি প্রতিষ্ঠিত হয়। বাংলাদেশে দুইটি স্টক এক্সচেঞ্জ রয়েছে— (১) ঢাকা স্টক এক্সচেঞ্জ লিমিটেড (১৯৫৪) এবং (২) চট্টগ্রাম স্টক এক্সচেঞ্জ লিমিটেড (১৯৯৫)।"
+      ],
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140757"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_ECON_03",
+      "topic": "Economy",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+        "Grameen Bank, founded by Muhammad Yunus in 1983, pioneered the concept of microcredit.",
+        "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন'। এটি মূলধন বাজার নিয়ন্ত্রণকারী প্রতিষ্ঠান। ১৯৯৩ সালের ৮ জুন এটি প্রতিষ্ঠিত হয়। বাংলাদেশে দুইটি স্টক এক্সচেঞ্জ রয়েছে— (১) ঢাকা স্টক এক্সচেঞ্জ লিমিটেড (১৯৫৪) এবং (২) চট্টগ্রাম স্টক এক্সচেঞ্জ লিমিটেড (১৯৯৫)।"
+      ],
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140759"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_ECON_04",
+      "topic": "Economy",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Dhaka Stock Exchange (DSE) is the main stock exchange of Bangladesh, established in 1954.",
+        "Grameen Bank, founded by Muhammad Yunus in 1983, pioneered the concept of microcredit.",
+        "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন'। এটি মূলধন বাজার নিয়ন্ত্রণকারী প্রতিষ্ঠান। ১৯৯৩ সালের ৮ জুন এটি প্রতিষ্ঠিত হয়। বাংলাদেশে দুইটি স্টক এক্সচেঞ্জ রয়েছে— (১) ঢাকা স্টক এক্সচেঞ্জ লিমিটেড (১৯৫৪) এবং (২) চট্টগ্রাম স্টক এক্সচেঞ্জ লিমিটেড (১৯৯৫)।"
+      ],
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140761"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Royal Bengal Tiger is the national animal of Bangladesh, primarily found in the Sundarbans.",
+        "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production."
+      ],
+      "question": "[Flora & Fauna Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140787"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Royal Bengal Tiger is the national animal of Bangladesh, primarily found in the Sundarbans.",
+        "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production."
+      ],
+      "question": "[Flora & Fauna Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140789"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The Royal Bengal Tiger is the national animal of Bangladesh, primarily found in the Sundarbans.",
+        "The Ilish (Hilsa) is the national fish of Bangladesh and contributes about 12% of total fish production."
+      ],
+      "question": "[Flora & Fauna Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140791"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_GEOG_01",
+      "topic": "Geography",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The capital of Bangladesh is Dhaka, located on the banks of the Buriganga River.",
+        "Bangladesh is divided into 8 administrative divisions: Barishal, Chattogram, Dhaka, Khulna, Mymensingh, Rajshahi, Rangpur, and Sylhet.",
+        "The Padma River is the main distributary of the Ganges and the largest river in Bangladesh by discharge volume."
+      ],
+      "question": "[Geography Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140849"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_GEOG_02",
+      "topic": "Geography",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "The capital of Bangladesh is Dhaka, located on the banks of the Buriganga River.",
+        "Bangladesh is divided into 8 administrative divisions: Barishal, Chattogram, Dhaka, Khulna, Mymensingh, Rajshahi, Rangpur, and Sylhet.",
+        "The Padma River is the main distributary of the Ganges and the largest river in Bangladesh by discharge volume."
+      ],
+      "question": "[Geography Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140851"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_01",
+      "topic": "Government",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।"
+      ],
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140881"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_02",
+      "topic": "Government",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।"
+      ],
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140883"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_03",
+      "topic": "Government",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "১৯৭১ সালের ১০ এপ্রিল বঙ্গবন্ধু শেখ মুজিবুর রহমানকে তার অবর্তমানে রাষ্ট্রপতি এবং সশস্ত্র বাহিনী ও মুক্তিযুদ্ধের সর্বাধিনায়ক করে সরকার গঠন করা হয়। সৈয়দ নজরুল ইসলাম ছিলেন মুজিবনগর সরকারের অস্থায়ী রাষ্ট্রপতি। তাজউদ্দীন আহমেদ ছিলেন মুজিবনগর সরকারের প্রধানমন্ত্রী।"
+      ],
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.140886"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_HIST_01",
+      "topic": "History",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Mujibur Rahman is known as the Father of the Nation of Bangladesh.",
+        "Bangladesh achieved independence on 26 March 1971 after a nine-month Liberation War against Pakistan.",
+        "The Lahore Resolution of 1940 demanded separate Muslim-majority states in eastern and northwestern India."
+      ],
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141048"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_HIST_02",
+      "topic": "History",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Mujibur Rahman is known as the Father of the Nation of Bangladesh.",
+        "Bangladesh achieved independence on 26 March 1971 after a nine-month Liberation War against Pakistan.",
+        "The Lahore Resolution of 1940 demanded separate Muslim-majority states in eastern and northwestern India."
+      ],
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141051"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_HIST_03",
+      "topic": "History",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Mujibur Rahman is known as the Father of the Nation of Bangladesh.",
+        "Bangladesh achieved independence on 26 March 1971 after a nine-month Liberation War against Pakistan.",
+        "The Lahore Resolution of 1940 demanded separate Muslim-majority states in eastern and northwestern India."
+      ],
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141052"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_HIST_04",
+      "topic": "History",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Sheikh Mujibur Rahman is known as the Father of the Nation of Bangladesh.",
+        "Bangladesh achieved independence on 26 March 1971 after a nine-month Liberation War against Pakistan.",
+        "The Lahore Resolution of 1940 demanded separate Muslim-majority states in eastern and northwestern India."
+      ],
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141054"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LANG_01",
+      "topic": "Language",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Bengali is the 7th most spoken language in the world, with approximately 230 million native speakers.",
+        "International Mother Language Day on 21 February was declared by UNESCO in 1999 to honor the 1952 Language Movement in Bangladesh."
+      ],
+      "question": "[Language Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141084"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LANG_02",
+      "topic": "Language",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Bengali is the 7th most spoken language in the world, with approximately 230 million native speakers.",
+        "International Mother Language Day on 21 February was declared by UNESCO in 1999 to honor the 1952 Language Movement in Bangladesh."
+      ],
+      "question": "[Language Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141086"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LANG_03",
+      "topic": "Language",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "Bengali is the 7th most spoken language in the world, with approximately 230 million native speakers.",
+        "International Mother Language Day on 21 February was declared by UNESCO in 1999 to honor the 1952 Language Movement in Bangladesh."
+      ],
+      "question": "[Language Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141088"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "বাঙালি জাতীয়তাবাদ চেতনা দ্বারা প্রভাবিত হয়ে বাঙালি জাতি ভাষা আন্দোলনে অংশগ্রহণ করে।",
+        "২৩ ফেব্রুয়ারি, ১৯৪৮ কুমিল্লার ধীরেন্দ্রনাথ দত্ত পাকিস্তান গণপরিষদে বাংলাকে রাষ্ট্রভাষা করার প্রস্তাব উত্থাপন করেন।",
+        "জেনারেল ইয়াহিয়া খান এই উক্তিটি করেছিলেন।"
+      ],
+      "question": "[Liberation War Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141129"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "বাঙালি জাতীয়তাবাদ চেতনা দ্বারা প্রভাবিত হয়ে বাঙালি জাতি ভাষা আন্দোলনে অংশগ্রহণ করে।",
+        "২৩ ফেব্রুয়ারি, ১৯৪৮ কুমিল্লার ধীরেন্দ্রনাথ দত্ত পাকিস্তান গণপরিষদে বাংলাকে রাষ্ট্রভাষা করার প্রস্তাব উত্থাপন করেন।",
+        "জেনারেল ইয়াহিয়া খান এই উক্তিটি করেছিলেন।"
+      ],
+      "question": "[Liberation War Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141131"
+    },
+    {
+      "mcq_id": "STATIC_RAG_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "baseline": "static_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "retrieved_context": [
+        "বাঙালি জাতীয়তাবাদ চেতনা দ্বারা প্রভাবিত হয়ে বাঙালি জাতি ভাষা আন্দোলনে অংশগ্রহণ করে।",
+        "২৩ ফেব্রুয়ারি, ১৯৪৮ কুমিল্লার ধীরেন্দ্রনাথ দত্ত পাকিস্তান গণপরিষদে বাংলাকে রাষ্ট্রভাষা করার প্রস্তাব উত্থাপন করেন।",
+        "জেনারেল ইয়াহিয়া খান এই উক্তিটি করেছিলেন।"
+      ],
+      "question": "[Liberation War Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি static context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:42:32.141134"
+    }
+  ]
+}

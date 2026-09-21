@@ -1,0 +1,266 @@
+﻿Total paragraphs: 399
+[P100] [Normal] Score(q) = w1┬╖TopicPrior + w2┬╖Recency + w3┬╖TemporalSalience + w4┬╖HistoricalRecurrence + w5┬╖SourceConfidence ΓêÆ w6┬╖Redundancy
+[P101] [Normal] Tune the weights on an earlier pseudo-holdout (for example, use exams up to year yΓêÆ1 to forecast year y). Then lock the weights before the 2023 run.
+[P102] [Heading 1] 6. Dynamic bitemporal knowledge graph
+[P104] [Small Note] Figure 2. Recommended end-to-end architecture.
+[P105] [Heading 2] 6.1 Why a bitemporal graph rather than a latest-value database
+[P106] [Normal] Never overwrite a changed fact. The system must preserve historical states so that it can reconstruct what was true at an arbitrary cutoff. Store both valid time (when the fact is true in the world) and observation/ingestion time (when the system learned it).
+[P107] [Normal] f = (s, r, o, [t_valid_start, t_valid_end), [t_obs_start, t_obs_end), provenance, confidence)
+[P108] [Normal] Example conceptually: if Person A held Office X until June 2022 and Person B held it thereafter, both statements remain in the graph with non-overlapping validity intervals. A query for May 2022 should return A; a query for May 2023 should return B.
+[P109] [Heading 2] 6.2 Minimum graph objects
+[P111] [Heading 2] 6.3 Recommended claim schema
+[P112] [Code Block] claim_id: UUID
+[P113] [Code Block] subject_id: canonical entity
+[P114] [Code Block] relation: controlled relation label
+[P115] [Code Block] object_id_or_value: entity or literal
+[P116] [Code Block] valid_from / valid_to: temporal interval
+[P117] [Code Block] source_published_at: date visible from source
+[P118] [Code Block] observed_at: when crawler acquired it
+[P119] [Code Block] source_url + snapshot_hash: provenance
+[P120] [Code Block] source_tier: official / intergovernmental / institutional / reputable news / secondary
+[P121] [Code Block] confidence: calibrated 0ΓÇô1
+[P122] [Code Block] status: accepted / disputed / superseded / pending
+[P123] [Code Block] topics: one or more BCS topic IDs
+[P124] [Heading 2] 6.4 Entity linking and relation normalization
+[P125] [List Bullet] Canonicalize Bangla and English surface forms to the same entity where appropriate; retain aliases in both scripts.
+[P126] [List Bullet] Normalize titles separately from people (e.g., the office is an entity; the office-holder relation is temporal).
+[P127] [List Bullet] Use a controlled relation vocabulary. A small, high-precision relation set is better than hundreds of inconsistent predicates.
+[P128] [List Bullet] Log an entity-link confidence score and route uncertain cases to human review.
+[P129] [List Bullet] For numeric values, store unit, period, reporting agency, and revision status. Numbers without time and unit are unsafe for GK generation.
+[P130] [Heading 2] 6.5 Temporal normalization rules
+[P131] [List Bullet] Prefer explicit date intervals from primary evidence.
+[P132] [List Bullet] If only a start date is known, keep valid_to open until a superseding claim is verified.
+[P133] [List Bullet] If the source says ΓÇ£as of 2022,ΓÇ¥ represent the granularity honestly; do not invent a day/month.
+[P134] [List Bullet] Distinguish event time from publication time. An event on 10 January reported on 12 January has valid_from=10 Jan but source_published_at=12 Jan.
+[P135] [List Bullet] Distinguish retrospective reports from contemporaneous evidence. Retrospective pages can help audit truth but must not enter a pre-cutoff generation run if published after the cutoff.
+[P136] [Heading 1] 7. Episodic web knowledge acquisition and provenance
+[P137] [Normal] Describe the process as topic-guided episodic knowledge acquisition for temporal KG maintenance, not merely web scraping. The research object is the maintained sequence of verified factual states, not the crawling mechanism itself.
+[P138] [Heading 2] 7.1 Source hierarchy
+[P140] [Heading 2] 7.2 Acquisition loop
+[P141] [List Number] For each topic, create search templates from entity/relation demand (e.g., office-holder changes, annual rankings, new memberships, award winners).
+[P142] [List Number] Retrieve candidate sources through a cutoff-enforcing search layer.
+[P143] [List Number] Extract candidate claims, dates, entities, and relation labels into a structured schema.
+[P144] [List Number] Check source tier, publication date, temporal consistency, and entity-link confidence.
+[P145] [List Number] Compare each claim with the current graph state. If it changes a mutable relation, open a conflict/update transaction rather than overwriting.
+[P146] [List Number] Collect corroborating evidence when the relation is high-risk or a source is non-primary.
+[P147] [List Number] Commit accepted facts with provenance and close the prior validity interval when a verified transition occurs.
+[P148] [List Number] Schedule future checks based on the relationΓÇÖs expected change rate (daily/weekly/monthly/annual/rare).
+[P149] [Heading 2] 7.3 Update scheduling by mutability
+[P151] [Heading 1] 8. Agentic MCQ generation architecture
+[P152] [Heading 2] 8.1 Recommended agents and strict interfaces
+[P154] [Heading 2] 8.2 Rule: no free-form agent browsing in the main experiment
+[P155] [Heading 2] 8.3 Generation template
+[P156] [Code Block] INPUT
+[P157] [Code Block] - target_time = t*
+[P158] [Code Block] - topic_id / subtopic_id
+[P159] [Code Block] - allowed_fact_ids with validity intervals
+[P160] [Code Block] - BCS question-pattern exemplars from pre-target exams
+[P161] [Code Block] - desired answer type and difficulty
+[P163] [Code Block] OUTPUT
+[P164] [Code Block] - stem
+[P165] [Code Block] - option_A ... option_D
+[P166] [Code Block] - correct_option
+[P167] [Code Block] - supporting_fact_ids
+[P168] [Code Block] - evidence_ids
+[P169] [Code Block] - temporal_class
+[P170] [Code Block] - confidence
+[P171] [Code Block] - generation_rationale (internal log only, not released as answer)
+[P172] [Heading 2] 8.4 Revision loop
+[P173] [List Number] Generate one draft from selected graph facts.
+[P174] [List Number] Run deterministic structural checks: option count, duplicate options, answer presence, forbidden post-cutoff evidence, unsupported entities.
+[P175] [List Number] Run temporal verifier and independent fact checker.
+[P176] [List Number] Run style/difficulty critic.
+[P177] [List Number] If failed, revise only using the original allowed evidence set; do not expand web access during revision.
+[P178] [List Number] Cap revision rounds (e.g., 2ΓÇô3) and report rejection rate. Persist the full audit log for analysis.
+[P179] [Heading 1] 9. Temporally contrastive distractor generation
+[P180] [Normal] Distractors are not an afterthought. Temporal GK questions offer a unique opportunity: a historically correct value can be a highly plausible but currently incorrect distractor. The graph lets you construct these systematically while still verifying that only one option is correct at t*.
+[P181] [Normal] D_t = { o_j : type(o_j)=type(o*), o_j Γëá o*, and o_j is not correct for (s,r,?,t) }
+[P182] [Heading 2] 9.1 Distractor sources in preferred order
+[P183] [List Number] Temporal predecessor/successor for the same subjectΓÇôrelation (e.g., previous office holder).
+[P184] [List Number] Same-type entities linked to a sibling relation or related institution.
+[P185] [List Number] Near-neighbor values from the same topic, ranking, event, or organization.
+[P186] [List Number] Historically confused entities observed in prior BCS options.
+[P187] [List Number] LLM-generated candidates only when graph alternatives are unavailable; these require stricter verification.
+[P188] [Heading 2] 9.2 Hard constraints
+[P189] [List Bullet] Exactly one correct option under the target temporal snapshot.
+[P190] [List Bullet] All distractors must match the answer type and grammatical form.
+[P191] [List Bullet] No distractor may be a synonym/alias of the correct answer.
+[P192] [List Bullet] No distractor may become correct due to underspecified time in the stem.
+[P193] [List Bullet] A distractor can be historically true only if the stem clearly anchors the target time or the exam-time interpretation makes it unambiguous.
+[P194] [List Bullet] Avoid absurd distractors: high plausibility is desired, but ambiguity is not.
+[P195] [Heading 1] 10. Verification and rejection pipeline
+[P196] [Heading 2] 10.1 Verification stages
+[P198] [Heading 2] 10.2 Rejection taxonomy to log
+[P199] [List Bullet] E-TIME: fact not valid at target time
+[P200] [List Bullet] E-LEAK: post-cutoff source/evidence detected
+[P201] [List Bullet] E-UNSUP: answer not supported by stored evidence
+[P202] [List Bullet] E-MULTI: multiple options correct
+[P203] [List Bullet] E-DIST: implausible or type-inconsistent distractor
+[P204] [List Bullet] E-AMB: ambiguous/underspecified stem
+[P205] [List Bullet] E-STYLE: not BCS-like
+[P206] [List Bullet] E-DUP: duplicate / too close to previous item
+[P207] [List Bullet] E-KG: graph conflict unresolved
+[P208] [List Bullet] E-SRC: source below required evidence tier
+[P209] [Heading 1] 11. Primary 2023 temporal evaluation
+[P210] [Normal] This is the experiment that should carry the paper. The objective is not to regenerate the exact wording of the held-out paper. The objective is to ask whether a system frozen before the exam can generate a ranked set of BCS-style MCQs whose topics and examinable facts overlap substantially with what the commission actually tested, while remaining temporally correct and fully grounded.
+[P211] [Heading 2] 11.1 FreezeΓÇôgenerateΓÇôreveal protocol
+[P212] [List Number] Freeze the historical BCS corpus at the last pre-2023 exam; exclude the target 45th BCS paper.
+[P213] [List Number] Freeze the temporal KG at the chosen cutoff t* using only eligible evidence.
+[P214] [List Number] Freeze prompts, LLMs, model versions, retrieval parameters, graph schema, exam-likelihood ranker, and random seeds.
+[P215] [List Number] Generate exactly 50 GK questions if your target subset contains 50 items; additionally generate a ranked pool of K=200 candidates for forecasting analysis.
+[P216] [List Number] Run 5 independent seeds to quantify generation variability. Never alter the pipeline after seeing 2023 results.
+[P217] [List Number] Only now reveal the 2023 target set to the evaluation team.
+[P218] [List Number] Annotate target questions into topic, subtopic, entities, answer type, temporal class, and canonical fact keys.
+[P219] [List Number] Match generated candidates to target facts using a staged automatic + human adjudication procedure.
+[P220] [List Number] Report both ΓÇ£realistic examΓÇ¥ results at N=50 and coverage curves at K=50/100/200.
+[P221] [Heading 2] 11.2 Gold target representation
+[P222] [Normal] For each held-out 2023 question, build a representation independent of wording. This prevents evaluation from rewarding lexical imitation rather than knowledge selection.
+[P223] [Code Block] gold_item = {
+[P224] [Code Block]   topic_id, subtopic_id,
+[P225] [Code Block]   entity_set,
+[P226] [Code Block]   relation_or_fact_key,
+[P227] [Code Block]   gold_answer_entity_or_value,
+[P228] [Code Block]   answer_type,
+[P229] [Code Block]   temporal_class,
+[P230] [Code Block]   temporal_anchor,
+[P231] [Code Block]   canonical_evidence
+[P232] [Code Block] }
+[P233] [Heading 2] 11.3 Hierarchical matching levels
+[P235] [Heading 1] 12. Baselines and ablation studies
+[P236] [Heading 2] 12.1 Baselines
+[P238] [Heading 2] 12.2 Mandatory ablations
+[P240] [Heading 1] 13. Complete metric suite
+[P241] [Heading 2] 13.1 Held-out 2023 exam forecasting / reconstruction metrics
+[P243] [Heading 3] Why report both N=50 and K=200?
+[P244] [Normal] N=50 answers the realistic question: can the system create one exam-sized paper whose content resembles the held-out exam? K=200 answers a forecasting question: does the system place the actual examined facts within a broader candidate pool? Reviewers will understand that exact examination selection is partly stochastic and editorial, so Recall@100/200 provides a fairer measure of knowledge/topic anticipation while Precision@50 measures focus.
+[P245] [Heading 2] 13.2 Temporal correctness and grounding metrics
+[P247] [Heading 2] 13.3 MCQ validity and distractor metrics
+[P249] [Heading 2] 13.4 BCS relevance, quality, diversity, and difficulty
+[P251] [Heading 2] 13.5 Temporal KG construction metrics
+[P253] [Heading 2] 13.6 Retrieval metrics
+[P255] [Heading 2] 13.7 Efficiency and operational metrics
+[P257] [Heading 1] 14. Human evaluation and annotation protocol
+[P258] [Heading 2] 14.1 Rater profile
+[P259] [Normal] Use at least three independent raters for the main human evaluation if feasible. Ideal raters are faculty, experienced BCS instructors, or candidates with demonstrated familiarity with BCS GK. At minimum, separate fact verification from stylistic/difficulty scoring to avoid one raterΓÇÖs overall impression dominating every dimension.
+[P260] [Heading 2] 14.2 Sampling
+[P261] [List Bullet] Evaluate all N=50 questions from each primary system if the number of systems is manageable.
+[P262] [List Bullet] For larger baseline sets, sample a fixed, stratified number per system while preserving topic and temporal-class distribution.
+[P263] [List Bullet] Blind raters to system identity and randomize question order.
+[P264] [List Bullet] Include real historical BCS questions as calibration anchors, but never reveal which are real during scoring.
+[P265] [List Bullet] For pairwise preference, compare the full system against the strongest baseline on matched topics/facts.
+[P266] [Heading 2] 14.3 Human rubric
+[P268] [Heading 2] 14.4 Agreement
+[P269] [List Bullet] Use FleissΓÇÖ ╬║ or KrippendorffΓÇÖs ╬▒ for categorical/binary labels across >2 raters.
+[P270] [List Bullet] Use intraclass correlation (ICC) or KrippendorffΓÇÖs ╬▒ (ordinal) for Likert dimensions.
+[P271] [List Bullet] Report raw agreement as an interpretable supplement.
+[P272] [List Bullet] Adjudicate low-agreement fact/temporal items and retain disagreement examples for the error-analysis section.
+[P273] [Heading 1] 15. Statistical analysis and uncertainty
+[P274] [Normal] Do not report only single percentages. Generation is stochastic and many metrics are paired at the question or gold-fact level.
+[P276] [Heading 1] 16. Error analysis that should appear in the paper
+[P278] [Heading 2] 16.1 Error slices
+[P279] [List Bullet] Evergreen vs dynamic vs event-specific
+[P280] [List Bullet] Bangladesh Affairs vs International Affairs
+[P281] [List Bullet] Person/organization/date/number/location answer type
+[P282] [List Bullet] Single-hop vs multi-fact question
+[P283] [List Bullet] Tier-1/2 vs lower-tier evidence
+[P284] [List Bullet] Frequent vs long-tail historical topic
+[P285] [List Bullet] Exact-date vs year-only temporal granularity
+[P286] [Heading 1] 17. Novelty positioning against recent ACL / EMNLP / NAACL work
+[P287] [Normal] The literature should be organized by research gap, not by a chronological list. The closest works establish that (i) LLM/KB methods can generate questions, (ii) temporally changing knowledge causes QA failures and requires temporal retrieval/graphs, and (iii) agents can reason over temporal KGs. The paperΓÇÖs differentiator is using a topic-conditioned, dynamically maintained temporal KG as the knowledge substrate for MCQ generation and evaluating the generator through a genuine historical exam holdout.
+[P289] [Heading 2] 17.1 The novelty sentence to defend
+[P290] [Normal] Before final submission, repeat the literature search and weaken ΓÇ£to our knowledgeΓÇ¥ if a directly overlapping paper appears. Since this is a rapidly moving area, novelty should be stated as the combination of capabilities and evaluation protocol, not as a brittle ΓÇ£first-ever temporal QGΓÇ¥ claim.
+[P291] [Heading 2] 17.2 How to cite the recent literature in Related Work
+[P292] [List Bullet] Paragraph A ΓÇö Question generation: KQG-CoT and MCQG-SRefine; explain why factual freshness is not solved by self-refinement alone.
+[P293] [List Bullet] Paragraph B ΓÇö Dynamic/evolving knowledge: TemporalWiki, DYNAMICQA, EvoWiki, EverGreenQA; motivate mutable vs evergreen fact classes and the need for snapshots.
+[P294] [List Bullet] Paragraph C ΓÇö Time-sensitive retrieval/QA: temporal graph fusion and MRAG; motivate explicit temporal relevance and structured evidence.
+[P295] [List Bullet] Paragraph D ΓÇö Temporal KG agents: CronQuestions, TECQA, Temp-R1; acknowledge strong temporal reasoning over existing TKGs, then distinguish the generation/maintenance direction.
+[P296] [List Bullet] Paragraph E ΓÇö Bangladesh/low-resource agentic systems: Mina as an important local precedent but opposite task direction (answering existing exam questions vs generating future/as-of-time exam questions).
+[P297] [Heading 1] 18. Paper-writing blueprint
+[P298] [Heading 2] 18.1 Suggested title patterns
+[P299] [List Bullet] Temporally Grounded MCQ Generation over Dynamic Knowledge: A BCS General-Knowledge Testbed
+[P300] [List Bullet] From Evolving Facts to Exam Questions: Topic-Guided Temporal Knowledge Graphs for BCS-GK MCQ Generation
+[P301] [List Bullet] Can We Generate YesterdayΓÇÖs Exam Before It Happens? Temporally Grounded MCQ Generation with Dynamic Knowledge Graphs
+[P302] [Heading 2] 18.2 Abstract structure
+[P304] [Heading 2] 18.3 Main paper section plan
+[P306] [Heading 2] 18.4 Figures and tables that reviewers should see
+[P308] [Heading 2] 18.5 Suggested contribution paragraph
+[P309] [Heading 1] 19. RA implementation plan and deliverables
+[P310] [Heading 2] 19.1 Suggested workstreams
+[P312] [Heading 2] 19.2 Twelve-week execution plan
+[P314] [Heading 2] 19.3 Definition of done for each subsystem
+[P315] [List Bullet] Corpus: ΓëÑ95% of sampled answer keys independently verified; annotation agreement reported.
+[P316] [List Bullet] Topic ontology: ΓëÑ90% manual acceptability on a sampled mapping set; no uncontrolled label explosion.
+[P317] [List Bullet] Temporal KG: high precision is more important than maximum coverage; every accepted mutable fact has provenance and temporal fields.
+[P318] [List Bullet] Acquisition: every query/source logged; cutoff violations automatically blocked.
+[P319] [List Bullet] Generation: every final MCQ includes used fact IDs and evidence IDs.
+[P320] [List Bullet] Verifier: zero known post-cutoff leakage in unit tests; explicit errors for multiple-correct-option cases.
+[P321] [List Bullet] Evaluation: generated outputs hashed/frozen before target annotations are accessed.
+[P322] [List Bullet] Paper: all headline claims trace directly to a table/figure and a predeclared metric.
+[P323] [Heading 1] 20. Reproducibility, ethics, and reviewer-risk checklist
+[P324] [Heading 2] 20.1 Reproducibility checklist
+[P325] [List Bullet] Pin model names/versions, prompts, temperature, top-p, seeds, embedding model, and reranker.
+[P326] [List Bullet] Export all graph snapshots used in experiments or provide deterministic reconstruction scripts where licensing permits.
+[P327] [List Bullet] Log source URL, original publication date, retrieval date, snapshot/hash, source tier, and extracted claim IDs.
+[P328] [List Bullet] Release the relation vocabulary, topic ontology, annotation guidelines, evaluation code, and target matching rubric.
+[P329] [List Bullet] Persist every generated draft and verifier decision for auditability.
+[P330] [List Bullet] Provide a leakage-audit script that checks source dates and target-text similarity.
+[P331] [List Bullet] Report inference hardware/API configuration, token use, and cost.
+[P332] [List Bullet] If some BCS question text cannot legally be redistributed, release metadata/annotations and scripts that reconstruct the dataset from permissible sources rather than copying restricted content.
+[P333] [Heading 2] 20.2 Ethical / practical constraints
+[P334] [List Bullet] Respect robots.txt, site terms, rate limits, and copyright. The paper should emphasize factual extraction and provenance, not mass redistribution of third-party webpages.
+[P335] [List Bullet] Do not treat a single news article as ground truth for sensitive or contested current-affairs claims when authoritative sources exist.
+[P336] [List Bullet] Preserve uncertainty and conflict rather than forcing every claim to one value.
+[P337] [List Bullet] Avoid claims that the system can replace official exam setters or predict confidential future questions. Frame it as temporally grounded assessment generation and historical forecasting evaluation.
+[P338] [List Bullet] Clearly distinguish actual BCS questions from generated mock questions in any demo or release.
+[P339] [Heading 2] 20.3 Reviewer attack surface and how to pre-empt it
+[P341] [Heading 2] 20.4 Internal go/no-go criteria before submission
+[P344] [Heading 1] Appendix A. Pseudocode and implementation skeleton
+[P345] [Heading 2] A.1 As-of-time graph query
+[P346] [Code Block] function snapshot(topic, t_star):
+[P347] [Code Block]     claims = KG.find(topic = topic)
+[P348] [Code Block]     eligible = [c for c in claims if c.valid_from <= t_star < c.valid_to]
+[P349] [Code Block]     eligible = [c for c in eligible if c.source_published_at <= evidence_cutoff]
+[P350] [Code Block]     eligible = resolve_conflicts(eligible, source_tier, corroboration, confidence)
+[P351] [Code Block]     return eligible
+[P352] [Heading 2] A.2 Generation pipeline
+[P353] [Code Block] for blueprint_slot in exam_blueprint:
+[P354] [Code Block]     topic = planner.select_topic(blueprint_slot, historical_priors)
+[P355] [Code Block]     facts = temporal_retriever.snapshot(topic, t_star)
+[P356] [Code Block]     candidate = generator.generate(topic, facts, bcs_exemplars)
+[P357] [Code Block]     candidate.options = distractor_agent.build(candidate, facts, KG_history)
+[P358] [Code Block]     verdict = temporal_verifier.check(candidate, t_star, evidence_cutoff)
+[P359] [Code Block]     if verdict.fail: candidate = revise_with_same_evidence(candidate, verdict)
+[P360] [Code Block]     if style_critic.accept(candidate): store(candidate)
+[P361] [Code Block] rank_and_deduplicate(stored_candidates)
+[P362] [Heading 2] A.3 Gold-fact matching
+[P363] [Code Block] for gold in target_2023:
+[P364] [Code Block]     for gen in generated_pool:
+[P365] [Code Block]         level = 0
+[P366] [Code Block]         if same_topic(gold, gen): level = 1
+[P367] [Code Block]         if same_entity_relation(gold, gen): level = 2
+[P368] [Code Block]         if same_canonical_fact(gold, gen): level = 3
+[P369] [Code Block]         if semantic_equivalent(gold, gen): level = max(level, 4)
+[P370] [Code Block]         save_pair_score(gold, gen, level)
+[P371] [Code Block]     assign_best_nonconflicting_match(gold)
+[P372] [Heading 1] Appendix B. Experiment result-table templates
+[P373] [Heading 2] B.1 2023 held-out forecasting
+[P375] [Heading 2] B.2 Temporal + MCQ quality
+[P377] [Heading 2] B.3 Ablation
+[P379] [Heading 1] Appendix C. 2023 target annotation sheet
+[P381] [Heading 1] References and literature anchors
+[P382] [Normal] [1] Saxena, A., Chakrabarti, S., & Talukdar, P. (2021). Question Answering Over Temporal Knowledge Graphs. ACL-IJCNLP 2021. Source
+[P383] [Normal] [2] Jang, J., et al. (2022). TemporalWiki: A Lifelong Benchmark for Training and Evaluating Ever-Evolving Language Models. EMNLP 2022. Source
+[P384] [Normal] [3] Liang, Y., et al. (2023). Prompting Large Language Models with Chain-of-Thought for Few-Shot Knowledge Base Question Generation. EMNLP 2023. Source
+[P385] [Normal] [4] Su, X., Howard, P., Hakim, N., & Bethard, S. (2023). Fusing Temporal Graphs into Transformers for Time-Sensitive Question Answering. Findings of EMNLP 2023. Source
+[P386] [Normal] [5] Alhazmi, E., et al. (2024). Distractor Generation in Multiple-Choice Tasks: A Survey of Methods, Datasets, and Evaluation. EMNLP 2024. Source
+[P387] [Normal] [6] Marjanovic, S. V., et al. (2024). DYNAMICQA: Tracing Internal Knowledge Conflicts in Language Models. Findings of EMNLP 2024. Source
+[P388] [Normal] [7] Yao, Z., et al. (2025). MCQG-SRefine: Multiple Choice Question Generation and Evaluation with Iterative Self-Critique, Correction, and Comparison Feedback. NAACL 2025. Source
+[P389] [Normal] [8] Uddin, M. N., et al. (2025). UnSeenTimeQA: Time-Sensitive Question-Answering Beyond LLMsΓÇÖ Memorization. ACL 2025. Source
+[P390] [Normal] [9] Tang, W., et al. (2025). EvoWiki: Evaluating LLMs on Evolving Knowledge. ACL 2025. Source
+[P391] [Normal] [10] Pletenev, S., et al. (2025). Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA. EMNLP 2025. Source
+[P392] [Normal] [11] MRAG: A Modular Retrieval Framework for Time-Sensitive Question Answering. Findings of EMNLP 2025. Source
+[P393] [Normal] [12] Liu, S., Zhou, X., Wang, B., & Zhang, G. (2026). Temporal Evidence Chain for Temporal Knowledge Graph Question Answering with Large Language Models. ACL 2026. Source
+[P394] [Normal] [13] Gong, Z., et al. (2026). Temp-R1: A Unified Autonomous Agent for Complex Temporal KGQA via Reverse Curriculum Reinforcement Learning. ACL 2026. Source
+[P395] [Normal] [14] Wasi, A. T., Faisal, W., Islam, M. R., & Parvez, M. R. (2026). Mina: A Multilingual LLM-Powered Legal Assistant Agent for Empowering Access to Justice in Bangladesh. Findings of ACL 2026. Source
+[P396] [Normal] [15] The Daily Star (19 March 2023). 45th BCS preliminary test on May 19 (reporting a BPSC statement). Source
+[P397] [Heading 2] Final note to the RA team

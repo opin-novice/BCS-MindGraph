@@ -1,0 +1,94 @@
+{
+  "benchmark_name": "BCSBatighor GK Component Ablation Study Suite (§9.3 PRD Standard)",
+  "cutoff_date": "2023-04-19",
+  "execution_timestamp": "2026-09-18T23:53:38.992040",
+  "total_variants_evaluated": 4,
+  "ablation_results": {
+    "full_proposed_system": {
+      "variant_name": "Full Proposed System",
+      "components_active": [
+        "Bitemporal KG",
+        "RuleBasedScreener",
+        "Prompt Constraints"
+      ],
+      "metrics": {
+        "factual_validity": 0.9722,
+        "temporal_correctness": 1.0,
+        "distractor_quality": 0.9444,
+        "overall_score": 0.9722
+      },
+      "performance_drop": {
+        "factual_validity_delta": 0.0,
+        "temporal_correctness_delta": 0.0,
+        "distractor_quality_delta": 0.0,
+        "overall_score_delta": 0.0
+      }
+    },
+    "wo_temporal_kg": {
+      "variant_name": "w/o Temporal KG",
+      "ablated_component": "Bitemporal Knowledge Graph Snapshot Query Engine",
+      "components_active": [
+        "RuleBasedScreener",
+        "Prompt Constraints"
+      ],
+      "metrics": {
+        "factual_validity": 0.8056,
+        "temporal_correctness": 0.6944,
+        "distractor_quality": 0.7222,
+        "overall_score": 0.7407
+      },
+      "performance_drop": {
+        "factual_validity_delta": -0.1666,
+        "temporal_correctness_delta": -0.3056,
+        "distractor_quality_delta": -0.2222,
+        "overall_score_delta": -0.2315
+      }
+    },
+    "wo_screener": {
+      "variant_name": "w/o Screener",
+      "ablated_component": "RuleBasedScreener & FactualityVerificationEngine",
+      "components_active": [
+        "Bitemporal KG",
+        "Prompt Constraints"
+      ],
+      "metrics": {
+        "factual_validity": 0.8611,
+        "temporal_correctness": 0.8333,
+        "distractor_quality": 0.7778,
+        "overall_score": 0.8241
+      },
+      "performance_drop": {
+        "factual_validity_delta": -0.1111,
+        "temporal_correctness_delta": -0.1667,
+        "distractor_quality_delta": -0.1666,
+        "overall_score_delta": -0.1481
+      }
+    },
+    "wo_prompt_constraints": {
+      "variant_name": "w/o Prompt Constraints",
+      "ablated_component": "Strict Cutoff Date Prompt Boundary Contract (t* <= 2023-04-19)",
+      "components_active": [
+        "Bitemporal KG",
+        "RuleBasedScreener"
+      ],
+      "metrics": {
+        "factual_validity": 0.6111,
+        "temporal_correctness": 0.6111,
+        "distractor_quality": 0.6667,
+        "overall_score": 0.6296
+      },
+      "performance_drop": {
+        "factual_validity_delta": -0.3611,
+        "temporal_correctness_delta": -0.3889,
+        "distractor_quality_delta": -0.2777,
+        "overall_score_delta": -0.3426
+      }
+    }
+  },
+  "ablation_insights": {
+    "largest_temporal_drop": "w/o Prompt Constraints (-0.3889)",
+    "largest_distractor_drop": "w/o Prompt Constraints (-0.2777) / w/o Temporal KG (-0.2222)",
+    "largest_overall_drop": "w/o Prompt Constraints (-0.3426)",
+    "conclusion": "All 3 components (Bitemporal KG, RuleBasedScreener, and Prompt Constraints) are indispensable for target quality."
+  }
+}

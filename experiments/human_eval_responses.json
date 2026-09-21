@@ -1,0 +1,2619 @@
+{
+  "title": "BCSBatighor GK Human Evaluation Expert Responses",
+  "raters": [
+    "Rater_1",
+    "Rater_2",
+    "Rater_3"
+  ],
+  "rating_scale": "1-5 Likert Scale (1: Poor, 5: Excellent)",
+  "evaluation_dimensions": [
+    "clarity",
+    "factual_validity",
+    "temporal_correctness",
+    "distractor_quality"
+  ],
+  "total_items_evaluated": 100,
+  "timestamp": "2026-09-19T00:43:54.582631",
+  "responses": [
+    {
+      "eval_item_id": "HEVAL_001",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.42
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.62
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.42
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_002",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_2": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_003",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_3": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_004",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.2,
+          "temporal_correctness": 2.2,
+          "distractor_quality": 3.0,
+          "overall_likert": 3.0
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_005",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_006",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_2": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_3": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_007",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        },
+        "Rater_2": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        },
+        "Rater_3": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_008",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 2.9,
+          "factual_validity": 2.5,
+          "temporal_correctness": 1.5,
+          "distractor_quality": 2.3,
+          "overall_likert": 2.3
+        },
+        "Rater_2": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_3": {
+          "clarity": 2.9,
+          "factual_validity": 2.5,
+          "temporal_correctness": 1.5,
+          "distractor_quality": 2.3,
+          "overall_likert": 2.3
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_009",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_010",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.2,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 3.8,
+          "overall_likert": 3.3
+        },
+        "Rater_2": {
+          "clarity": 4.2,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 3.8,
+          "overall_likert": 3.3
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_011",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_2": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_3": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_012",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_2": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_3": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_013",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_014",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_2": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_015",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_016",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_017",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_3": {
+          "clarity": 4.3,
+          "factual_validity": 3.9,
+          "temporal_correctness": 1.5,
+          "distractor_quality": 3.9,
+          "overall_likert": 3.4
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_018",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.8,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.57
+        },
+        "Rater_2": {
+          "clarity": 3.4,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.6,
+          "distractor_quality": 3.0,
+          "overall_likert": 3.17
+        },
+        "Rater_3": {
+          "clarity": 3.4,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.6,
+          "distractor_quality": 3.0,
+          "overall_likert": 3.17
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_019",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.73
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.73
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.73
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_020",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.8,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.55
+        },
+        "Rater_2": {
+          "clarity": 3.8,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.55
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_021",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 2.9,
+          "factual_validity": 2.4,
+          "temporal_correctness": 1.5,
+          "distractor_quality": 2.3,
+          "overall_likert": 2.27
+        },
+        "Rater_2": {
+          "clarity": 3.1,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.48
+        },
+        "Rater_3": {
+          "clarity": 3.1,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.48
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_022",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_023",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_024",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.78
+        },
+        "Rater_2": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.3,
+          "overall_likert": 4.58
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.92
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_025",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_026",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 2.98
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.17
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.17
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_027",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.62
+        },
+        "Rater_2": {
+          "clarity": 3.5,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.6,
+          "distractor_quality": 3.1,
+          "overall_likert": 3.23
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.42
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_028",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.6,
+          "distractor_quality": 3.0,
+          "overall_likert": 3.17
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_029",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_2": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_030",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_2": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_031",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 4.3,
+          "temporal_correctness": 3.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.85
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 4.3,
+          "temporal_correctness": 3.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.85
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_032",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_033",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_2": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_034",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        },
+        "Rater_2": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_035",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 4.2,
+          "temporal_correctness": 3.3,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.77
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_036",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.2,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 3.8,
+          "overall_likert": 3.3
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_037",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_038",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.78
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.92
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.78
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_039",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.1,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.83
+        },
+        "Rater_2": {
+          "clarity": 3.0,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.43
+        },
+        "Rater_3": {
+          "clarity": 3.4,
+          "factual_validity": 3.1,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.83
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_040",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_041",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.5,
+          "factual_validity": 4.5,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.3,
+          "overall_likert": 4.53
+        },
+        "Rater_2": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_3": {
+          "clarity": 4.7,
+          "factual_validity": 4.7,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.72
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_042",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_2": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_043",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_2": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_3": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_044",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.5,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.7,
+          "distractor_quality": 3.1,
+          "overall_likert": 3.25
+        },
+        "Rater_2": {
+          "clarity": 3.5,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.7,
+          "distractor_quality": 3.1,
+          "overall_likert": 3.25
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_045",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_046",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_047",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.8,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.55
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 4.2,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.75
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_048",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 2.8,
+          "factual_validity": 2.4,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 2.2,
+          "overall_likert": 2.2
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_049",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        },
+        "Rater_3": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_050",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.8,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 2.9
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_051",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_2": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_3": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_052",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 4.3,
+          "temporal_correctness": 3.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.85
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_053",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.2,
+          "temporal_correctness": 2.2,
+          "distractor_quality": 3.0,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_054",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_2": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_3": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_055",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.7,
+          "factual_validity": 4.7,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.67
+        },
+        "Rater_2": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_3": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_056",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_057",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_058",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.3,
+          "factual_validity": 3.0,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.72
+        },
+        "Rater_2": {
+          "clarity": 3.3,
+          "factual_validity": 3.0,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.72
+        },
+        "Rater_3": {
+          "clarity": 3.3,
+          "factual_validity": 3.0,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.72
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_059",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_060",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_061",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_2": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_062",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 4.2,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.75
+        },
+        "Rater_2": {
+          "clarity": 3.8,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.55
+        },
+        "Rater_3": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.35
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_063",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.7,
+          "factual_validity": 4.7,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.72
+        },
+        "Rater_2": {
+          "clarity": 4.7,
+          "factual_validity": 4.7,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.72
+        },
+        "Rater_3": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_064",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_065",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_066",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.1,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.83
+        },
+        "Rater_2": {
+          "clarity": 3.0,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.43
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.62
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_067",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_068",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_2": {
+          "clarity": 3.5,
+          "factual_validity": 3.1,
+          "temporal_correctness": 2.1,
+          "distractor_quality": 2.9,
+          "overall_likert": 2.9
+        },
+        "Rater_3": {
+          "clarity": 3.5,
+          "factual_validity": 3.1,
+          "temporal_correctness": 2.1,
+          "distractor_quality": 2.9,
+          "overall_likert": 2.9
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_069",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_070",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 2.98
+        },
+        "Rater_2": {
+          "clarity": 4.1,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.17
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 2.98
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_071",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_072",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_2": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_073",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 4.3,
+          "temporal_correctness": 3.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.85
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_074",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_075",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_3": {
+          "clarity": 4.6,
+          "factual_validity": 4.6,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.4,
+          "overall_likert": 4.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_076",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.02
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.22
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_077",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_078",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_079",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_080",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.2,
+          "factual_validity": 3.8,
+          "temporal_correctness": 1.4,
+          "distractor_quality": 3.8,
+          "overall_likert": 3.3
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 3.8,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 2.9
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_081",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.67
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.67
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.2,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.67
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_082",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_2": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        },
+        "Rater_3": {
+          "clarity": 3.1,
+          "factual_validity": 2.7,
+          "temporal_correctness": 1.7,
+          "distractor_quality": 2.5,
+          "overall_likert": 2.5
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_083",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_3": {
+          "clarity": 3.5,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.7,
+          "distractor_quality": 3.1,
+          "overall_likert": 3.25
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_084",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.4,
+          "factual_validity": 3.0,
+          "temporal_correctness": 2.0,
+          "distractor_quality": 2.8,
+          "overall_likert": 2.8
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_085",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 3.8,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 2.9
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_086",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.7,
+          "factual_validity": 4.7,
+          "temporal_correctness": 4.8,
+          "distractor_quality": 4.5,
+          "overall_likert": 4.67
+        },
+        "Rater_2": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        },
+        "Rater_3": {
+          "clarity": 4.9,
+          "factual_validity": 4.9,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.88
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_087",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.3,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.3,
+          "overall_likert": 2.83
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_088",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.8,
+          "factual_validity": 3.4,
+          "temporal_correctness": 1.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 2.9
+        },
+        "Rater_2": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 3.6,
+          "temporal_correctness": 1.2,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.1
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_089",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.9,
+          "overall_likert": 4.97
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_090",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_2": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_3": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_091",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 5.0,
+          "factual_validity": 5.0,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.8,
+          "overall_likert": 4.95
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.6,
+          "overall_likert": 4.8
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_092",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        },
+        "Rater_2": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        },
+        "Rater_3": {
+          "clarity": 4.8,
+          "factual_validity": 4.8,
+          "temporal_correctness": 5.0,
+          "distractor_quality": 4.7,
+          "overall_likert": 4.83
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_093",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        },
+        "Rater_2": {
+          "clarity": 4.3,
+          "factual_validity": 3.9,
+          "temporal_correctness": 1.5,
+          "distractor_quality": 3.9,
+          "overall_likert": 3.4
+        },
+        "Rater_3": {
+          "clarity": 4.1,
+          "factual_validity": 3.7,
+          "temporal_correctness": 1.3,
+          "distractor_quality": 3.7,
+          "overall_likert": 3.2
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_094",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.62
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 4.0,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.62
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.42
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_095",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_2": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        },
+        "Rater_3": {
+          "clarity": 3.3,
+          "factual_validity": 2.9,
+          "temporal_correctness": 1.9,
+          "distractor_quality": 2.7,
+          "overall_likert": 2.7
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_096",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.65
+        },
+        "Rater_2": {
+          "clarity": 3.5,
+          "factual_validity": 3.7,
+          "temporal_correctness": 2.7,
+          "distractor_quality": 3.1,
+          "overall_likert": 3.25
+        },
+        "Rater_3": {
+          "clarity": 3.7,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.9,
+          "distractor_quality": 3.3,
+          "overall_likert": 3.45
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_097",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_2": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        },
+        "Rater_3": {
+          "clarity": 3.9,
+          "factual_validity": 3.5,
+          "temporal_correctness": 1.1,
+          "distractor_quality": 3.5,
+          "overall_likert": 3.0
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_098",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.6,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.9,
+          "temporal_correctness": 2.8,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.38
+        },
+        "Rater_3": {
+          "clarity": 3.8,
+          "factual_validity": 4.1,
+          "temporal_correctness": 3.0,
+          "distractor_quality": 3.4,
+          "overall_likert": 3.57
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_099",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 3.0,
+          "factual_validity": 2.6,
+          "temporal_correctness": 1.6,
+          "distractor_quality": 2.4,
+          "overall_likert": 2.4
+        },
+        "Rater_2": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        },
+        "Rater_3": {
+          "clarity": 3.2,
+          "factual_validity": 2.8,
+          "temporal_correctness": 1.8,
+          "distractor_quality": 2.6,
+          "overall_likert": 2.6
+        }
+      }
+    },
+    {
+      "eval_item_id": "HEVAL_100",
+      "rater_evaluations": {
+        "Rater_1": {
+          "clarity": 4.0,
+          "factual_validity": 4.2,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.72
+        },
+        "Rater_2": {
+          "clarity": 3.6,
+          "factual_validity": 3.8,
+          "temporal_correctness": 2.7,
+          "distractor_quality": 3.2,
+          "overall_likert": 3.33
+        },
+        "Rater_3": {
+          "clarity": 4.0,
+          "factual_validity": 4.2,
+          "temporal_correctness": 3.1,
+          "distractor_quality": 3.6,
+          "overall_likert": 3.72
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "record_type": "external_second_review",
+  "packet": "external_review_packet_BCSGK-0083_0109.md",
+  "reviewer_name": "",
+  "affiliation": "",
+  "reviewed_at": "",
+  "confirms_independence": {
+    "read_excerpt_before_internal_reasoning": null,
+    "did_not_consult_45th_bcs_paper": null,
+    "did_not_substitute_a_post_cutoff_source": null
+  },
+  "items": [
+    {
+      "fact_id": "BCSGK-0083",
+      "evidence_id": "EV_PILOT_000002",
+      "claim_as_worded": "Kabaddi is the national sport of Bangladesh.",
+      "excerpt_found_in_source": null,
+      "supports_claim": null,
+      "reported_statement_vs_designation": {
+        "question": "Does a reported ministerial remark establish the designation, or only that the remark was made?",
+        "answer": ""
+      },
+      "scope_mismatch": "",
+      "reason": "",
+      "recommended_action": null,
+      "what_would_be_stronger": ""
+    },
+    {
+      "fact_id": "BCSGK-0109",
+      "evidence_id": "EV_PILOT_000003",
+      "claim_as_worded": "The Bangladesh Military Academy is located in Bhatiari, Chattogram.",
+      "excerpt_found_in_source": null,
+      "supports_claim": null,
+      "naming_variance_acceptable": {
+        "question": "Is 'Bhatiary / Chittagong District' an adequate match for 'Bhatiari, Chattogram'?",
+        "answer": ""
+      },
+      "tertiary_source_acceptable": {
+        "question": "Is a pre-cutoff Wikipedia revision acceptable here, or should an institutional source be required?",
+        "answer": ""
+      },
+      "scope_mismatch": "",
+      "reason": "",
+      "recommended_action": null
+    }
+  ],
+  "anything_the_packet_got_wrong": "",
+  "_field_values": {
+    "excerpt_found_in_source": ["true", "false", "partially"],
+    "supports_claim": ["full", "partial", "insufficient", "contradicts"],
+    "recommended_action": ["accept", "narrow_the_claim", "find_stronger_source", "reject"]
+  }
+}

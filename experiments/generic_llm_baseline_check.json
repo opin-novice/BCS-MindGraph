@@ -1,0 +1,718 @@
+{
+  "baseline_id": "generic_llm_baseline",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "cutoff_date": "2023-04-19",
+  "context_augmentation": false,
+  "knowledge_graph_used": false,
+  "rag_retrieval_used": false,
+  "screener_used": false,
+  "total_mcqs_generated": 36,
+  "benchmark_demand_satisfied": true,
+  "topic_summary": {
+    "Appointments": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution": {
+      "requested": 1,
+      "generated": 1,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution & Law": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Culture": {
+      "requested": 5,
+      "generated": 5,
+      "elapsed_seconds": 0.0
+    },
+    "Economy": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Flora & Fauna": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Geography": {
+      "requested": 2,
+      "generated": 2,
+      "elapsed_seconds": 0.0
+    },
+    "Government": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "History": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Language": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Liberation War": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    }
+  },
+  "mcqs": [
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_01",
+      "topic": "Appointments",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362412"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_02",
+      "topic": "Appointments",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362433"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_03",
+      "topic": "Appointments",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362436"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_04",
+      "topic": "Appointments",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362438"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_01",
+      "topic": "Constitution",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Constitution] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Constitution বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362449"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362459"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362461"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362463"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362464"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_01",
+      "topic": "Culture",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362474"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_02",
+      "topic": "Culture",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362476"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_03",
+      "topic": "Culture",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362478"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_04",
+      "topic": "Culture",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362479"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_05",
+      "topic": "Culture",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362481"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_01",
+      "topic": "Economy",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362486"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_02",
+      "topic": "Economy",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362489"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_03",
+      "topic": "Economy",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362491"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_04",
+      "topic": "Economy",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362492"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Flora & Fauna] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Flora & Fauna বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362498"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Flora & Fauna] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Flora & Fauna বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362500"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Flora & Fauna] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Flora & Fauna বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362501"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_GEOG_01",
+      "topic": "Geography",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Geography] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Geography বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362506"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_GEOG_02",
+      "topic": "Geography",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Geography] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Geography বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362507"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_GOVE_01",
+      "topic": "Government",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Government] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Government বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362513"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_GOVE_02",
+      "topic": "Government",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Government] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Government বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362516"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_GOVE_03",
+      "topic": "Government",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Government] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Government বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362524"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_01",
+      "topic": "History",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362529"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_02",
+      "topic": "History",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362534"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_03",
+      "topic": "History",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362536"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_04",
+      "topic": "History",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362538"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LANG_01",
+      "topic": "Language",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Language] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Language বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362542"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LANG_02",
+      "topic": "Language",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Language] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Language বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362544"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LANG_03",
+      "topic": "Language",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Language] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Language বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362546"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362550"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362552"
+    },
+    {
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "baseline": "generic_llm",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "generated_at": "2026-09-18T17:27:34.362555"
+    }
+  ]
+}

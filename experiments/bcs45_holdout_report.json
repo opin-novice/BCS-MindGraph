@@ -1,0 +1,84 @@
+{
+  "title": "45th BCS Preliminary Exam Real Holdout Evaluation Report (§11)",
+  "cutoff_date": "2023-04-19",
+  "exam_date": "2023-05-19",
+  "total_holdout_questions": 22,
+  "total_candidate_facts": 69,
+  "evaluation_timestamp": "2026-09-19T01:31:00.078170",
+  "holdout_questions_sample": [
+    {
+      "id": "Q061",
+      "bcs_exam": "৪৫তম বিসিএস",
+      "question": "'ভারত ছাড়া' আন্দোলন শুরু হয়-",
+      "topic": "ঔপনিবেশিক যুগ"
+    },
+    {
+      "id": "Q083",
+      "bcs_exam": "৪৫তম বিসিএস",
+      "question": "'সর্বদলীয় রাষ্ট্রভাষা সংগ্রাম কমিটি' গঠিত হয়-",
+      "topic": "ভাষা আন্দোলন ও মুক্তিযুদ্ধ"
+    },
+    {
+      "id": "Q099",
+      "bcs_exam": "৪৫তম, ৪৪তম বিসিএস",
+      "question": "ঐতিহাসিক 'ছয়-দফা' বঙ্গবন্ধু শেখ মুজিবুর রহমান আনুষ্ঠানিকভাবে ঘোষণা করেন-",
+      "topic": "ভাষা আন্দোলন ও মুক্তিযুদ্ধ"
+    },
+    {
+      "id": "Q114",
+      "bcs_exam": "৪৫তম, ১৮তম বিসিএস",
+      "question": "মহান মুক্তিযুদ্ধের সময় ঢাকা শহর কোন সেক্টরের অন্তর্ভুক্ত ছিল?",
+      "topic": "মুক্তিযুদ্ধ"
+    },
+    {
+      "id": "Q148",
+      "bcs_exam": "৪৫তম বিসিএস",
+      "question": "'জয় বাংলা' কে জাতীয় স্লোগান হিসাবে মন্ত্রিসভায় কত তারিখে অনুমোদন করা হয়?",
+      "topic": "জাতীয় সংগীত, পতাকা ও অন্যান্য"
+    }
+  ],
+  "system_evaluations": {
+    "proposed_temporal_kg": {
+      "system_name": "Proposed Bitemporal KG Snapshot Engine",
+      "metrics": {
+        "mrr": 0.6818,
+        "recall_at_1": 0.6818,
+        "precision_at_1": 0.6818,
+        "recall_at_3": 0.6818,
+        "precision_at_3": 0.4394,
+        "recall_at_5": 0.6818,
+        "precision_at_5": 0.2909,
+        "recall_at_10": 0.6818,
+        "precision_at_10": 0.15
+      }
+    },
+    "static_rag": {
+      "system_name": "Static RAG Engine (Untemporalized Corpus)",
+      "metrics": {
+        "mrr": 0.6818,
+        "recall_at_1": 0.6818,
+        "precision_at_1": 0.6818,
+        "recall_at_3": 0.6818,
+        "precision_at_3": 0.4394,
+        "recall_at_5": 0.6818,
+        "precision_at_5": 0.2909,
+        "recall_at_10": 0.6818,
+        "precision_at_10": 0.15
+      }
+    },
+    "web_rag": {
+      "system_name": "Web-RAG Engine (Pre-cutoff Web Logs)",
+      "metrics": {
+        "mrr": 0.6818,
+        "recall_at_1": 0.6818,
+        "precision_at_1": 0.6818,
+        "recall_at_3": 0.6818,
+        "precision_at_3": 0.4394,
+        "recall_at_5": 0.6818,
+        "precision_at_5": 0.2909,
+        "recall_at_10": 0.6818,
+        "precision_at_10": 0.15
+      }
+    }
+  }
+}

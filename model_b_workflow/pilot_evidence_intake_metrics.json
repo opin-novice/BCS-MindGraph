@@ -1,0 +1,8 @@
+{
+  "pilot_count": 50,
+  "queue_status": "evidence_candidates_intaked",
+  "candidate_evidence_rows": 3,
+  "pending_reviewer_rows": 3,
+  "evidence_verified": false,
+  "model_b_merge_performed": false
+}

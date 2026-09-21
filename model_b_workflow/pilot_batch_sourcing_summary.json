@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-17",
+  "batch": "milestone3a_pilot_remaining",
+  "cutoff": "2023-04-19",
+  "offline": false,
+  "pilot_facts_targeted": 47,
+  "excluded_already_worked": [
+    "BCSGK-0315",
+    "BCSGK-0336",
+    "BCSGK-0359"
+  ],
+  "outcomes": {
+    "candidate_evidence_found": 21,
+    "no_prose_support_found": 25,
+    "no_probes": 1
+  },
+  "evidence_records_written": 21,
+  "accepted_for_build": 0,
+  "seed_touched": false,
+  "note": "Every record is pending_reviewer. A found excerpt is a lead, not support: it has to be read against the fact's own wording before it counts, and the claim may be narrower or wider than the sentence that matched."
+}

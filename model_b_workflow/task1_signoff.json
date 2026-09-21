@@ -1,0 +1,44 @@
+{
+  "record_type": "task1_signoff",
+  "declared_at": "2026-09-17",
+  "declared_by": "PI",
+  "status": "COMPLETE",
+  "acceptance_criterion": "Strict temporal guard PASS at the 2023-04-19 cutoff for the frozen Model B seed.",
+  "verification": {
+    "command": "python verify_temporal_corpus.py guard --seed",
+    "run_at": "2026-09-17",
+    "exit_code": 0,
+    "result": "STRICT TEMPORAL GUARD (2023-04-19): PASS",
+    "facts": 69,
+    "static_valid_at_cutoff": 63,
+    "valid_at_cutoff_dynamic": 6,
+    "guard_violations": 0,
+    "topics": 11
+  },
+  "contrast_check": {
+    "command": "python verify_temporal_corpus.py guard",
+    "exit_code": 1,
+    "result": "FAIL -- 603 unversioned facts across 21 topics",
+    "why_this_matters": "The same guard, same cutoff, same Model B route, run over the 616-fact source corpus, still fails. A gate that passed both would be telling us nothing."
+  },
+  "reproducibility_note": "Before today the 69/69 PASS figure existed only as output quoted in the handover; no committed script reproduced it. run_guard() called insert_fact_pipeline WITHOUT temporal_class or the four temporal_evidence_* fields, so the offline dry-run could not exercise the static route at all and could only ever report FAIL. The plumbing was fixed and `guard --seed` added, so the acceptance claim is now re-runnable on demand.",
+  "model_b_policy": {
+    "status": "adopted",
+    "static": "admitted on verified pre-cutoff source evidence (temporal_evidence_status=verified_pre_cutoff_source, temporal_evidence_date <= 2023-04-19); no valid_from interval required",
+    "dynamic": "requires a verified pre-cutoff valid_from",
+    "pipeline_wiring": "main-pipeline.py already carries FACTS_JSON=bcs_gk_facts_model_b.json, CUTOFF_DATE=2023-04-19, STRICT_TEMPORAL_GUARD=True, ALLOW_STATIC_SOURCE_EVIDENCE=True, and passes all five temporal fields into the KG."
+  },
+  "seed": {
+    "file": "bcs_gk_facts_model_b.json",
+    "count": 69,
+    "unmodified": true,
+    "note": "Not edited by any step in this sign-off."
+  },
+  "open_after_signoff": [
+    "PI-Q263-COLLISION -- not ruled on; blocks nothing",
+    "External second review of BCSGK-0083 / BCSGK-0109 -- packet sent",
+    "30 residual unclassified facts in the reviewer queue",
+    "21 pilot excerpts awaiting a human reading (auto_reading does not count)"
+  ],
+  "open_items_do_not_block": "None of these touches the 69-fact seed or the guard result."
+}

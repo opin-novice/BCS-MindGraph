@@ -1,0 +1,1063 @@
+=================================================================
+  FACT QUALITY REPORT — BCSBatighor GK Knowledge Graph
+  Generated: 2026-09-15 07:00:15
+=================================================================
+
+--- ACCEPT (303 fact(s)) ---
+  [FACT_dffeae1b] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "আর্যরা খ্রিষ্টপূর্ব ১৫০০ অব্দে উপমহাদেশে আসে এবং বৈদিক সভ্যতার সূচনা করে। তাদের ..."
+  [FACT_fd36671a] score=0.77 | mcq=[]
+    "বাংলার আদি অধিবাসী ছিল অস্ট্রিক বা অস্ট্রালয়েড গোত্রের মানুষ (কোল, ভীল, মুণ্ডা,..."
+  [FACT_7ff66184] score=0.77 | mcq=[]
+    "আর্যপূর্ব জনগোষ্ঠীর মধ্যে অস্ট্রিক জনগোষ্ঠী থেকে বাঙালি জাতির প্রধান অংশ গঠিত হয..."
+  [FACT_ff0c5e30] score=0.77 | mcq=[]
+    "বঙ্গ জনপদের অন্তর্ভুক্ত ছিল ঢাকা, ফরিদপুর ও বিক্রমপুর অঞ্চল।"
+  [FACT_19547663] score=0.77 | mcq=[]
+    "সমতট জনপদ বৃহত্তর কুমিল্লা ও নোয়াখালী অঞ্চল নিয়ে গঠিত ছিল।"
+  [FACT_adbdb0ee] score=0.77 | mcq=['who_question', 'when_question']
+    "প্রাচীন চন্দ্রদ্বীপের বর্তমান নাম বরিশাল। এটি বাকেরগঞ্জ ও বাকলা নামেও পরিচিত ছিল..."
+  [FACT_8323a950] score=0.77 | mcq=['where_question']
+    "প্রাচীন গৌড় নগরীর অংশবিশেষ বর্তমান চাঁপাইনবাবগঞ্জ জেলায় অবস্থিত।"
+  [FACT_2798c506] score=0.77 | mcq=[]
+    "মহাস্থানগড়ের প্রাচীন নাম ছিল পুণ্ড্রনগর।"
+  [FACT_65d4c7e3] score=0.785 | mcq=['numeric_ranking']
+    "ফা-হিয়েন ৪০১-৪১১ খ্রিস্টাব্দে দ্বিতীয় চন্দ্রগুপ্তের রাজত্বকালে (গুপ্তযুগে) বাং..."
+  [FACT_a3b3e60c] score=0.77 | mcq=['numeric_ranking']
+    "শশাঙ্ক ছিলেন বাংলার প্রথম স্বাধীন ও সার্বভৌম রাজা যিনি বিভিন্ন জনপদকে একত্র করে ..."
+  [FACT_f8b9d6bb] score=0.785 | mcq=['numeric_ranking']
+    "চন্দ্রগুপ্ত মৌর্য খ্রিষ্টপূর্ব ৩২১ অব্দে মৌর্য সাম্রাজ্য প্রতিষ্ঠা করেন।"
+  [FACT_5ff47649] score=0.77 | mcq=[]
+    "হিউয়েন সাং-এর দীক্ষাগুরু ছিলেন নালন্দা বিশ্ববিদ্যালয়ের অধ্যক্ষ শীলভদ্র।"
+  [FACT_3b93b7b9] score=0.77 | mcq=[]
+    "শীলভদ্র নালন্দা বিহারের আচার্য ছিলেন।"
+  [FACT_63a6e091] score=0.77 | mcq=[]
+    "পাল বংশের দ্বিতীয় রাজা ধর্মপাল সোমপুর বিহার প্রতিষ্ঠা করেন।"
+  [FACT_568d4c03] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "লক্ষণ সেনের মৃত্যুর পর তার দ্বিতীয় পুত্র কেশব সেন (১২২৫-১২৩০) সেন বংশের শেষ শাস..."
+  [FACT_ef45b83f] score=0.77 | mcq=['numeric_ranking']
+    "বাংলার প্রথম স্বাধীন নবাব ছিলেন মুর্শিদকুলী খান এবং শেষ নবাব ছিলেন সিরাজউদ্দৌলা।"
+  [FACT_fd23483d] score=0.77 | mcq=[]
+    "ইলিয়াস শাহী বংশের প্রতিষ্ঠাতা শামসুদ্দীন ইলিয়াস শাহের সময় থেকে অঞ্চলটি 'বাঙ্গ..."
+  [FACT_f4f2d9da] score=0.77 | mcq=[]
+    "আলাউদ্দিন হোসেন শাহের শাসনকালে জ্ঞান-বিজ্ঞান ও শিল্পকলার ব্যাপক উন্নয়ন হওয়ায় ..."
+  [FACT_d4389899] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৬১০ সালে মুঘল সুবেদার ইসলাম খান চিশতি রাজধানী ঢাকায় স্থানান্তর করে 'জাহাঙ্গীরন..."
+  [FACT_5419cdf8] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "আলাউদ্দিন হোসেন শাহ ১৪৯৮ সালে কামতা রাজ্য দখলের পর ১৫১৯ সালে মৃত্যু পর্যন্ত বৃহত..."
+  [FACT_1070d72a] score=0.77 | mcq=['when_question']
+    "প্রতাপ আদিত্য বাংলার বারো ভূঁইয়াদের একজন ছিলেন যারা মুঘল শাসন মেনে নেয়নি।"
+  [FACT_02f1308c] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৭৫৭ সালের ২৩ জুন ভাগীরথী নদীর তীরে পলাশীর প্রান্তরে নবাব সিরাজউদ্দৌলা এবং ইস্ট ..."
+  [FACT_5d9e9323] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "শাহজাদা আজম ১৬৭৮ সালে লালবাগ দুর্গের নির্মাণ শুরু করলেও অধিকাংশ কাজ সম্পন্ন করেন..."
+  [FACT_5e9d1f1e] score=0.77 | mcq=['who_question']
+    "ঢাকার 'খোলাই খাল' খনন করেন ইসলাম খান।"
+  [FACT_9609db00] score=0.785 | mcq=['numeric_ranking']
+    "ইখতিয়ার উদ্দিন মুহাম্মাদ বিন বখতিয়ার খলজি ১২০৪ সালে লক্ষণ সেনের রাজধানী নদীয়া..."
+  [FACT_b0157ce9] score=0.77 | mcq=[]
+    "সুলতানি আমলে সোনারগাঁও ও গৌড় উভয় শহরই বাংলার রাজধানী ছিল।"
+  [FACT_2fc64a60] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "আলাউদ্দিন হোসেন শাহ গৌড়ের বড় সোনা মসজিদ নির্মাণ করেন, যার নির্মাণকাজ ১৫২৭ সালে..."
+  [FACT_f344e8cd] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৬১০ খ্রিষ্টাব্দে ঢাকায় প্রথমবার বাংলার রাজধানী স্থাপিত হয়।"
+  [FACT_f6bdf376] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "সুবেদার ইসলাম খান চিশতি ১৬১০ সালে রাজধানী ঢাকায় স্থানান্তর করেন।"
+  [FACT_1fb263b5] score=0.77 | mcq=[]
+    "ইখতিয়ারউদ্দিন মুহাম্মাদ বিন বখতিয়ার খলজি বাংলায় মুসলিম আধিপত্য বিস্তারের সূচন..."
+  [FACT_e08bfe35] score=0.77 | mcq=[]
+    "সুলতান গিয়াসউদ্দিন আজম শাহ ফারসি কবিতায় পারদর্শী ছিলেন এবং ইরানের কবি হাফিজের ..."
+  [FACT_877bfb47] score=0.77 | mcq=[]
+    "পরীবিবি ছিলেন শায়েস্তা খানের কন্যা। তার আসল নাম ইরান দুখত।"
+  [FACT_51a4827c] score=0.77 | mcq=['who_question', 'where_question']
+    "বড় কাটরা ও ছোট কাটরা ঢাকার চকবাজারে অবস্থিত। শাহ মুহাম্মদ সুজা বড় কাটরা এবং শা..."
+  [FACT_778650cc] score=0.77 | mcq=[]
+    "পরীবিবির আসল নাম ছিল ইরান দুখত।"
+  [FACT_87c184a9] score=0.77 | mcq=[]
+    "মুঘল আমলে সুবা বাংলার রাজধানী ছিল ঢাকা।"
+  [FACT_89cd14a8] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৭১৭ খ্রিস্টাব্দে সুবেদার মুর্শিদ কুলি খান বাংলার রাজধানী ঢাকা থেকে মুর্শিদাবাদে..."
+  [FACT_d1b1aa63] score=0.77 | mcq=[]
+    "শামসুদ্দিন ইলিয়াস শাহের সময় থেকে সমগ্র বাংলা ভাষাভাষী অঞ্চল বাঙ্গালাহ নামে পরি..."
+  [FACT_51cf1af2] score=0.77 | mcq=[]
+    "মুঘল সম্রাট হুমায়ুন গৌড়ের মনোরম আবহাওয়ায় মুগ্ধ হয়ে বাংলার নাম রাখেন 'জান্না..."
+  [FACT_2ce0efa8] score=0.77 | mcq=[]
+    "মুঘল সাম্রাজ্যের প্রতিষ্ঠাতা বাবর তুর্কি ভাষায় 'বাবরনামা' নামে আত্মজীবনী রচনা ক..."
+  [FACT_e5dac317] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "সম্রাট আকবর ১৫৮৪ সালে বাংলা সনের প্রবর্তন করেন।"
+  [FACT_4a34c15a] score=0.77 | mcq=[]
+    "বাংলা নববর্ষ পহেলা বৈশাখ পালনের সূচনা হয় সম্রাট আকবরের সময় থেকে।"
+  [FACT_c5d489ea] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "লর্ড কর্নওয়ালিস ২২ মার্চ, ১৭৯৩ খ্রিস্টাব্দে চিরস্থায়ী বন্দোবস্ত প্রবর্তন করেন।"
+  [FACT_1e3b140e] score=0.77 | mcq=[]
+    "লর্ড কর্নওয়ালিস বাংলায় চিরস্থায়ী বন্দোবস্ত প্রবর্তন করেন।"
+  [FACT_67805d2e] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "লর্ড কার্জন ১৯০৫ সালের ১৬ অক্টোবর বাংলা প্রদেশকে ভাগ করে 'পূর্ববঙ্গ ও আসাম' প্রদ..."
+  [FACT_87a6e6e6] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "ব্রিটেনের রাজা পঞ্চম জর্জ ১৯১১ সালের ১২ ডিসেম্বর দিল্লি দরবারে বঙ্গভঙ্গ রদের ঘোষ..."
+  [FACT_4fc11ffa] score=0.77 | mcq=['who_question']
+    "বঙ্গভঙ্গ কালে ভারতের ভাইসরয় ছিলেন লর্ড কার্জন।"
+  [FACT_8258c7b9] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বঙ্গভঙ্গ রদ ঘোষণা করা হয় ১৯১১ সালে, তা কার্যকর হয় ১৯১২ সালে।"
+  [FACT_0dcf34d3] score=0.77 | mcq=['who_question']
+    "পূর্ববঙ্গ ও আসাম প্রদেশ গঠনকালে ব্রিটিশ ভারতের ভাইসরয় ছিলেন লর্ড কার্জন।"
+  [FACT_b47ccf07] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "লর্ড ক্যানিং ১৮৬১ সালে উপমহাদেশে প্রথম পুলিশ ব্যবস্থা চালু করেন।"
+  [FACT_2e6ff0ef] score=0.77 | mcq=[]
+    "লর্ড মাউন্টব্যাটেন ব্রিটিশ ভারতের সর্বশেষ ভাইসরয় ছিলেন।"
+  [FACT_bd889b6b] score=0.77 | mcq=['numeric_ranking']
+    "অবিভক্ত বাংলার প্রথম মুখ্যমন্ত্রী ছিলেন ফজলুল হক এবং শেষ মুখ্যমন্ত্রী ছিলেন হোসে..."
+  [FACT_07dd5ac8] score=0.785 | mcq=['numeric_ranking']
+    "১৯০৫ সালে নবগঠিত পূর্ববঙ্গ ও আসাম প্রদেশের প্রথম লেফটেন্যান্ট গভর্নর ছিলেন বামফি..."
+  [FACT_ef8d49af] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৮১৮ সালে হাজী শরীয়তুল্লাহ বাংলায় ফরায়েজি আন্দোলনের সূত্রপাত করেন।"
+  [FACT_624d903e] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৭৮২ ও ১৭৮৪ সালে রামু খাঁর পুত্র জান বক্শ খাঁ ব্রিটিশদের বিরুদ্ধে বিদ্রোহ সংগঠিত..."
+  [FACT_8b5dc208] score=0.77 | mcq=[]
+    "নওয়াব স্যার সলিমুল্লাহ ঢাকা বিশ্ববিদ্যালয় প্রতিষ্ঠায় সক্রিয় ভূমিকা রেখেছিলেন..."
+  [FACT_cfd35a07] score=0.77 | mcq=[]
+    "নওয়াব আবদুল লতিফ বাংলার মুসলমানদের মাঝে আধুনিক শিক্ষা প্রচলনে অগ্রণী ভূমিকা পাল..."
+  [FACT_50389329] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "রাজা রামমোহন রায়ের প্রচেষ্টায় ১৮২৯ সালের ৪ ডিসেম্বর লর্ড উইলিয়াম বেন্টিঙ্ক 'স..."
+  [FACT_7dca5f92] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "পূর্ববঙ্গ জমিদারি দখল ও প্রজাস্বত্ব আইন ১৯৫০ সালে প্রণীত হয় যার ফলে জমিদারি প্র..."
+  [FACT_73ee71ce] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৬০ সালে পূর্ব পাকিস্তানে প্রথম কৃষিশুমারি অনুষ্ঠিত হয়। স্বাধীন বাংলাদেশে এ পর..."
+  [FACT_fc174b95] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "কৃষি পরিসংখ্যান বর্ষগ্রন্থ, ২০২৪ অনুযায়ী, বাংলাদেশে সবচেয়ে বেশি পাট উৎপন্ন হয়..."
+  [FACT_d4352feb] score=0.77 | mcq=[]
+    "বাংলাদেশের অর্থনৈতিক সেক্টরগুলোর মধ্যে কৃষি খাতে সবচেয়ে বেশি কর্মসংস্থান হয়।"
+  [FACT_bd37385b] score=0.77 | mcq=['when_question']
+    "বাংলাদেশের উৎপাদিত কৃষিপণ্যের মধ্যে ধানের পরিমাণ সবচেয়ে বেশি এবং উৎপাদিত ধান নি..."
+  [FACT_e163ce29] score=0.785 | mcq=['numeric_ranking']
+    "সর্বপ্রথম যে উফশি ধান এ দেশে চালু হয়ে এখনো বর্তমান রয়েছে তা হলো ইরি-৮।"
+  [FACT_e1b5865c] score=0.77 | mcq=['when_question']
+    "পার্বত্য চট্টগ্রামের তিন জেলায় (বান্দরবান, রাঙামাটি, খাগড়াছড়ি) পাহাড়ের গায়ে..."
+  [FACT_592374a4] score=0.77 | mcq=[]
+    "বাংলাদেশে সবচেয়ে বেশি উৎপাদিত হয় বোরো ধান।"
+  [FACT_63aabb65] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৮৪০ সালে চট্টগ্রাম জেলা শহরের ক্লাব সংলগ্ন এলাকায় একটি চা বাগান প্রতিষ্ঠিত হয়..."
+  [FACT_c3ff502c] score=0.77 | mcq=['numeric_ranking']
+    "BADC (Bangladesh Agricultural Development Corporation) বাংলাদেশে উচ্চ ফলনশীল বিভ..."
+  [FACT_96815582] score=0.77 | mcq=['where_question']
+    "বাংলাদেশের ইক্ষু গবেষণা ইনস্টিটিউট ঈশ্বরদীতে অবস্থিত।"
+  [FACT_1f05818a] score=0.77 | mcq=['where_question']
+    "বাংলাদেশে চিনি শিল্পের ট্রেনিং ইনস্টিটিউট ঈশ্বরদীতে অবস্থিত।"
+  [FACT_c73ebad9] score=0.77 | mcq=['where_question']
+    "ফিশারিজ ট্রেনিং ইনস্টিটিউট চাঁদপুরে এবং ফিশারিজ ট্রেনিং একাডেমি সাভার, ঢাকায় অব..."
+  [FACT_898d7223] score=0.785 | mcq=['numeric_ranking']
+    "বিশ্ববাজারে ব্ল্যাক বেঙ্গল ছাগলের চামড়া কুষ্টিয়া গ্রেড নামে পরিচিত। প্রাণিসম্প..."
+  [FACT_394f5895] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশ ব্যাংকের সর্বশেষ আমদানি পরিসংখ্যান অনুযায়ী, গত ২০২৩-২৪ অর্থবছরে গুঁড়া..."
+  [FACT_5093bc78] score=0.77 | mcq=['who_question', 'where_question']
+    "বাংলাদেশের কেন্দ্রীয় গো-প্রজনন খামার সাভার, ঢাকায় অবস্থিত। এছাড়া কেন্দ্রীয় ম..."
+  [FACT_1d693368] score=0.755 | mcq=['numeric_ranking']
+    "Export Promotion Bureau-2025 এর তথ্য অনুযায়ী রপ্তানি আয়ে ২০২৪-২৫ অর্থবছরের প্র..."
+  [FACT_a7c67b08] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বিশ্বব্যাংকের ১৯৯৭ সালের হিসাব অনুযায়ী বাংলাদেশের মাথাপিছু আয় ছিল ২৬০ মার্কিন ..."
+  [FACT_b12e2d64] score=0.755 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুসারে বাংলাদেশের মাথাপিছু জিডিপি (Per Capita GDP) ২৬৭১ ..."
+  [FACT_482fee8e] score=0.785 | mcq=['numeric_ranking']
+    "২০২৫-২৬ অর্থবছরের রপ্তানি প্রণোদনা বা ভর্তুকি বরাদ্দ রাখা হয়েছে ৭,৮২৫ কোটি টাকা..."
+  [FACT_4f7a6ee7] score=0.8 | mcq=['when_question', 'numeric_ranking']
+    "Value Added Tax বা মূল্য সংযোজন কর বাংলাদেশে প্রথম চালু হয় ১৯৯১ সালের ১ জুলাই। ..."
+  [FACT_c03a3183] score=0.785 | mcq=['numeric_ranking']
+    "৭ম পঞ্চবার্ষিকী পরিকল্পনা মেয়াদে প্রতিবছর বাংলাদেশের গড় প্রকৃত জিডিপি প্রবৃদ্ধ..."
+  [FACT_3789ab64] score=0.785 | mcq=['numeric_ranking']
+    "কোভিড-১৯ ভ্যাকসিন উৎপাদনে সম্পর্কিত চীনের সাথে বাংলাদেশের ইনসেপ্টা ফার্মাসিউটিক্..."
+  [FACT_98bb5902] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বাংলাদেশে তৈরি জাহাজ 'স্টেলা মেরিস' ১৫ মে, ২০০৮ ডেনমার্কে রপ্তানি করা হয়। এ জাহ..."
+  [FACT_13815274] score=0.77 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "ন্যাচারাল গ্যাস ফার্টিলাইজার ফ্যাক্টরি লিমিটেড (পূর্বনাম-ফেঞ্চুগঞ্জ সার কারখানা)..."
+  [FACT_16bdd582] score=0.77 | mcq=['who_question', 'where_question']
+    "জিয়া সার কারখানার বর্তমান নাম 'আশুগঞ্জ ফার্টিলাইজার অ্যান্ড কেমিক্যাল কোম্পানি ..."
+  [FACT_ded3359b] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বর্তমানে চামড়া শিল্প বাংলাদেশের দ্বিতীয় প্রধান রপ্তানি পণ্য এবং এ খাত থেকে ২০২..."
+  [FACT_acf62dbe] score=0.8 | mcq=['who_question', 'when_question', 'where_question', 'numeric_ranking']
+    "বাংলাদেশের প্রধান ও বৃহত্তম অভ্যন্তরীণ কন্টেইনার ডিপো (Inland Container Depot) চ..."
+  [FACT_c6f52988] score=0.77 | mcq=['where_question']
+    "ঘোড়াশাল সার কারখানা নরসিংদীতে অবস্থিত। এ সার কারখানায় প্রাকৃতিক গ্যাস ব্যবহার ..."
+  [FACT_d64ec197] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের প্রধান জাহাজ নির্মাণ কারখানা খুলনায় অবস্থিত। দেশে আনুমানিক ১০ হাজার ..."
+  [FACT_6c527551] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৮২ সালে প্রথমবারের মতো জাতীয় ঔষধ নীতি প্রণয়ন করা হয়। উক্ত নীতির প্রধান উদ্দ..."
+  [FACT_29ea4984] score=0.775 | mcq=['when_question', 'numeric_ranking']
+    "'Alliance for Bangladesh Worker's Safety' যুক্তরাষ্ট্রভিত্তিক বিশ্বসেরা গার্মেন্..."
+  [FACT_f3ff6592] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "সেই সময় (২০০৩ সালে) কানাডা বাংলাদেশকে এই সুবিধা দিয়েছিল। সম্প্রতি ০১ ডিসেম্বর,..."
+  [FACT_bf668e09] score=0.785 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরে ৩৯,৩৪৬ মিলিয়ন মার্কিন ডলারের ..."
+  [FACT_1e80689d] score=0.77 | mcq=[]
+    "বাণিজ্য ভারসাম্য (BOT) হলো একটি নির্দিষ্ট সময়ে একটি দেশের পণ্য ও সেবার রপ্তানি ..."
+  [FACT_c6485d9a] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরে বাংলাদেশের রপ্তানি আয় হয়েছে ..."
+  [FACT_665dcaff] score=0.785 | mcq=['numeric_ranking']
+    "১৯৮০ সালে দেশে সর্বপ্রথম ইপিজেড প্রতিষ্ঠার লক্ষ্যে আইন প্রণীত হয়। পরবর্তীতে ১৯৮..."
+  [FACT_4d2f4e11] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "মার্কিন ডলারে ২০০১-২০০২ অর্থবছরে বাংলাদেশের রপ্তানি আয় ছিল প্রায় ৬ বিলিয়ন।"
+  [FACT_3ef4e01e] score=0.77 | mcq=['numeric_ranking']
+    "বাংলাদেশের প্রথম ইপিজেড চট্টগ্রামে স্থাপিত হয়।"
+  [FACT_2f9da6e1] score=0.8 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বাংলাদেশ উন্নয়ন ফোরাম (BDF)-এর সমন্বয়কারী সংস্থা বিশ্বব্যাংক। এটি ১৯৭৪ সালে বা..."
+  [FACT_99fe312e] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "পুঁজি বা শেয়ার বাজার হলো আর্থিক সম্পদ বেচাকেনার একটি গুরুত্বপূর্ণ প্রতিষ্ঠান। এ..."
+  [FACT_b3408413] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের শেয়ার বাজার নিয়ন্ত্রক প্রতিষ্ঠান 'বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচ..."
+  [FACT_9c38362a] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "কর্মসংস্থান ব্যাংক ১৯৯৮ সালে প্রতিষ্ঠিত হয়।"
+  [FACT_49d59121] score=0.77 | mcq=[]
+    "শেয়ার লেনদেনের ইলেকট্রনিক ব্যবহারকে ডিম্যাট বলা হয়।"
+  [FACT_7070fa46] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "গ্রামীণ ব্যাংক ১৯৭৬ সালে চট্টগ্রামের জোবরা গ্রামে প্রকল্প হিসেবে যাত্রা শুরু করে..."
+  [FACT_5a116eec] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বাংলাদেশে প্রথম নোট চালু হয় ৪ মার্চ, ১৯৭২। এ সময় প্রথম ১ টাকা ও ১০০ টাকার নোট ..."
+  [FACT_5f7d18df] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের ২০১৮-১৯ অর্থবছরে বাজেট জিডিপির প্রেক্ষিত প্রবৃদ্ধির হার ছিল ৭.৮০ শতাং..."
+  [FACT_9383e3fa] score=0.785 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী ২০২৪-২৫ অর্থবছরে মূল্যস্ফীতি ধরা হয়েছে ৮.৪৮% ও ..."
+  [FACT_b3eb743b] score=0.785 | mcq=['numeric_ranking']
+    "২০১৫-১৬ অর্থবছরে বাংলাদেশের অর্জিত অর্থনৈতিক প্রবৃদ্ধির হার ছিল ৭.০৫%।"
+  [FACT_b129b885] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "মূল্য সংযোজন কর বাংলাদেশে ১ জুলাই, ১৯৯১ থেকে চালু করা হয়।"
+  [FACT_7c1318a6] score=0.785 | mcq=['numeric_ranking']
+    "২০০৩-০৪ সনের বার্ষিক উন্নয়ন কর্মসূচির মোট ব্যয় ছিল ২০,৩০০ কোটি টাকা।"
+  [FACT_5cb91d58] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের ১৯৯৪-৯৫ সালের বাজেটে শিক্ষা খাতে বরাদ্দের পরিমাণ ছিল ১,৮৭৬ কোটি টাকা।..."
+  [FACT_16ab6241] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "দেশের দুর্দশাগ্রস্ত, অবহেলিত, আর্থিক দৈন্যে জর্জরিত বয়স্ক জনগোষ্ঠীর আর্থ-সামাজি..."
+  [FACT_ba33e9b2] score=0.785 | mcq=['where_question', 'numeric_ranking']
+    "Bangladesh is a country in South Asia bordering India and Burma covering an area..."
+  [FACT_99ff287d] score=0.77 | mcq=['where_question']
+    "Lying along the east bank of the Buriganga River in the heart of the Bengal delt..."
+  [FACT_01c8af9f] score=0.77 | mcq=['numeric_ranking']
+    "Dhaka is the largest city in Bangladesh and is the cultural and economic hub of ..."
+  [FACT_c13ba770] score=0.785 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "History Of The Capital Of Bangladesh The history of the city can be traced to se..."
+  [FACT_7ba0234a] score=0.785 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "It fell under the British rule in 1765, and by 1864 it was made a municipality a..."
+  [FACT_dbc9072c] score=0.77 | mcq=[]
+    "এই দিন বাংলাদেশের সাবেক প্রধানমন্ত্রী শেখ হাসিনা নিজে মাওয়া প্রান্ত দিয়ে টোল প..."
+  [FACT_863ad9cd] score=0.785 | mcq=['numeric_ranking']
+    "পদ্মা - ব্রহ্মপুত্র - মেঘনা নদীর অববাহিকায় তৈরি সেতুটি ৪১টি স্প্যান নিয়ে গঠিত,..."
+  [FACT_abf83805] score=0.77 | mcq=['numeric_ranking']
+    "বাংলাদেশের স্বাধীনতার পর বাংলাদেশের প্রথম রাষ্ট্রপতি শেখ মুজিবুর রহমান পদ্মা নদী..."
+  [FACT_5de106aa] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "In 2011, the 15th constitutional amendment in Bangladesh referred to Sheikh Muji..."
+  [FACT_63063cfc] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "He was elected to public office for the first time in 1954 and championed Bengal..."
+  [FACT_d2f1583b] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের ১৬ তম রাষ্ট্রপতি হিসেবে তিনি ২৪ এপ্রিল ২০২৩ তারিখ থেকে ২৪ জুলাই ২০২৬ ..."
+  [FACT_06d21746] score=0.77 | mcq=[]
+    "রাষ্ট্রপতি হওয়ার পূর্বে তিনি জেলা ও দায়রা জজ ও দুর্নীতি দমন কমিশনের কমিশনার ছি..."
+  [FACT_efd93816] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "প্রাথমিক ও শিক্ষা জীবন মোহাম্মদ সাহাবুদ্দিন ১৯৪৯ সালের ১০ই ডিসেম্বর তৎকালীন পাকি..."
+  [FACT_7ed8fe08] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "পরীক্ষিত উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে এটি একটি পরীক্ষিত সংস্করণ , যা ৩ সেপ্ট..."
+  [FACT_8cfcb6de] score=0.8 | mcq=['when_question', 'numeric_ranking']
+    "মুক্তিযুদ্ধ English মুক্তিযুদ্ধ ১৯৭১ সালের ২৬ মার্চ মুক্তিযুদ্ধ শুরু হয় এবং ঐ ব..."
+  [FACT_382088e7] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "১৯৪৭ সালে ব্রিটিশ শাসনের অবসানের পর থেকেই পাকিস্তানের দুই অংশের মধ্যে যেসব ইস্যু..."
+  [FACT_3cc34549] score=0.77 | mcq=[]
+    "ইতোমধ্যে সমস্যা নিরসনের জন্য শেখ মুজিব ও ইয়াহিয়া খানের মধ্যে আলোচনা শুরু হয়।"
+  [FACT_4a479c0a] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "আলোচনা ব্যর্থ হয় এবং ১৯৭১ সালের ২৫ মার্চ মধ্যরাতে পাকিস্তানি সৈন্যরা বাঙালি হত্..."
+  [FACT_01c8cc2b] score=0.77 | mcq=['who_question', 'where_question']
+    "অববাহিকার সমুদ্রমুখী সীমানা এই বনভূমি গঙ্গা ও ব্রহ্মপুত্রের মোহনায় অবস্থিত এবং ..."
+  [FACT_d1f5f051] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৮৭৮ সালে সুন্দরবনের বর্তমান ভারতীয় অংশটির সংরক্ষণের কাজ আরম্ভ হয়।"
+  [FACT_118051d8] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭৩ সালে মূল এলাকাটি সুন্দরবন ব্যাঘ্র প্রকল্প হিসাবে ঘোষিত হয়।"
+  [FACT_14233530] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৮৯ সালে সুন্দরবনের এই ভারতীয় অংশকে বায়োস্ফিয়ার রিজার্ভ ঘোষণা করা হয়।"
+  [FACT_beee0b05] score=0.77 | mcq=[]
+    "বৃহত্তর সুন্দরবনের ভারতীয় ও বাংলাদেশের অংশ একই নিরবচ্ছিন্ন ভূমিরূপের অংশ হলেও ই..."
+  [FACT_e220e452] score=0.77 | mcq=[]
+    "কয়েকটি উপজেলা নিয়ে একটি জেলা গঠিত হয়।"
+  [FACT_37222510] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১-এ বাংলাদেশ প্রতিষ্ঠাকালে জেলার সংখ্যা ছিল ১৯ টি ।"
+  [FACT_948b1fdb] score=0.77 | mcq=[]
+    "রাষ্ট্রপতি এরশাদ মহুকুমাগুলোকে জেলায় উন্নীতকরণের প্রক্রিয়া চালু করেন।"
+  [FACT_3d0ffe15] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৪৭ খ্রিষ্টাব্দে পাকিস্তান প্রতিষ্ঠালগ্নে পূর্ব পাকিস্তান তথা বর্তমান বাংলাদেশে..."
+  [FACT_585d8309] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৬৯-এ ময়মনসিংহ জেলার টাঙ্গাইল মহকুমা ও বরিশাল জেলার পটুয়াখালী মহুকুমাকে জেলায..."
+  [FACT_2e1fb9e2] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "স্বাধীন বাংলাদেশে সর্বপ্রথম ১৯৭৮ সালে ময়মনসিংহের জামালপুর মহুকুমাকে একটি জেলায়..."
+  [FACT_4735721c] score=0.77 | mcq=['who_question']
+    "জেলা পরিষদ একজন চেয়ারম্যান, পনেরো জন সদস্য ও পাঁচ জন সংরক্ষিত আসনের মহিলা সদস্য..."
+  [FACT_9aa59cfb] score=0.8 | mcq=['numeric_ranking']
+    "From Simple English Wikipedia, the free encyclopedia There are 64 Districts of B..."
+  [FACT_265719f9] score=0.785 | mcq=['numeric_ranking']
+    "The districts are further subdivided into 493 sub-districts, or upazila (উপজেলা ..."
+  [FACT_848e6fc3] score=0.785 | mcq=['numeric_ranking']
+    "These 64 districts make up the eight divisions of Bangladesh , the districts are..."
+  [FACT_761e60c4] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের অধিকাংশ এলাকা সমুদ্র সমতল হতে মাত্র ১০ মিটার উচ্চতায় অবস্থিত।"
+  [FACT_98fbcca5] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "শেখ মুজিবুর রহমান (১৭ মার্চ ১৯২০ – ১৫ আগস্ট ১৯৭৫), সংক্ষিপ্তাকারে শেখ মুজিব বা ব..."
+  [FACT_edf74b38] score=0.77 | mcq=['who_question']
+    "তিনি পাকিস্তান আন্দোলনে সক্রিয় অংশগ্রহণ করেন এবং পরবর্তীকালে পূর্ব পাকিস্তানকে ..."
+  [FACT_972dff1b] score=0.77 | mcq=['who_question']
+    "শুরুতে তিনি আওয়ামী লীগের সভাপতি, এরপর বাংলাদেশের প্রধানমন্ত্রী এবং পরবর্তীকালে ..."
+  [FACT_2bbd2657] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "পূর্ব পাকিস্তানের রাজনৈতিক স্বায়ত্তশাসন অর্জনের প্রয়াস এবং পরবর্তীকালে ১৯৭১ খ্..."
+  [FACT_19aafae4] score=0.785 | mcq=['numeric_ranking']
+    "১৯৪৭ খ্রিষ্টাব্দে ভারত বিভাগ পরবর্তী পূর্ব পাকিস্তানের রাজনীতির প্রাথমিক পর্যায়..."
+  [FACT_8a92ef41] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "শেখ মুজিবুর রহমান তার রাজনৈতিক জীবনে প্রায় ১৩ বছর কারাভোগ করেন।"
+  [FACT_c23d9269] score=0.77 | mcq=['who_question']
+    "জনগণের স্বাধিকার প্রতিষ্ঠার লক্ষ্যে ছয় দফা স্বায়ত্তশাসন পরিকল্পনা প্রস্তাব করে..."
+  [FACT_4300b0e3] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান অবিভক্ত ভারতের পূর্ববঙ্গের ফরি..."
+  [FACT_4ff63e33] score=0.77 | mcq=[]
+    "তাই তাঁর এই জন্মশতবার্ষিকী উদযাপনের জন্যই 'মুজিববর্ষ' পালনের সিদ্ধান্ত নেওয়া হয..."
+  [FACT_a42b6abc] score=0.77 | mcq=[]
+    "মুজিববর্ষের লোগোর নকশা করেন সব্যসাচী হাজরা।"
+  [FACT_a587a337] score=0.77 | mcq=[]
+    "মুজিববর্ষের আবহ সঙ্গীত "তুমি বাংলার ধ্রুবতারা, তুমি হৃদয়ের বাতিঘর আকাশে-বাতাসে ..."
+  [FACT_04cc0aac] score=0.785 | mcq=['numeric_ranking']
+    "বেগম শেখ ফজিলাতুন্নেছা মুজিব (৮ আগস্ট ১৯৩০ - ১৫ আগস্ট ১৯৭৫) ছিলেন বাংলাদেশের প্র..."
+  [FACT_7c541542] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "তার জন্মদিন শেখ হাসিনা সরকারের আমলে রাষ্ট্রীয় মর্যাদায় পালন করা হলেও ২০২৪ সালে..."
+  [FACT_d37b4d38] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "প্রাথমিক জীবন তিনি ১৯৩০ সালে গোপালগঞ্জের টুঙ্গিপাড়ায় জন্মগ্রহণ করেন।"
+  [FACT_f24c861a] score=0.77 | mcq=[]
+    "তিনি তার স্বামী শেখ মুজিবুর রহমানের চাচাতো বোন ছিলেন।"
+  [FACT_74f6c3b2] score=0.785 | mcq=['numeric_ranking']
+    "শেখ মুজিবের বয়স যখন ১৩ ও বেগম ফজিলাতুন্নেসার বয়স যখন মাত্র তিন, তখন পরিবারের ব..."
+  [FACT_d8c588fe] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৩৮ সালে বিয়ে হবার সময় রেনুর বয়স ছিল ৮ বছর ও শেখ মুজিবের ১৮ বছর।"
+  [FACT_a07740ba] score=0.77 | mcq=[]
+    "তারা হলেন শেখ হাসিনা ও শেখ রেহানা এবং শেখ কামাল , শেখ জামাল ও শেখ রাসেল ।"
+  [FACT_0ddaefef] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধের সময় বেগম ফজিলাতুন্নেসা পরিবারের অন্য সদস্যদের (শেখ..."
+  [FACT_92bb6003] score=0.8 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "From Simple English Wikipedia, the free encyclopedia Sheikh Mujibur Rahman ( Ben..."
+  [FACT_0c8681ff] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "Rahman was assassinated on 15 August 1975 along with all his family members pres..."
+  [FACT_db7ded11] score=0.77 | mcq=['who_question']
+    "His elder daughter Sheikh Hasina is the current prime minister of Bangladesh."
+  [FACT_aab0ed1d] score=0.77 | mcq=[]
+    "Early life Rahman was born in Tungipara village of Gopalganj District."
+  [FACT_3a063eef] score=0.77 | mcq=['who_question']
+    "His father, Sheikh Lutfur Rahman, was a serestadar, an officer responsible for r..."
+  [FACT_78202bd3] score=0.77 | mcq=['who_question', 'numeric_ranking']
+    "Hasina is the daughter of the founding father and first President of Bangladesh ..."
+  [FACT_10557d64] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "Sheikh Hasina was ranked as the 42nd most powerful woman in the world by Forbes ..."
+  [FACT_0ef9b7ed] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "Early life Hasina was born on 28 September 1947 to the Bengali Muslim Sheikh fam..."
+  [FACT_b5249993] score=0.77 | mcq=['who_question', 'numeric_ranking']
+    "Her father was Sheikh Mujibur Rahman , the first President of Bangladesh , regar..."
+  [FACT_3427658a] score=0.785 | mcq=['who_question']
+    "She has Iraqi Arab ancestry through her paternal grandfather Sheikh Lutfar Rahma..."
+  [FACT_ccaf7a2d] score=0.77 | mcq=[]
+    "Her mother was Sheikh Fazilatunnesa Mujib ."
+  [FACT_9ab4eb8d] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "The Independence Day of Bangladesh is celebrated on 26 March when Sheikh Mujibur..."
+  [FACT_a8e7b74b] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "The Bangladesh Liberation War started on 26 March and lasted till 16 December 19..."
+  [FACT_671686d5] score=0.77 | mcq=['who_question']
+    "There is a dispute along partisan line on who declared the Independence of Bangl..."
+  [FACT_751aa3e6] score=0.77 | mcq=[]
+    "The Awami League claim Sheikh Mujibur Rahman while the Bangladesh Nationalist Pa..."
+  [FACT_1a025b4f] score=0.77 | mcq=[]
+    "After the partition, present-day Pakistan was called West Pakistan while present..."
+  [FACT_bbe3b502] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "The Independence of Bangladesh was declared on 26 March 1971 at the first watch ..."
+  [FACT_9ca1da47] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালের স্বাধীনতা যুদ্ধে পাকিস্তান থেকে স্বাধীনতা অর্জনের পর দেশটি বিশ্ব মানচ..."
+  [FACT_5e855ebd] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "যোগদানের এক সপ্তাহ পর ১৯৭৪ সালের ২৫ সেপ্টেম্বর জাতিসংঘ সাধারণ পরিষদে বঙ্গবন্ধু শ..."
+  [FACT_9da185e2] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "ইতিহাস বাংলাদেশের সঙ্গে জাতিসংঘের সম্পর্কের সূচনা হয় ১৯৭১ সালে স্বাধীনতা সংগ্রা..."
+  [FACT_d988ac74] score=0.77 | mcq=['who_question']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধে জাতিসংঘ মূলত যুক্ত হয়েছিল নিম্নোক্ত ক্ষেত্রে: মানবা..."
+  [FACT_a10674f2] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "১৯৭১ সালের মার্চ মাসে ঐতিহাসিক অসহযোগ আন্দোলন চলাকালে আন্দোলনে অংশগ্রহণকারী নেতৃ..."
+  [FACT_17b83803] score=0.77 | mcq=[]
+    "সে সময়ে জাতিসংঘ উন্নয়ন কর্মসূচির ঢাকাস্থ প্রতিনিধির সঙ্গে একটি বিশেষ বৈঠকও করে..."
+  [FACT_d94a3059] score=0.77 | mcq=[]
+    "অন্যান্য বিশ্বনেতার সঙ্গে সেদিন জাতিসংঘ মহাসচিব উথান্ট এই গণহত্যাকে নিন্দা করে এ..."
+  [FACT_4003f3b3] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৮০ খ্রিষ্টাব্দের আগে পর্যন্ত বাংলাদেশের অর্থনীতি মূলত পাট ও পাটজাত পণ্যের ওপর ..."
+  [FACT_afb059a7] score=0.785 | mcq=['numeric_ranking']
+    "১৯৮০-এর দশকে এ হার ছিলো ২৯% এবং ১৯৯০-এর দশকে ছিলো ২৪%।"
+  [FACT_3b7985c0] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "ঢাকা বিশ্ববিদ্যালয়ের পদার্থ বিজ্ঞান বিভাগের অধ্যাপক আবুল কাশেম ১ সেপ্টেম্বর, ১৯..."
+  [FACT_f3990511] score=0.77 | mcq=['numeric_ranking']
+    "গানটির রচয়িতা আবদুল গাফফার চৌধুরী। প্রথম সুরকার ছিলেন আবদুল লতিফ, বর্তমান সুরকা..."
+  [FACT_3f76702e] score=0.77 | mcq=[]
+    "ভাষা আন্দোলনের সময় পাকিস্তানের প্রধানমন্ত্রী ছিলেন খাজা নাজিমউদ্দীন।"
+  [FACT_c65b00bb] score=0.77 | mcq=[]
+    "বাঙালি জাতীয়তাবাদ চেতনা দ্বারা প্রভাবিত হয়ে বাঙালি জাতি ভাষা আন্দোলনে অংশগ্রহণ..."
+  [FACT_fe72c79f] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "২৩ ফেব্রুয়ারি, ১৯৪৮ কুমিল্লার ধীরেন্দ্রনাথ দত্ত পাকিস্তান গণপরিষদে বাংলাকে রাষ্..."
+  [FACT_bc6d55c4] score=0.77 | mcq=[]
+    "গানটির বর্তমান (প্রচলিত) সুরকার হলেন আলতাফ মাহমুদ।"
+  [FACT_80b0058d] score=0.77 | mcq=['numeric_ranking']
+    "একুশের প্রথম কবিতা 'কাঁদতে আসিনি, ফাঁসির দাবি নিয়ে এসেছি' রচনা করেন মাহবুব-উল-আ..."
+  [FACT_41dea3a9] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "টাঙ্গাইল জেলার সন্তোষে ১৯৫৭ সালের ৬-১০ ফেব্রুয়ারি কাগমারী সম্মেলন অনুষ্ঠিত হয়।"
+  [FACT_7ea38fbe] score=0.77 | mcq=['who_question']
+    "যুক্তফ্রন্টের নির্বাচনি প্রতীক ছিল নৌকা এবং মুসলিম লীগের প্রতীক ছিল হারিকেন।"
+  [FACT_a04e7a50] score=0.785 | mcq=['numeric_ranking']
+    "ঐতিহাসিক ২১-দফার প্রথম দাবি ছিল বাংলাকে অন্যতম রাষ্ট্রভাষা হিসেবে স্বীকৃতি দেওয়..."
+  [FACT_3aa0f50f] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "৬ দফাকে বাঙালি জাতির মুক্তির সনদ বা 'ম্যাগনাকার্টা' হিসেবে আখ্যায়িত করা হয়।"
+  [FACT_a750c706] score=0.77 | mcq=[]
+    "জেনারেল ইয়াহিয়া খান এই উক্তিটি করেছিলেন।"
+  [FACT_6c02017d] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালের ২ মার্চ ঢাকা বিশ্ববিদ্যালয়ের বটতলায় এক ছাত্র সমাবেশে ডাকসুর ভিপি আ...."
+  [FACT_26efef79] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "৭ মার্চ, ১৯৭১ সালে শেখ মুজিবুর রহমান তৎকালীন ঢাকার রেসকোর্স ময়দানে জাতির উদ্দেশ..."
+  [FACT_f93f2c18] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "১৯৭১ সালের ২৬ মার্চ মেজর জিয়াউর রহমান বাংলাদেশের স্বাধীনতা ঘোষণা করেন। পরবর্তীত..."
+  [FACT_6d3d0f42] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "আনুষ্ঠানিকভাবে স্বাধীনতার ঘোষণাপত্র জারি করা হয় ১০ এপ্রিল, ১৯৭১ যা ২৬ মার্চ, ১৯..."
+  [FACT_6556b038] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "মুজিবনগরে ১০ এপ্রিল, ১৯৭১ সালে স্বাধীনতা ঘোষণা করা হয়েছিল।"
+  [FACT_5b8c27db] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "মুজিবনগর সরকার কর্তৃক জারিকৃত ঘোষণাপত্রে সার্বভৌম গণপ্রজাতন্ত্রেরূপে বাংলাদেশ প্..."
+  [FACT_593b0d3f] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "৪ এপ্রিল, ১৯৭১ বাংলাদেশ বাহিনী বেসরকারিভাবে গঠিত হয় যা ১১ এপ্রিল পুনর্গঠিত করা ..."
+  [FACT_39b16e45] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধে সুষ্ঠুভাবে পরিচালনার জন্য ১৯৭১ সালের ১১ জুলাই সমগ্র ..."
+  [FACT_d61f0d5c] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের মুক্তিযুদ্ধে পরাজয় নিশ্চিত জেনে বাংলাদেশকে মেধাশূন্য করতে পাকবাহিনী ..."
+  [FACT_aefa4761] score=0.77 | mcq=[]
+    "স্বাধীনতার ঘোষণাপত্রে বলা হয়েছে, সংবিধান প্রণীত না হওয়া পর্যন্ত শেখ মুজিবুর রহ..."
+  [FACT_febdb490] score=0.785 | mcq=[]
+    "মুক্তিযুদ্ধের সময় বাংলাদেশকে ১১টি সেক্টরে ভাগ করা হয়েছিল।"
+  [FACT_80a3d342] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৪ ডিসেম্বর বাংলাদেশে শহীদ বুদ্ধিজীবী দিবস পালিত হয়।"
+  [FACT_0ff350f8] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "সোভিয়েত ইউনিয়ন (বর্তমান রাশিয়া) ও ভারত মুক্তিযুদ্ধের পক্ষ শক্তি হিসেবে কাজ কর..."
+  [FACT_ebb41ad8] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালের ১৬ ডিসেম্বর বাংলাদেশের স্বাধীনতা যুদ্ধের বিজয়ের দিন রেসকোর্স ময়দানে..."
+  [FACT_6056fa33] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "মুক্তিযুদ্ধে বীরত্বপূর্ণ অবদান রাখায় ১৯৭৩ সালের ১৫ ডিসেম্বর সরকারি গেজেটের মাধ্..."
+  [FACT_93a9ddf8] score=0.785 | mcq=['numeric_ranking']
+    "ল্যান্ড নায়েক নূর মোহাম্মদ শেখ ৮ নম্বর সেক্টরের অধীনে মুক্তিযুদ্ধে অংশগ্রহণ করে..."
+  [FACT_e224e89a] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বীরশ্রেষ্ঠ সিপাহি হামিদুর রহমানের প্রথম সমাধি ছিল ভারতের ত্রিপুরা রাজ্যের আমবাসা..."
+  [FACT_ddf13541] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধে বীরত্বপূর্ণ অবদানের জন্য ৬৮ জনকে বীর উত্তম উপাধিতে ভ..."
+  [FACT_1c27da02] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বীরশ্রেষ্ঠ মহিউদ্দীন জাহাঙ্গীর ১৪ ডিসেম্বর, ১৯৭১ সালে চাঁপাইনবাবগঞ্জে যুদ্ধরত অব..."
+  [FACT_ef46e6ba] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "মুক্তিযুদ্ধে বীরত্বের জন্য ৭ জনকে সর্বোচ্চ সম্মান 'বীরশ্রেষ্ঠ' খেতাব দেওয়া হয়।"
+  [FACT_e92eadb7] score=0.77 | mcq=[]
+    "বীরশ্রেষ্ঠ হামিদুর রহমানের পদবি ছিল সিপাহি।"
+  [FACT_b03792cb] score=0.76 | mcq=['when_question', 'numeric_ranking']
+    "'September on Jessore Road' মুক্তিযুদ্ধের সময় আমেরিকান কবি Allen Ginsberg এর রচ..."
+  [FACT_0fef3fb2] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালে বাংলাদেশের স্বাধীনতা যুদ্ধে যুক্তরাষ্ট্রের ভূমিকা নিয়ে আমেরিকান অধ্যা..."
+  [FACT_80676f88] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশকে স্বীকৃতিদানকারী প্রথম মুসলিম দেশ এবং প্রথম আফ্রিকান দেশ ছিল সেনেগাল (..."
+  [FACT_8cfd2de9] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "পূর্ব জার্মানি ছিল বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ (১১ জানুয়া..."
+  [FACT_dca3fc94] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশকে স্বাধীন দেশ হিসেবে স্বীকৃতি দানকারী দ্বিতীয় দেশ ছিল ভারত (৬ ডিসেম্বর..."
+  [FACT_8a91c2c5] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধের সময় ব্যবহৃত পতাকাতে লাল বৃত্তের ভেতর হলুদ রঙের একট..."
+  [FACT_0353ebf1] score=0.785 | mcq=['numeric_ranking']
+    "সংবিধানের ৪(১) অনুচ্ছেদ অনুসারে রবীন্দ্রনাথ ঠাকুর রচিত আমার সোনার বাংলা, আমি তোম..."
+  [FACT_f175af24] score=0.77 | mcq=['who_question']
+    "কিশোরগঞ্জ জেলার শোলাকিয়ায় অনুষ্ঠিত দক্ষিণ এশিয়ার সর্ববৃহৎ ঈদের জামাতে তিন থেক..."
+  [FACT_04948d93] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "মানচিত্র খচিত প্রথম জাতীয় পতাকার নকশা তৈরি করেন শিবনারায়ণ দাশ। পরবর্তীতে ১৯৭২ ..."
+  [FACT_39659a88] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "স্বাধীনতার পর ২১ ফেব্রুয়ারি, ১৯৭২ এ প্রকাশিত প্রথম ডাকটিকেটে শহীদ মিনারের ছবি ছ..."
+  [FACT_55048b24] score=0.77 | mcq=[]
+    "মুজিবনগর সরকারের অর্থনীতি বিষয়ক ও পরিকল্পনা বিভাগের দায়িত্বে ছিলেন তাজউদ্দিন আ..."
+  [FACT_6955d412] score=0.785 | mcq=['numeric_ranking']
+    "১৯৭১ সালে মুজিবনগর সরকার কর্তৃক প্রকাশিত সাপ্তাহিক পত্রিকা 'জয় বাংলা'। এটি ১১ ম..."
+  [FACT_93bdf436] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধ সুষ্ঠুভাবে পরিচালনার জন্য ১৯৭১ সালের ১০ এপ্রিল মেহেরপ..."
+  [FACT_8053950c] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "কোনো দেশের জনসংখ্যার আনুষ্ঠানিক গণনাই আদমশুমারি। বাংলাদেশের মোট জনসংখ্যা নির্ধার..."
+  [FACT_323206b2] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "স্বাস্থ্য, জনসংখ্যা ও পুষ্টি কর্মসূচি ব্যবস্থাপনার ক্ষেত্রে দক্ষিণ এশিয়ার একটি ..."
+  [FACT_6c254361] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশে প্রতিবছর ২ ফেব্রুয়ারি 'জাতীয় জনসংখ্যা দিবস' পালন করা হয়। উল্লেখ্য ব..."
+  [FACT_b5f8a713] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশ ইকোনমিক রিভিউ ২০১৬ অনুযায়ী বাংলাদেশের শিশু মৃত্যুর হার (প্রতি হাজার জী..."
+  [FACT_e40beb82] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "পঞ্চম আদমশুমারি ২০১১ অনুযায়ী বাংলাদেশে Household প্রতি জনসংখ্যা বা খানা প্রতি জ..."
+  [FACT_dda4f417] score=0.77 | mcq=[]
+    "NIPORT হলো জনসংখ্যা বিষয়ক গবেষণা প্রতিষ্ঠান। এর পূর্ণরূপ National Institute of ..."
+  [FACT_82f7202a] score=0.77 | mcq=[]
+    "ভরাও জনগোষ্ঠী দিনাজপুর, রংপুর, রাজশাহী ও বগুড়া অঞ্চলে বাস করে। এরা জেড়োপাসক এব..."
+  [FACT_7a307ccb] score=0.785 | mcq=['numeric_ranking']
+    "পাহাড়ে বিদ্যমান সংকট নিরসনের লক্ষ্যে তৎকালীন সরকার ও জনসংহতি সমিতির মধ্যে ২ ডিস..."
+  [FACT_03103273] score=0.77 | mcq=['when_question']
+    "খাসিয়া নু-গোষ্ঠীদের গ্রামকে বলা হয় পুঞ্জি। ভূমি জরিপের ভৌগোলিক ইউনিট এবং রাজস্..."
+  [FACT_a3f5cee4] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "পার্বত্য চট্টগ্রাম শান্তিচুক্তি ২ ডিসেম্বর, ১৯৯৭ সালে স্বাক্ষরিত হয়।"
+  [FACT_8df7f9d8] score=0.785 | mcq=['numeric_ranking']
+    "চাকমা শরণার্থীদের দ্বিতীয় দফায় ১ম অর্থাৎ ২১ জুলাই, ১৯৯৪ তারিখে ৩৭৫ জন বাংলাদেশ..."
+  [FACT_98c08736] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বঙ্গভঙ্গ রদ হলে ব্রিটিশ সরকার পূর্ববঙ্গে একটি বিশ্ববিদ্যালয় প্রতিষ্ঠার ঘোষণা দে..."
+  [FACT_aa53bf71] score=0.77 | mcq=['numeric_ranking']
+    "ঢাকা বিশ্ববিদ্যালয়ের প্রথম চ্যান্সেলর লর্ড ডানভাস (জেসিআই)। প্রথম ভাইস চ্যান্সে..."
+  [FACT_c36a15e0] score=0.77 | mcq=['numeric_ranking']
+    "কৃষি বিশ্ববিদ্যালয়ের প্রথম উপাচার্য ছিলেন ড. ওসমান গণি।"
+  [FACT_2259e334] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "রাজশাহী বিশ্ববিদ্যালয় ১৯৫৩ সালে স্থাপিত হয়।"
+  [FACT_e630a3bb] score=0.77 | mcq=['when_question']
+    "বাংলাদেশের সংবিধান হাতে লেখার দায়িত্ব ন্যস্ত ছিল শিল্পী এ.কে.এম. আব্দুর রউফ। শি..."
+  [FACT_3660ecfe] score=0.785 | mcq=['numeric_ranking']
+    "১৯৭২ সালের ১১ জানুয়ারির অস্থায়ী সংবিধান আদেশ জারির পর ২৩ মার্চ রাষ্টপতি গণপরিষ..."
+  [FACT_f1b072f5] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান প্রবর্তিত হয় ১৬ ডিসেম্বর, ১৯৭২ সালে।"
+  [FACT_ffe91347] score=0.785 | mcq=['numeric_ranking']
+    "সংবিধানের অনুচ্ছেদ ২৫ এর আলোকে বাংলাদেশের বৈদেশিক নীতি পরিচালিত হয়।"
+  [FACT_0ac7f6e1] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "রাষ্ট্র যেমন নাগরিকদের বিবিধ সুযোগ সুবিধা এবং অধিকার দিয়ে থাকে তেমনি রাষ্ট্রের ..."
+  [FACT_4d41f97c] score=0.76 | mcq=['numeric_ranking']
+    "সংবিধানের ২১(২) ধারায় বলা হয়েছে 'সকল সময়ে জনগণের সেবা করিবার চেষ্টা করা প্রজা..."
+  [FACT_206221de] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "সংবিধানের ৪৪(১) অনুচ্ছেদে বলা হয়েছে, সংবিধানের তৃতীয় ভাগের অধিকারসমূহ বলবৎ করা..."
+  [FACT_d841b9b7] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "৭ মার্চ, ১৯৭৩ বাংলাদেশের প্রথম জাতীয় সংসদের ৩০০ আসনে সাধারণ নির্বাচন অনুষ্ঠিত হ..."
+  [FACT_7aac8c95] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশ নির্বাচন কমিশন একটি সাংবিধানিক প্রতিষ্ঠান। এটি প্রতিষ্ঠিত হয় ১৯৭২ সালে..."
+  [FACT_3704d34d] score=0.785 | mcq=['numeric_ranking']
+    "গণপ্রতিনিধিত্ব আদেশ বা The Representation of the Peoples Order 1972 (RPO)-এর ১২(..."
+  [FACT_edeb0b3b] score=0.8 | mcq=['numeric_ranking']
+    "সংবিধানের ৫ম সংশোধনকে 'First distortion of constitution' বলে আখ্যায়িত করা হয়।"
+  [FACT_caf3df7b] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "তত্ত্বাবধায়ক সরকার ব্যবস্থা প্রণয়ন করা হয়েছিল ২৭ মার্চ ১৯৯৬ সংবিধানের ১৩তম সং..."
+  [FACT_d101359a] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের সংবিধানে এখন পর্যন্ত ১৭টি সংশোধনী আনা হয়েছে। ২০১৮ সালের ৮ জুলাই সংবি..."
+  [FACT_f56b5621] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালে যুদ্ধাপরাধীসহ অন্যান্য মানবতাবিরোধী অপরাধীদের বিচার নিশ্চিতকরণের জন্য ..."
+  [FACT_b2f51bb3] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "শেখ মুজিবুর রহমানের শাসনামলে ১৯৭৫ সালে বাংলাদেশের সংবিধানের চতুর্থ সংশোধনীর মাধ্..."
+  [FACT_24c9eab4] score=0.77 | mcq=[]
+    "স্বাধীনতার ঘোষণাপত্র সংবিধানের সপ্তম তফসিলে সংযোজন করা হয়েছে।"
+  [FACT_e6a98688] score=0.77 | mcq=[]
+    "প্রতিনিধিত্বমূলক গণতন্ত্রে সংখ্যাগরিষ্ঠ দল যখন গণবিরোধী কাজে লিপ্ত না হয়, স্বেচ..."
+  [FACT_68e9f80d] score=0.785 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "আইন ও সালিশ কেন্দ্র (আসক) একটি মানবাধিকার ও আইন সহায়তা প্রদানকারী বেসরকারি সংগঠ..."
+  [FACT_a5f61f08] score=0.8 | mcq=['who_question', 'numeric_ranking']
+    "চাপ সৃষ্টিকারী গোষ্ঠী হচ্ছে এমন এক গোষ্ঠী যার সদস্যগণ সমজাতীয় মনোভাব এবং স্বার্..."
+  [FACT_9f965cd4] score=0.77 | mcq=['who_question']
+    "প্রশ্নে উল্লিখিত 'counting vote' না হয়ে 'casting vote' হবে। জাতীয় সংসদে কোন বি..."
+  [FACT_839f204c] score=0.77 | mcq=[]
+    "যে কোনো দেশের আইন পরিষদ এক কক্ষ অথবা দ্বিকক্ষ বিশিষ্ট হয়ে থাকে। বাংলাদেশের জাতী..."
+  [FACT_889bd55c] score=0.785 | mcq=['numeric_ranking']
+    "সংসদের ৭২(১) বিধি অনুসারে মন্ত্রী ব্যতীত সকল সংসদ সদস্য সংসদে বিল উত্থাপনের নোটি..."
+  [FACT_5399ca4a] score=0.785 | mcq=['who_question']
+    "সংবিধানের ৩য় তফসিলে বর্ণিত শপথনামা অনুযায়ী প্রত্যেক নির্বাচিত সংসদ সদস্য বিদায..."
+  [FACT_abe56673] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "সংবিধানের ৭৫(২) অনুচ্ছেদ অনুসারে, বাংলাদেশ জাতীয় সংসদে কোরাম হয় ন্যূনতম ৬০ জন ..."
+  [FACT_803e83da] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশের প্রথম জাতীয় সংসদ থেকেই মহিলাদের জন্য আসন সংরক্ষণ করে রাখা হয়। সে সম..."
+  [FACT_dac5c617] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশের সংবিধানের ৯৫(১) অনুচ্ছেদ অনুযায়ী রাষ্ট্রপতি প্রধান বিচারপতি এবং প্রধ..."
+  [FACT_7b1d5fee] score=0.77 | mcq=['who_question']
+    "প্রজাতন্ত্র বলতে গণতান্ত্রিক সরকারকে বোঝায়। প্রজাতন্ত্রের নির্বাহী ক্ষমতা রাষ্ট..."
+  [FACT_599d4f1d] score=0.785 | mcq=['numeric_ranking']
+    "নির্বাহী বিভাগ থেকে বিচার বিভাগ পৃথক করার জন্য ১৯৯৫ সালের ১৯ নভেম্বর বিসিএস (বিচ..."
+  [FACT_e1a19bb3] score=0.785 | mcq=['numeric_ranking']
+    "একজন সরকারপ্রধান, একজন উপদেষ্টা ও ১৩ জন সদস্যের সমন্বয়ে মোট ১৫ জন ব্যক্তি নিয়ে..."
+  [FACT_0d7ec71c] score=0.785 | mcq=['numeric_ranking']
+    "মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয় গঠিত হয় ২৩ অক্টোবর, ২০০১ সালে। সংবিধানের ৫৫(৬) অ..."
+  [FACT_a7510460] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭৪ সালে সর্বপ্রথম সাদা পোশাকে স্পেশাল ব্র্যাঞ্চে ১২ জন মহিলা পুলিশ নিয়োগ করা ..."
+  [FACT_adbf5c49] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "মেজর জেনারেল কে এম শফিউল্লাহ ১৯৭৫ সালের ১৫ আগস্ট ভোর রাত পর্যন্ত বাংলাদেশের সেনা..."
+  [FACT_a98179d9] score=0.785 | mcq=['numeric_ranking']
+    "সংবিধান হলো বাংলাদেশের সর্বোচ্চ আইন। সংবিধানের ৯৪নং অনুচ্ছেদে সুপ্রিম কোর্ট প্রত..."
+  [FACT_b05c0e15] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "সংবিধান অনুযায়ী আপিল বিভাগে বিচারপতির সংখ্যা বাড়ানোর এখতিয়ার রয়েছে একমাত্র র..."
+  [FACT_a6d7b759] score=0.77 | mcq=['who_question']
+    "একনেক (ECNEC) এর পূর্ণরূপ- Executive Committee of the National Economic Council।..."
+  [FACT_8f306cfa] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "তথ্যের অবাধ প্রবাহ এবং জনগণের তথ্য অধিকার নিশ্চিত করার জন্য ২০০৯ সালের ২৯ মার্চ ..."
+  [FACT_faeae21b] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭৯ সালের আর্মড পুলিশ ব্যাটালিয়ন আক্ট সংশোধন করে গঠিত র‍্যাব আর্মড পুলিশ ব্যাট..."
+  [FACT_2ff9da71] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "আইনটি জাতীয় সংসদে পাস হয় ৯ এপ্রিল, ২০০২ সালে।"
+  [FACT_918c4f0f] score=0.785 | mcq=['numeric_ranking']
+    "আইনটি জাতীয় সংসদে পাস হয় ২৭ মার্চ, ১৯৯৬ সালে। রাষ্ট্রপতি কর্তৃক অনুমোদন পায় ২..."
+  [FACT_40047707] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "১৯৮২ সালে স্থানীয় সরকার অর্ডিন্যান্সের মাধ্যমে থানা পরিষদ গঠিত হয়। ১৯৮৩ সালে স..."
+  [FACT_71bf9e5b] score=0.77 | mcq=['when_question', 'numeric_ranking']
+    "মোহাম্মাদ হানিফ ঢাকা সিটি কর্পোরেশনের প্রথম নির্বাচিত মেয়র ছিলেন।"
+  [FACT_c4d9a10f] score=0.77 | mcq=[]
+    "NILG-এর পূর্ণরূপ National Institute of Local Government (জাতীয় স্থানীয় সরকার ই..."
+  [FACT_2f807129] score=0.785 | mcq=['numeric_ranking']
+    "প্রদত্ত অপশনগুলোর মধ্যে সেন্টমার্টিন বাংলাদেশের সবচেয়ে ছোট ইউনিয়ন। টেকনাফ উপকূ..."
+  [FACT_42767daa] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "আশির দশকের প্রথমদিকে দেশব্যাপী প্রশাসনিক সংস্কারের অংশ হিসেবে পার্বত্য চট্টগ্রাম..."
+  [FACT_79b9cefb] score=0.785 | mcq=['when_question', 'numeric_ranking']
+    "স্বাধীনতার পরবর্তী সময়ে প্রায় এক দশক বাংলাদেশের জেলার সংখ্যা ছিল ২০টি। সামরিক ..."
+  [FACT_49e1db1d] score=0.785 | mcq=['numeric_ranking']
+    "মুঘল আমলে কোতোয়ালের এবং ব্রিটিশ আমলে পৌরসভার উপর ঢাকা শহর পরিচালনা ও ব্যবস্থাপন..."
+  [FACT_3a73b89d] score=0.77 | mcq=['who_question', 'numeric_ranking']
+    "সংসদ নেতা হলেন বাংলাদেশের জাতীয় সংসদে শাসক দলের নেতা, যিনি জাতীয় সংসদে সরকারের..."
+  [FACT_9a546614] score=0.785 | mcq=['numeric_ranking']
+    "সংবিধানের ৬৫(১) অনুচ্ছেদ অনুযায়ী আইনপ্রণয়ন ক্ষমতা জাতীয় সংসদের উপর ন্যস্ত করা..."
+  [FACT_51ac30b7] score=0.77 | mcq=['who_question']
+    "সপ্তম জাতীয় সংসদে সর্বপ্রথম প্রধানমন্ত্রীর প্রশ্নোত্তর পর্ব চালু করা হয়। সংসদে..."
+  [FACT_bfc2a58d] score=0.755 | mcq=['numeric_ranking']
+    "দারিদ্র, শিক্ষার অভাব, শিশুমৃত্যু, যথাযথ স্বাস্থ্যসেবার অভাব, এইডস, যক্ষ্মা, ম্য..."
+  [FACT_741ca6c7] score=0.785 | mcq=['who_question', 'numeric_ranking']
+    "হুমায়ুন রশীদ চৌধুরী প্রথম বাংলাদেশী হিসেবে ১৯৮৬ সালে অনুষ্ঠিত জাতিসংঘের সাধারণ ..."
+  [FACT_5c3300e7] score=0.77 | mcq=[]
+    "বঙ্গবন্ধু শেখ মুজিবুর রহমান জাতিসংঘের সাধারণ পরিষদের অধিবেশনে বাংলা ভাষায় বক্তৃ..."
+  [FACT_e24c8730] score=0.785 | mcq=['numeric_ranking']
+    "বাংলাদেশ প্রথমবার ১০ নভেম্বর, ১৯৭৮ সালে জাতিসংঘ নিরাপত্তা পরিষদে অস্থায়ী সদস্য ..."
+
+--- REFINED_ACCEPT (203 fact(s)) ---
+  [FACT_b225bab5] score=0.61 | mcq=[]
+    "পুণ্ড্র বাংলার সর্বপ্রাচীন জনপদ."
+  [FACT_e338a424] score=0.725 | mcq=['numeric_ranking']
+    "পুণ্ড্রনগরের বর্তমান নাম মহাস্থানগড়, বগুড়া শহর থেকে প্রায় ১৩ কি. মি. উত্তরে ক..."
+  [FACT_77ea417f] score=0.71 | mcq=['when_question']
+    "নির্বাণ বৌদ্ধধর্মের একটি মূল ধারণা, যার অর্থ সকল আকাঙ্ক্ষার অবসান."
+  [FACT_74352ec7] score=0.725 | mcq=['who_question']
+    "শশাঙ্কের মৃত্যুর পর ৭ম-৮ম শতকে বাংলায় অরাজকতার কাল 'মাৎস্যন্যায়' নামে পরিচিত."
+  [FACT_6f93f48c] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "ইবনে বতুতা ১৩৪৬ খ্রিষ্টাব্দে ফখরুদ্দিন মোবারক শাহের আমলে সোনারগাঁওয়ে আসেন."
+  [FACT_c28c27fd] score=0.71 | mcq=[]
+    "শায়েস্তা খান মগ ও পর্তুগিজ জলদস্যুদের তাড়িয়ে চট্টগ্রাম দখল করে এর নাম রাখেন '..."
+  [FACT_a05ec009] score=0.71 | mcq=['when_question']
+    "আইন-ই-আকবরী গ্রন্থে বাংলা নামের উৎপত্তির বিষয়টি সর্বাধিক উল্লিখিত."
+  [FACT_2500e30d] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "১৫১৬ সালে পর্তুগিজরা সর্বপ্রথম বাংলায় আগমন করে."
+  [FACT_77a2df07] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "১৭৭০ খ্রিষ্টাব্দে (বাংলা ১১৭৬ সনে) ভয়াবহ দুর্ভিক্ষ দেখা দেয় যা 'ছিয়াত্তরের মন..."
+  [FACT_f48c24d9] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "এলাহাবাদ চুক্তির মাধ্যমে ১২ আগস্ট, ১৭৬৫ খ্রিষ্টাব্দে ইস্ট ইন্ডিয়া কোম্পানি বাংল..."
+  [FACT_9db9ea3b] score=0.71 | mcq=[]
+    "দুদু মিয়া জমিদারদের অত্যাচার রোধকল্পে এই ঘোষণা দেন."
+  [FACT_a061b088] score=0.6875 | mcq=['numeric_ranking']
+    "BBS'র কৃষি পরিসংখ্যান গ্রন্থ ২০২৪ অনুযায়ী বাংলাদেশের মোট আবাদযোগ্য জমির পরিমাণ ..."
+  [FACT_22f51838] score=0.725 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুসারে, বাংলাদেশের জিডিপিতে কৃষি খাতের অবদান ১০. ৯৪%."
+  [FACT_ae4cd309] score=0.725 | mcq=['numeric_ranking']
+    "বলাকা, দোয়েল, শতাব্দী, অগ্রণী, সোনালিকা, আনন্দ, আকবর, কাঞ্চন, বরকত, জোপাটিকা, ই..."
+  [FACT_58a1307a] score=0.71 | mcq=[]
+    "ম্যানিলা' ও 'সুমাত্রা' তামাক এর উন্নতজাতের নাম. পদ্মা, মধুবালা তরমুজের উন্নত জাত..."
+  [FACT_ca1486a9] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "কৃষি মৌসুম: রবি (কার্তিক-ফাল্গুন), খরিপ-১ (চৈত্র-জ্যৈষ্ঠ), খরিপ-২ (আষাঢ়-ভাদ্র),..."
+  [FACT_562a88a9] score=0.71 | mcq=['who_question']
+    "ডায়মন্ড, কার্ডিনেল, কুফরি, সিন্দুরী, মিউজিকা, নেপিতাল, অ্যালুয়েট, ক্যারোলাস (ছ..."
+  [FACT_22f13eba] score=0.71 | mcq=[]
+    "অগ্নিশ্বর, কানাইবাসি, মোহনবাসি, বীটজবা, অমৃত সাগর, সিসাপুরী, কবরী, সবরি, চাঁপা ই..."
+  [FACT_a4d4d14f] score=0.71 | mcq=[]
+    "বর্ণালী, শুভ্র, উত্তরণ, মোহর, সুইটকর্ন ইত্যাদি উন্নত জাতের ভুট্টার নাম."
+  [FACT_c999f14f] score=0.71 | mcq=[]
+    "সোনালিকা' ও 'আকবর' বাংলাদেশের কৃষি ক্ষেত্রে উন্নত জাতের গমের নাম."
+  [FACT_a2b560d9] score=0.71 | mcq=[]
+    "বাংলাদেশের কৃষিতে 'দোয়েল' উন্নত জাতের গমের নাম."
+  [FACT_09d19101] score=0.61 | mcq=[]
+    "ইরাটম' উন্নত জাতের ধান."
+  [FACT_bb333f0d] score=0.71 | mcq=[]
+    "বাংলাদেশ কৃষিক্ষেত্রে 'বলাকা' ও 'দোয়েল' উন্নতজাতের গম শস্যের নাম."
+  [FACT_af41c53a] score=0.71 | mcq=[]
+    "অগিশর', 'কানাইবাঁশি', 'মোহনবাঁশি' ও 'বীটজবা' কলা জাতীয় ফলের নাম."
+  [FACT_846058e1] score=0.67 | mcq=[]
+    "জুম চাষ খাগড়াছড়িতে হয়."
+  [FACT_7e0e87f2] score=0.71 | mcq=[]
+    "রোপা আমন ধানের রোপণ উপযোগী সময় শ্রাবণ-ভাদ্র এবং কাটার উপযোগী সময় অগ্রহায়ণ-পৌষ..."
+  [FACT_e52c86a8] score=0.71 | mcq=['when_question']
+    "জুম' চাষ পদ্ধতি চট্টগ্রাম ও পার্বত্য চট্টগ্রামের জেলাসমূহে দেখা যায়."
+  [FACT_f2a7367f] score=0.71 | mcq=[]
+    "ব্রিটিশ গভর্নর ওয়ারেন হেস্টিংসের উদ্যোগে নেদারল্যান্ডস বা হল্যান্ড থেকে আগত আলু..."
+  [FACT_b34fe42d] score=0.725 | mcq=['numeric_ranking']
+    "দেশের মৎস্য সম্পদ সংরক্ষণের নিমিত্তে বাংলাদেশের মৎস্য আইনে ২৩ সেন্টিমিটারের (প্র..."
+  [FACT_707d4d1c] score=0.71 | mcq=[]
+    "বাংলাদেশে গো-চারণের জন্য বাথান রয়েছে দুটি জেলায়. যথা-পাবনা ও সিরাজগঞ্জ."
+  [FACT_d3a70913] score=0.725 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, জিডিপিতে প্রাণিসম্পদের অবদান ১. ৮১%."
+  [FACT_e0dec49b] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "পরিকল্পনা কমিশনের গৃহীত পদক্ষেপ অনুযায়ী সপ্তম পঞ্চবার্ষিক পরিকল্পনার মেয়াদ ২০১..."
+  [FACT_1e3af86a] score=0.6875 | mcq=['numeric_ranking']
+    "বাংলাদেশের GDP এর প্রধান খাত সেবা খাত. অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, GDP তে স..."
+  [FACT_7576483f] score=0.725 | mcq=['numeric_ranking']
+    "বিবিএসের সাময়িক হিসাব অনুযায়ী ২০২৪-২৫ অর্থবছরের জিডিপি প্রবৃদ্ধির হার ৩. ৯৭%."
+  [FACT_8ec4c423] score=0.6875 | mcq=['who_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী GDP'তে অবদানকারী খাতসমূহের মধ্যে সেবা খাতে প্রবৃ..."
+  [FACT_da06ce24] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের প্রেক্ষিত পরিকল্পনার সময়সীমা ২০২১-২০৪১."
+  [FACT_bb776fd9] score=0.725 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরের জিডিপিতে শিল্পখাতের অবদান ৩৭...."
+  [FACT_92aba89c] score=0.725 | mcq=['numeric_ranking']
+    "মুন্সিগঞ্জের গজারিয়া উপজেলার বাউসিয়া এলাকায় ২০০ একর জমিতে ঔষধ শিল্পপার্ক স্থা..."
+  [FACT_73fa0778] score=0.71 | mcq=[]
+    "বাংলাদেশের পেপার মিলস: কর্ণফুলী পেপার মিলস (কাপ্তাই, চন্দ্রঘোনা, রাঙামাটি) - কাঁ..."
+  [FACT_28404f6b] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশ সাধারণত রপ্তানি, প্রবাসী শ্রমিকদের পাঠানো রেমিট্যান্স, বৈদেশিক ঋণ ও অনু..."
+  [FACT_0a17b00b] score=0.6875 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী ২০২৪-২৫ অর্থবছরে বাংলাদেশে মোট রপ্তানি আয়ে রেডি..."
+  [FACT_ed512e38] score=0.71 | mcq=[]
+    "ট্যারিফ কমিশন বাণিজ্য মন্ত্রণালয়ের অধীন."
+  [FACT_cd608b85] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরে বাংলাদেশ সবচেয়ে বেশি আমদানি ক..."
+  [FACT_45430576] score=0.71 | mcq=[]
+    "বাংলাদেশে সবচেয়ে বেশি রপ্তানি করে চীন."
+  [FACT_d8590590] score=0.71 | mcq=[]
+    "বাংলাদেশ সবচেয়ে বেশি সাহায্য পায় জাপান থেকে."
+  [FACT_4e41ba44] score=0.6875 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বাংলাদেশ ব্যাংকের FDI রিপোর্ট ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরে বাংলাদেশের সবচেয়ে..."
+  [FACT_7cb2cced] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বাংলাদেশের ২ ধরনের নোট আছে— সরকারি ও ব্যাংক নোট. বাংলাদেশের সরকারি নোট ৩টি— ১, ২..."
+  [FACT_e62d2878] score=0.725 | mcq=[]
+    "বর্তমানে দেশে তফসিলভুক্ত ব্যাংক ৬১টি. তন্মধ্যে রাষ্ট্রায়ত্ত তফসিলভুক্ত বাণিজ্যি..."
+  [FACT_02534420] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "৩১ মার্চ, ২০১১ সালে বাংলাদেশে প্রথম মোবাইল ব্যাংকিং (রকেট) আনুষ্ঠানিকভাবে শুরু ক..."
+  [FACT_f80a3ac4] score=0.71 | mcq=['numeric_ranking']
+    "বাংলাদেশের প্রথম বেসরকারি ব্যাংক 'আরব-বাংলাদেশ' ব্যাংক. প্রথম বিদেশি ব্যাংক-স্ট্..."
+  [FACT_a02b9d00] score=0.71 | mcq=[]
+    "গ্রামীণ ব্যাংক বাংলাদেশের দরিদ্রতম জনগোষ্ঠীকে ঋণ দিয়ে দেশে ও বিদেশে সুনাম কুড়ি..."
+  [FACT_38806e8d] score=0.7475 | mcq=['who_question', 'numeric_ranking']
+    "বার্ষিক উন্নয়ন কর্মসূচি (ADP) হলো সরকারের একটি গুরুত্বপূর্ণ স্বল্পমেয়াদি উন্নয..."
+  [FACT_b93939e9] score=0.6875 | mcq=['when_question', 'numeric_ranking']
+    "UNDP মানব উন্নয়ন রিপোর্ট ২০২৫ মতে বাংলাদেশের মাথাপিছু আয় ৮৪৯৮ মার্কিন ডলার."
+  [FACT_c17780bf] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, ২০২৪-২৫ অর্থবছরে বাংলাদেশের মাথাপিছু আয় ২৮২০ ম..."
+  [FACT_c3f371e6] score=0.71 | mcq=[]
+    "পদ্মা সেতু বা পদ্মা বহুমুখী সেতু হচ্ছে বাংলাদেশের পদ্মা নদীর উপর নির্মিত একটি বহ..."
+  [FACT_5c8db8d7] score=0.71 | mcq=[]
+    "পদ্মা সেতুটি বাংলাদেশ সম্পূর্ণ নিজের অর্থে তৈরি করেছে."
+  [FACT_44ace6bf] score=0.71 | mcq=[]
+    "পদ্মা সেতুর নির্মাণ কাজ বাংলাদেশের ইতিহাসে সবচেয়ে চ্যালেঞ্জিং নির্মাণ প্রকল্প হ..."
+  [FACT_142bc47a] score=0.71 | mcq=[]
+    "দুই স্তর বিশিষ্ট ইস্পাত ও কংক্রিট নির্মিত ট্রাসের এই সেতুর উপরের স্তরে চার লেনের..."
+  [FACT_ea688cfe] score=0.725 | mcq=['numeric_ranking']
+    "সেতুটির মোট দৈর্ঘ্য ৬. ১৫ কিমি (৩. ৮২ মাইল)."
+  [FACT_11e5ac0f] score=0.725 | mcq=['numeric_ranking']
+    "এটি বাংলাদেশের দীর্ঘতম সেতু, স্প্যান সংখ্যা ও মোট দৈর্ঘ্য উভয়ের দিক থেকে গঙ্গা ..."
+  [FACT_495f5ee7] score=0.71 | mcq=[]
+    "সড়কটি নির্মাণের অংশ হিসেবে তারা পদ্মা নদীর ওপর একটি সেতু নির্মাণের পরামর্শ দেন."
+  [FACT_a26c6697] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে এটি ১৯৭১ সালের স্বাধীনতার ঘোষণাপত্রের পর থেকে ব..."
+  [FACT_b3b514b8] score=0.77 | mcq=['who_question']
+    "Friend of Bengal '), was the founder of Bangladesh."
+  [FACT_481804b3] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "মোহাম্মদ সাহাবুদ্দিন বা মোহাম্মদ সাহাবুদ্দিন চুপ্পু (জন্ম: ১০ ডিসেম্বর ১৯৪৯) একজ..."
+  [FACT_91cbfba9] score=0.71 | mcq=['numeric_ranking']
+    "তিনি বাংলাদেশের প্রথম ও একমাত্র রাষ্ট্রপতি যিনি তিনটি ভিন্ন সরকারের শপথবাক্য পাঠ..."
+  [FACT_029d9dd4] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের স্বাধীনতা যুদ্ধ তথা বাংলাদেশের মুক্তিযুদ্ধ হলো ১৯৭১ খ্রিষ্টাব্দে তৎকা..."
+  [FACT_c8ea6aa0] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "পশ্চিম পাকিস্তান -কেন্দ্রিক সামরিক জান্তা সরকার ১৯৭১ খ্রিষ্টাব্দের ২৫শে মার্চ রা..."
+  [FACT_cffdf71c] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "স্থানাঙ্ক : ২১°৫০′১৭″ উত্তর ৮৮°৫৩′০৭″ পূর্ব ﻿ / ﻿ ২১. ৮৩৮০° উত্তর ৮৮. ৮৮৫২° পূর্..."
+  [FACT_226c4623] score=0.71 | mcq=[]
+    "বৃহত্তর সুন্দরবন সমুদ্র উপকূলবর্তী নোনা পরিবেশের সবচেয়ে বড় ম্যানগ্রোভ বনভূমি হ..."
+  [FACT_74af5eae] score=0.725 | mcq=['numeric_ranking']
+    "১০,০০০ বর্গ কিলোমিটার জুড়ে গড়ে ওঠা সুন্দরবনের প্রায় ৬,৫১৭ বর্গ কিলোমিটার রয়ে..."
+  [FACT_eb329104] score=0.725 | mcq=['numeric_ranking']
+    "১৯৭৭ সালে ২,৫৮,৫০০ হেক্টর আয়তন বিশিষ্ট সুন্দরবন ব্যাঘ্র প্রকল্পের ১৩৩,০০০ হেক্ট..."
+  [FACT_fd79024d] score=0.71 | mcq=[]
+    "গোটা সুন্দরবনকে জালের মত জড়িয়ে রয়েছে সামুদ্রিক স্রোতধারা, কাদা চর এবং ম্যানগ্..."
+  [FACT_a468b9f3] score=0.71 | mcq=[]
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে জেলা বাংলাদেশের প্রশাসনিক ব্যবস্থায় একটি গুরুত..."
+  [FACT_3bd741d7] score=0.71 | mcq=[]
+    "প্রশাসনিকভাবে একটি জেলা একটি বিভাগের অধিক্ষেত্রভুক্ত."
+  [FACT_114128de] score=0.71 | mcq=[]
+    "জেলার প্রধান আইন বিভাগ সংসদ সদস্যগণ বাংলাদেশের জেলাতে আইন এবং নির্বাহী বিভাগের প..."
+  [FACT_791ae11d] score=0.71 | mcq=[]
+    "বাংলাদেশের বর্তমান সরকার ব্যবস্থা সংসদীয় পদ্ধতির."
+  [FACT_730e9cb3] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "এই গঙ্গা-ব্রহ্মপুত্র মোহনা অঞ্চলে প্রায় ৩০০০ বছর বা তারও পূর্ব থেকে যে জনগোষ্ঠী..."
+  [FACT_290606a1] score=0.71 | mcq=[]
+    "ভৌগোলিক বিচারে বাংলাদেশের অবস্থান দক্ষিণ এশিয়ায় , ভারত ও মিয়ানমারের মাঝখানে."
+  [FACT_17dd5689] score=0.71 | mcq=[]
+    "বাংলাদেশের পশ্চিম, উত্তর, আর পূর্ব জুড়ে রয়েছে ভারত."
+  [FACT_bad7346f] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের স্থল সীমান্তরেখার দৈর্ঘ্য ৪,২৪৬ কিলোমিটার যার ৯৪ শতাংশ (৯৪%) ভারতের স..."
+  [FACT_aefd6e3a] score=0.71 | mcq=[]
+    "বাংলাদেশের দক্ষিণ-পূর্বাংশের কক্সবাজার পৃথিবীর দীর্ঘতম সমুদ্র সৈকতগুলোর অন্যতম."
+  [FACT_2e4cc100] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের মাঝামাঝি স্থান দিয়ে কর্কটক্রান্তি রেখা (২৩°৫`) অতিক্রম করেছে."
+  [FACT_d260e6ad] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের উচ্চতম স্থান দেশের দক্ষিণ-পূর্বাঞ্চলে পার্বত্য চট্টগ্রাম এর মোডকমুয়া..."
+  [FACT_95dbc89e] score=0.71 | mcq=[]
+    "জনসাধারণের কাছে তিনি “শেখ মুজিব” বা “শেখ সাহেব” নামে এবং তার উপাধি “বঙ্গবন্ধু” হ..."
+  [FACT_d2b1be1e] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "পাকিস্তানের নতুন সরকার গঠন বিষয়ে তৎকালীন রাষ্ট্রপতি ইয়াহিয়া খান এবং পশ্চিম পা..."
+  [FACT_dc3a2141] score=0.71 | mcq=['who_question']
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে মুজিববর্ষ হলো বাংলাদেশের জাতির জনক বঙ্গবন্ধু শে..."
+  [FACT_6a2c3b58] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "ঘোষণা ও প্রস্তুতি ২০১৮ সালের ৬ জুলাই আওয়ামী লীগের কেন্দ্রীয় কার্যালয়ে উপদেষ্ট..."
+  [FACT_99a3716d] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "পরে সরকার পুনরায় মুজিব বর্ষের সময়কাল ও ‘জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান..."
+  [FACT_f17b6e99] score=0.71 | mcq=[]
+    "এছাড়াও বাংলাদেশ সরকার জন্মশতবার্ষিকী ও মুজিববর্ষ উদ্‌যাপন উপলক্ষ্যে স্বল্পদৈর্ঘ..."
+  [FACT_d3e3e6b8] score=0.71 | mcq=[]
+    "তার পিতার নাম শেখ জহুরুল হক ও মাতার নাম হোসনে আরা বেগম."
+  [FACT_8bf2268f] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "হত্যাকাণ্ড ১৯৭৫ সালের ১৫ই আগস্ট, এক দল নিম্নপদস্থ সেনা কর্মকর্তারা রাষ্ট্রপতির ব..."
+  [FACT_6c02b7fb] score=0.71 | mcq=['who_question']
+    "এই হত্যাকাণ্ডের শিকার হওয়া ব্যক্তিদের মধ্যে অন্তর্ভুক্ত আছেন ফজিলাতুন্নেছার দশ ..."
+  [FACT_b2603023] score=0.71 | mcq=[]
+    "The people of Bangladesh then took part in a nine-month guerilla war against the..."
+  [FACT_b569efc7] score=0.725 | mcq=['numeric_ranking']
+    "This resulted in the death of about 3 million Bangladeshi, as per Awami league a..."
+  [FACT_471b1a2e] score=0.71 | mcq=[]
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে বাংলাদেশ দক্ষিণ এশিয়ার একটি জনবহুল ও উন্নয়নশী..."
+  [FACT_be4f9b8d] score=0.71 | mcq=[]
+    "বাংলাদেশের সভ্যতার ইতিহাস চার সহস্রাব্দেরও বেশি সময় ধরে সেই ক্যালকোলিথিক যুগ থে..."
+  [FACT_490d451d] score=0.725 | mcq=['numeric_ranking']
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে বাংলাদেশ ও জাতিসংঘের এক গভীর সম্পর্ক রয়েছে. বা..."
+  [FACT_53cabe94] score=0.71 | mcq=[]
+    "কূটনৈতিক প্রতিনিধিত্ব নিউ ইয়র্ক সিটিতে জাতিসংঘ সদর দফতরে বাংলাদেশের স্থায়ী মিশ..."
+  [FACT_87a5c0d1] score=0.71 | mcq=[]
+    "যার নেতৃত্বে রয়েছে জাতিসংঘে বাংলাদেশের স্থায়ী প্রতিনিধি."
+  [FACT_848ebb99] score=0.71 | mcq=[]
+    "মোহাম্মদ আবদুল মুহিত জাতিসংঘে বাংলাদেশের বর্তমান স্থায়ী প্রতিনিধি."
+  [FACT_11857ed2] score=0.71 | mcq=[]
+    "জেনেভাতে জাতিসংঘে বাংলাদেশের স্থায়ী মিশন জেনেভা ভিত্তিক জাতিসংঘের অঙ্গগুলির প্র..."
+  [FACT_abd5c79e] score=0.71 | mcq=[]
+    "ভিয়েনায় ভিয়েনার জাতিসংঘে বাংলাদেশের স্থায়ী মিশন বাংলাদেশের প্রতিনিধিত্ব করে."
+  [FACT_066defb7] score=0.71 | mcq=[]
+    "উইকিপিডিয়া, মুক্ত বিশ্বকোষ থেকে বাংলাদেশের অর্থনীতি কৃষি থেকে উৎপাদনমুখী শিল্পে..."
+  [FACT_67bb46e5] score=0.71 | mcq=[]
+    "বাংলাদেশের অর্থনীতির বড় একটি অংশ হচ্ছে রেমিট্যান্স ও তৈরি পোশাক শিল্প."
+  [FACT_47236f0d] score=0.71 | mcq=[]
+    "বাংলাদেশ একটি নিম্ন-মধ্য আয়ের উন্নয়নশীল এবং স্থিতিশীল বাজার অর্থনীতি."
+  [FACT_03faf4ae] score=0.71 | mcq=[]
+    "এই অর্থনীতির বৈশিষ্ট্যসমূহের মধ্যে রয়েছে মধ্যমহারের বার্ষিক প্রবৃদ্ধি , পরিব্যা..."
+  [FACT_553fe7ef] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ খ্রিষ্টাব্দে স্বাধীনতা অর্জনের পর থেকে বাংলাদেশের অর্থনীতি যথেষ্ট অগ্রগতি অ..."
+  [FACT_a6b271c5] score=0.71 | mcq=['numeric_ranking']
+    "বাংলাদেশের তৈরি পোশাক শিল্প বিশ্বের বৃহত্তম শিল্পের মধ্যে অন্যতম."
+  [FACT_9f51a38c] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের মাথাপিছু স্থূল দেশজ উৎপাদন স্বাধীনতার পরপরই ১৯৭০-এর দশকে সর্বোচ্চ ৫৭%..."
+  [FACT_93d2343c] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের অর্থনীতি বিশ্বের মধ্যে ৩৯ তম এবং ক্রয়ক্ষমতার ভিত্তিতে (পিপিপি) ২৯ তম..."
+  [FACT_a5ba4382] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশ গত এক দশক ধরে গড়ে ৬. ৩ শতাংশ হার ধরে রেখে মোট দেশজ উৎপাদনে (জিডিপি) প্..."
+  [FACT_26382e0b] score=0.725 | mcq=['numeric_ranking']
+    "ক্রয়ক্ষমতার সমতা অনুসারে (পিপিপি) বর্তমানে বাংলাদেশে মাথাপিছু জিডিপি ৪,৬০০ মার্..."
+  [FACT_8c01cf95] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বিশ্বব্যাংকের ২০১৯ সালের তথ্যানুসারে বাংলাদেশের মোট শ্রমশক্তি ৭,০০,০৯,৩৫৩ জন."
+  [FACT_6341a98a] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "ইউনেস্কো ১৭ নভেম্বর ১৯৯৯ তারিখে ২১ ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেব..."
+  [FACT_9bbcee9c] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "১১ মার্চ, ১৯৪৮ রাষ্ট্রভাষার দাবিতে প্রথম রাজপথে রক্ত ঝরে, তাই এ দিনটি 'ভাষা দিবস..."
+  [FACT_7efad62d] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "পাকিস্তান গণপরিষদ ৭ মে, ১৯৫৪ তারিখে বাংলা ভাষাকে রাষ্ট্রভাষা হিসেবে স্বীকৃতি দেয..."
+  [FACT_a3e7aa46] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "১৯৭১ সালের ১৬ ডিসেম্বর পাকিস্তানি বাহিনী তৎকালীন রেসকোর্স ময়দানে আত্মসমর্পণ করে..."
+  [FACT_55782035] score=0.71 | mcq=[]
+    "মুন্সী আব্দুর রহিম বীরশ্রেষ্ঠ নন."
+  [FACT_c98be073] score=0.71 | mcq=[]
+    "চারটি বীরত্বসূচক খেতাবের ক্রম: বীরশ্রেষ্ঠ > বীরউত্তম > বীর বিক্রম > বীর প্রতীক."
+  [FACT_80c14325] score=0.725 | mcq=['numeric_ranking']
+    "স্বাধীনতা যুদ্ধে বীরত্বসূচক অবদানের জন্য বীরপ্রতীক খেতাব পান ৪২৬ জন."
+  [FACT_6bc7785c] score=0.725 | mcq=[]
+    "বাংলাদেশের স্বাধীনতা যুদ্ধে বীরত্বসূচক অবদানের জন্য দু'জন মহিলা বীর প্রতীক খেতাব..."
+  [FACT_e6cf6fcf] score=0.77 | mcq=[]
+    "Making of a Nation Bangladesh' গ্রন্থের রচয়িতা নুরুল ইসলাম."
+  [FACT_85be73fc] score=0.71 | mcq=['when_question']
+    "দ্য লিবারেশন অব বাংলাদেশ' গ্রন্থের রচয়িতা মেজর জেনারেল সুখওয়ান্ত সিং."
+  [FACT_c1bb0fa1] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "পাকিস্তান ২২ ফেব্রুয়ারি, ১৯৭৪ সালে বাংলাদেশকে একটি সার্বভৌম রাষ্ট্র হিসেবে স্বী..."
+  [FACT_a3660472] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "ভুটান ৬ ডিসেম্বর, ১৯৭১ সালে প্রথম স্বীকৃতিদানকারী দেশ হিসেবে বাংলাদেশকে স্বীকৃতি..."
+  [FACT_4ef9e5ef] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "ইরাক প্রথম আরব দেশ হিসেবে বাংলাদেশকে স্বীকৃতি প্রদান করে (৮ জুলাই, ১৯৭২)."
+  [FACT_1c7f1185] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "মার্কিন যুক্তরাষ্ট্র ৪ এপ্রিল, ১৯৭২ সালে স্বাধীন বাংলাদেশকে স্বীকৃতি দান করে."
+  [FACT_866237a6] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের সংবিধানের ৪(৩) অনুচ্ছেদ অনুযায়ী, প্রজাতন্ত্রের জাতীয় প্রতীক হচ্ছে উ..."
+  [FACT_fbf39538] score=0.725 | mcq=['numeric_ranking']
+    "১৯৮০ সালের ৩ অক্টোবর রাষ্ট্রপতি জিয়াউর রহমানের সরকার ২৬ মার্চ দিনটিকে জাতীয় ও ..."
+  [FACT_c9f52db6] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "জাতীয় পতাকার দৈর্ঘ্য ও প্রস্থের অনুপাত ১০:৬ বা ৫ঃ৩. লাল বৃত্তির ব্যাসার্ধ পতাকা..."
+  [FACT_13eb1be7] score=0.71 | mcq=['who_question']
+    "বাংলাদেশের রাষ্ট্রীয় মনোগ্রাম বাংলাদেশ সরকারের সিলমোহর. এর নকশাকার এ. এন. এ সাহ..."
+  [FACT_71536eb3] score=0.61 | mcq=[]
+    "বাংলাদেশের জাতীয় ফল কাঁঠাল."
+  [FACT_af6f88f5] score=0.61 | mcq=[]
+    "বাংলাদেশের জাতীয় পাখি দোয়েল."
+  [FACT_12781f6c] score=0.71 | mcq=[]
+    "বাংলাদেশের জাতীয় পশু রয়েল বেঙ্গল টাইগার."
+  [FACT_3c2c2aa2] score=0.71 | mcq=[]
+    "বাংলাদেশের জাতীয় সংগীতে বাংলার প্রকৃতির কথা প্রধানভাবে আছে."
+  [FACT_fdf1e66c] score=0.695 | mcq=['numeric_ranking']
+    "মুজিবনগর সরকারের মন্ত্রিপরিষদ: তাজউদ্দিন আহমদ- প্রধানমন্ত্রী, প্রতিরক্ষা, তথ্য, ..."
+  [FACT_97aa1594] score=0.67 | mcq=['when_question', 'where_question']
+    "মুজিবনগর মেহেরপুর জেলায় অবস্থিত."
+  [FACT_3733d46b] score=0.71 | mcq=['numeric_ranking']
+    "১৯৭১ সালের ১৭ এপ্রিল জে. আতাউল গনি ওসমানীকে মুক্তিযুদ্ধের প্রধান সেনাপতি (বাংলাদ..."
+  [FACT_e8c19ccd] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের (পঞ্চম) আদমশুমারি ২০১১ অনুযায়ী নারীর সংখ্যা ৮৩৩৪৭২০৬ জন এবং পুরুষের ..."
+  [FACT_6c3f7b9c] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, প্রত্যাশিত গড় আয়ুকাল ৭২. ৩ বছর (পুরুষ: ৭০. ৮ ..."
+  [FACT_03d29ef5] score=0.6875 | mcq=['when_question', 'numeric_ranking']
+    "UNFPA কর্তৃক বিশ্ব জনসংখ্যা প্রতিবেদন ২০২৪ অনুযায়ী জনসংখ্যায় বাংলাদেশের অবস্থা..."
+  [FACT_5a108841] score=0.7475 | mcq=['when_question', 'numeric_ranking']
+    "UNFPA-এর জনসংখ্যা বিষয়ক রিপোর্ট ১৯৯৪ অনুযায়ী বাংলাদেশ বিশ্বের নবম জনসংখ্যার দে..."
+  [FACT_9737b073] score=0.6875 | mcq=['when_question', 'numeric_ranking']
+    "UNFPA কর্তৃক বিশ্ব জনসংখ্যা প্রতিবেদন ২০২৪ অনুযায়ী জনসংখ্যায় বাংলাদেশের অবস্থা..."
+  [FACT_0d97152a] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী বাংলাদেশের প্রত্যাশিত গড় আয়ুকাল ৭২. ৩ বছর (পুর..."
+  [FACT_6253c672] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "সর্বশেষ অর্থনৈতিক সমীক্ষা ২০২৫ (সাময়িক) অনুযায়ী দেশে মোট জনসংখ্যা ১৭২. ২৮ মিলি..."
+  [FACT_69dcede2] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "ষষ্ঠ জনশুমারি ও গৃহ গণনা-২০২২ এর চূড়ান্ত রিপোর্ট অনুযায়ী বাংলাদেশের ক্ষুদ্র নৃ..."
+  [FACT_5cd60e8e] score=0.71 | mcq=[]
+    "গারো উপজাতিদের আবাসস্থল মূলত ময়মনসিংহ, শেরপুর, নেত্রকোণা, টাঙ্গাইল, জামালপুর, স..."
+  [FACT_7fe87e57] score=0.71 | mcq=[]
+    "গারো উপজাতিদের আবাসস্থল মূলত ময়মনসিংহ জেলায়."
+  [FACT_17d7f73c] score=0.71 | mcq=['numeric_ranking']
+    "চাকমা বাংলাদেশের বৃহত্তম ক্ষুদ্র নৃ-গোষ্ঠী জনগোষ্ঠী. পার্বত্য জেলা রাঙামাটি, খাগ..."
+  [FACT_cee7a233] score=0.71 | mcq=[]
+    "হাজং উপজাতির বসবাস শেরপুর, ময়মনসিংহ, সুনামগঞ্জ ও নেত্রকোণায়. সিলেট জেলায় বসবা..."
+  [FACT_6edabff5] score=0.61 | mcq=[]
+    "পাঙন উপজাতির ধর্ম ইসলাম."
+  [FACT_29bce04d] score=0.725 | mcq=[]
+    "বাংলাদেশে বর্তমানে উপজাতীয় (ক্ষুদ্র নৃ-গোষ্ঠী) সাংস্কৃতিক প্রতিষ্ঠান রয়েছে ১০ট..."
+  [FACT_0a16ea07] score=0.71 | mcq=[]
+    "হাজংদের অধিবাস ময়মনসিংহ ও নেত্রকোণায়."
+  [FACT_69a74f7d] score=0.725 | mcq=[]
+    "বাংলাদেশে বসবাসরত ৫০টি উপজাতির মধ্যে গারো ও খাসিয়া ব্যতীত সকল উপজাতির পারিবারিক..."
+  [FACT_a4ecdc0a] score=0.71 | mcq=[]
+    "বাংলাদেশের বিখ্যাত মণিপুরী নাচ সিলেট অঞ্চলের."
+  [FACT_82e1f4f7] score=0.71 | mcq=[]
+    "মাওরি নিউজিল্যান্ডের আদিবাসী. বাংলাদেশে মাওরি উপজাতি বাস করে না."
+  [FACT_029a9cbc] score=0.725 | mcq=['numeric_ranking']
+    "জনশুমারি ও গৃহগণনা ২০২২ অনুযায়ী সাক্ষরতার হার সবচেয়ে বেশি ঢাকা বিভাগে ৭৪. ৮০%...."
+  [FACT_e97a0f1e] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশ অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী বাংলাদেশে সাক্ষরতার হার ৭৭. ৯%. এর মধ্য..."
+  [FACT_1c1c6a37] score=0.725 | mcq=[]
+    "বর্তমানে ১৭২টি অনুমোদিত বিশ্ববিদ্যালয় রয়েছে যার মধ্যে ৫৬টি সরকারি."
+  [FACT_b2187753] score=0.7475 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "জাতীয় শিক্ষা ব্যবস্থাপনা একাডেমি (নায়েম) ১৯৫৯ সালে এডুকেশন এক্সটেনশন সেন্টার (..."
+  [FACT_5f7207b8] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বর্তমানে (২০২৫) দেশে সরকারি মেডিকেল কলেজের সংখ্যা ৩৭টি."
+  [FACT_7e934148] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা-২০২৫ অনুযায়ী, দেশে কমিউনিটি ক্লিনিকের সংখ্যা ১৪২৯৭টি."
+  [FACT_a892445c] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "৩০ মে, ২০০১ ধানমন্ত্রির সেন্ট্রাল হসপিটালে ড. পারভীন ফাতেমার সার্বিক তত্ত্বাবধান..."
+  [FACT_5da23c76] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশ সংবিধানের ৫(১) অনুচ্ছেদ অনুযায়ী ঢাকা বাংলাদেশের রাজধানী."
+  [FACT_7712208a] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ৬ (১): বাংলাদেশের নাগরিকত্ব আইনের দ্বারা নির্ধারিত ও নিয়ন্ত্রিত হইবে. ..."
+  [FACT_3f1616d4] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "অনুচ্ছেদ ১৩: মালিকানা নীতি. অনুচ্ছেদ ১৮: জনস্বাস্থ্য ও নৈতিকতা. অনুচ্ছেদ ১৮ (ক):..."
+  [FACT_5dbed984] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ২১: নাগরিক ও সরকারি কর্মচারীদের কর্তব্য. অনুচ্ছেদ ২২: নির্বাহী বিভাগ থে..."
+  [FACT_856ec025] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ৪১: ধর্মীয় স্বাধীনতা. অনুচ্ছেদ ৩৮: সংগঠনের স্বাধীনতা. অনুচ্ছেদ ৫০: রাষ..."
+  [FACT_b3d6ae26] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "অনুচ্ছেদ ২৮(২): রাষ্ট্র ও গণজীবনের সর্বত্রে নারী পুরুষের সমান অধিকার লাভ করিবেন...."
+  [FACT_be70e176] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "অনুচ্ছেদ ২৬: মৌলিক অধিকারের সহিত অসমঞ্জস আইন বাতিল. অনুচ্ছেদ ২৭: আইনের দৃষ্টিতে ..."
+  [FACT_63a8e2d4] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "অনুচ্ছেদ ১০: সমাজতন্ত্র ও শোষণমুক্তি. অনুচ্ছেদ ২১ (২): প্রজাতন্ত্রের কর্মে নিযুক..."
+  [FACT_17d924ca] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ২৮ (৪): নারী ও শিশুদের অনুকূলে কিংবা নাগরিকদের যে কোনো অনগ্রসর অংশের অগ..."
+  [FACT_01a37c1c] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ-৮১: অর্থবিল. অনুচ্ছেদ-৮৫: সরকারী অর্থের নিয়ন্ত্রণ. অনুচ্ছেদ-৮৭: বার্ষি..."
+  [FACT_d62637d8] score=0.725 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ১১৭: প্রশাসনিক ট্রাইব্যুনাল. অনুচ্ছেদ ১১০: অধস্তন আদালত হতে হাইকোর্টে ব..."
+  [FACT_ce4c6af8] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের সংবিধানের ১২২(২) (খ) অনুচ্ছেদ অনুযায়ী বাংলাদেশের ভোটার হওয়ার সর্বনি..."
+  [FACT_50de8556] score=0.77 | mcq=[]
+    "Straw vote' বলতে সাধারণত Unofficial poll of public opinion- কে বুঝায়. Poll base..."
+  [FACT_f0dd8223] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশের ত্রয়োদশ জাতীয় সংসদ নির্বাচন ২০২৬ সালের ১২ ফেব্রুয়ারি অনুষ্ঠিত হবে."
+  [FACT_0e2d90f2] score=0.6875 | mcq=['numeric_ranking']
+    "অনুচ্ছেদ ১৩৬: কর্মিবিভাগ পুনর্গঠন. অনুচ্ছেদ ১৩৭: সরকারি কর্মকমিশন (PSC) প্রতিষ্ঠ..."
+  [FACT_966e2bcf] score=0.7475 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "১৯৮০ সালে বাংলাদেশে সিভিল সার্ভিস ক্যাডার কম্পোজিশন ক্যাডার রুল জারির সময় ক্যাড..."
+  [FACT_64146cac] score=0.71 | mcq=[]
+    "বাংলাদেশের সংবিধানের ত্রয়োদশ সংশোধনীর মূল বিষয়বস্তু হলো নিরপেক্ষ-নির্দলীয় তত্..."
+  [FACT_b8f6833d] score=0.71 | mcq=['who_question', 'numeric_ranking']
+    "সংবিধানের ৪র্থ তফসিল অনুচ্ছেদ ১৫০(১) অনুযায়ী ক্রান্তিকালীন ও অস্থায়ী বিধানাবলি..."
+  [FACT_4b003b17] score=0.725 | mcq=[]
+    "বাংলাদেশের সংবিধানে মোট ৭টি তফসিল আছে."
+  [FACT_6e889b3a] score=0.71 | mcq=['who_question', 'numeric_ranking']
+    "যেসব পদ সংবিধানে বর্ণিত বিধান মোতাবেক সৃষ্টি হয় এবং পদে নির্বাচিত ব্যক্তি শপথ গ..."
+  [FACT_d1a47c10] score=0.6725 | mcq=[]
+    "সুশীল সমাজ সরকার ও প্রাইভেট সেক্টরের মাঝামাঝি একটি গ্রুপ. এরা সরকার ও প্রাইভেট স..."
+  [FACT_8c1d2a67] score=0.71 | mcq=[]
+    "অ্যাটর্নি জেনারেল বাংলাদেশের প্রধান আইন কর্মকর্তা."
+  [FACT_2d7a8321] score=0.71 | mcq=['who_question', 'numeric_ranking']
+    "গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধানে বাংলাদেশের প্রধানমন্ত্রী হওয়ার জন্য ন্যূনতম ..."
+  [FACT_231f776f] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "বাংলাদেশের সংবিধানের ৪৮(৪) অনুচ্ছেদ অনুযায়ী গণপ্রজাতন্ত্রী বাংলাদেশের রাষ্ট্রপত..."
+  [FACT_7bffa3b3] score=0.725 | mcq=['numeric_ranking']
+    "সংবিধানের ৪৮(৩) অনুচ্ছেদ অনুসারে, রাষ্ট্রপতি প্রধানমন্ত্রী [৫৬(৩) অনুচ্ছেদ] ও প্..."
+  [FACT_55d91803] score=0.71 | mcq=[]
+    "পল্লী বিদ্যুৎ স্থানীয় সরকার নয়. স্থানীয় সরকার বলতে স্থানীয় সরকার ব্যবস্থাকে ..."
+  [FACT_7ddd9204] score=0.71 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "১৯৪৭ সালে ভারত ভাগের পরে বর্তমান বাংলাদেশের (তৎকালীন পূর্ব পাকিস্তান) অন্তর্গত ১..."
+  [FACT_479a2a62] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুযায়ী, বাংলাদেশে বর্তমানে ১২টি সিটি কর্পোরেশন, ৩২৯টি প..."
+  [FACT_1f6e95c8] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "২০২২ সালের ৬ষ্ঠ জনশুমারি ও গৃহগণনা প্রতিবেদন অনুযায়ী, বাংলাদেশের গ্রামের সংখ্যা..."
+  [FACT_2a0fbfd9] score=0.725 | mcq=[]
+    "তিতাস দেশের ৪৭০তম উপজেলা. এটি কুমিল্লা জেলার অন্তর্ভুক্ত. বর্তমানে দেশে মোট উপজে..."
+  [FACT_dcae6a12] score=0.71 | mcq=[]
+    "বাংলাদেশে বর্তমানে তিন স্তরবিশিষ্ট স্থানীয় সরকার ব্যবস্থা চালু আছে."
+  [FACT_e7e94f0e] score=0.725 | mcq=[]
+    "ঢাকা বিভাগে মোট ১৩টি জেলা রয়েছে. এগুলো হলো- ঢাকা, গাজীপুর, নারায়ণগঞ্জ, নরসিন্দ..."
+  [FACT_1ac1225a] score=0.725 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "বিশ্বব্যাংকের হিসাবে মাথাপিছু আয় ১০৪৬-১২৭৩৬ ডলার পর্যন্ত সবাই মধ্যম আয়ের দেশ. ..."
+  [FACT_7c65a9d7] score=0.71 | mcq=[]
+    "বাংলাদেশ একটি গণপ্রজাতান্ত্রিক ও এককেন্দ্রিক রাষ্ট্র. এই রাষ্ট্রের সকল ক্ষমতার ম..."
+  [FACT_e9d52624] score=0.725 | mcq=['numeric_ranking']
+    "বাংলাদেশের জাতীয় সংসদের মোট আসন সংখ্যা ৩৫০. এর মধ্যে ৩০০টি নির্বাচিত সংসদীয় আস..."
+  [FACT_e7ee1181] score=0.625 | mcq=[]
+    "বাংলাদেশ জাতিসংঘের ১৩৬তম সদস্য."
+  [FACT_60abc4f5] score=0.7475 | mcq=['who_question', 'when_question', 'numeric_ranking']
+    "১৯৪৮ সালে জাতিসংঘের শান্তিরক্ষা কার্যক্রম শুরু হয়. ১৯৮৮ সালে 'UNIIMOG' মিশনের ম..."
+  [FACT_2437e54c] score=0.725 | mcq=['numeric_ranking']
+    "স্থিতি পরিষদ/নিরাপত্তা পরিষদের ০৫টি স্থায়ী সদস্যের পাশাপাশি প্রতি ২ বছরের জন্য ..."
+  [FACT_0af1390d] score=0.7475 | mcq=['when_question', 'numeric_ranking']
+    "বাংলাদেশী সালমা খান ১৯৯৭-১৯৯৮ সালে CEDAW-এর চেয়ারপার্সন ছিলেন."
+  [FACT_9abed0c6] score=0.725 | mcq=['numeric_ranking']
+    "অর্থনৈতিক সমীক্ষা ২০২৫ অনুসারে, বর্তমানে বাংলাদেশে শিশুমৃত্যুর হার প্রতি হাজারে ..."
+
+--- SALVAGEABLE_ACCEPT (16 fact(s)) ---
+  [FACT_0f2d03c6] score=0.71 | mcq=['numeric_ranking']
+    "Bangladesh in the local language means the country of Bengal with most of the po..."
+  [FACT_e7c652c0] score=0.695 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "When the provincial capital of Murshidabad was removed in 1704 coupled with the ..."
+  [FACT_ad4af3e2] score=0.695 | mcq=['when_question', 'where_question', 'numeric_ranking']
+    "When the British rule ended in the region the city became part of Pakistan and D..."
+  [FACT_4c7d6443] score=0.71 | mcq=['who_question']
+    "রাষ্ট্রপতিদের তালিকা রাজনৈতিক দল বাংলাদেশ আওয়ামী লীগ / বাকশাল বাংলাদেশ জাতীয়তা..."
+  [FACT_4f7bdc51] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "He first served as the titular president of the Provisional Government of Bangla..."
+  [FACT_549ad486] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "He then served as Prime Minister of Bangladesh from the Awami League between Jan..."
+  [FACT_6a88f4fe] score=0.725 | mcq=['who_question', 'numeric_ranking']
+    "He finally served as President again during BAKSAL from January 1975 till his as..."
+  [FACT_d1215586] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "Mujib led the Awami League to win the first democratic election of Pakistan in 1..."
+  [FACT_706fc9f2] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "As civil disobedience erupted across East Pakistan, Mujib edged towards declarin..."
+  [FACT_12c89dc0] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "Reporters Without Borders in 2021 characterized Sheikh Hasina as a predator for ..."
+  [FACT_c7a9b7c2] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "Bangladesh declared independence from Pakistan in 1971."
+  [FACT_66a7f856] score=0.71 | mcq=['numeric_ranking']
+    "To understand the history of the independence of Bangladesh, one must first unde..."
+  [FACT_da85c80b] score=0.71 | mcq=[]
+    "This attempt brought about an opposition movement based on the linguistics and c..."
+  [FACT_1a785ff9] score=0.725 | mcq=['when_question', 'numeric_ranking']
+    "It commemorates the country's declaration of independence from Pakistan in the e..."
+  [FACT_df6bbfab] score=0.68 | mcq=['when_question']
+    "When it became evident that the promises made by the West Pakistan government we..."
+  [FACT_740bf182] score=0.71 | mcq=[]
+    "GDP growth (annual %) - Bangladesh World Bank national accounts data, and OECD N..."
+
+--- MCQ SUITABILITY SUMMARY ---
+  numeric_ranking     : 333 fact(s)
+  poor_candidate      : 141 fact(s)
+  when_question       : 188 fact(s)
+  where_question      : 19 fact(s)
+  who_question        : 107 fact(s)
+
+=================================================================

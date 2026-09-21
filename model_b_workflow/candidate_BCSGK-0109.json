@@ -1,0 +1,20 @@
+{
+  "fact_id": "BCSGK-0109",
+  "canonical_url": "https://en.wikipedia.org/w/index.php?oldid=1150163247",
+  "source_type": "mediawiki_revision",
+  "source_authority": "reference_or_institutional",
+  "publisher": "Wikipedia revision snapshot",
+  "document_title": "Bangladesh Military Academy",
+  "source_published_at": null,
+  "temporal_evidence_date": "2023-04-16",
+  "retrieved_at": "2026-09-16T00:00:00+00:00",
+  "content_hash_sha256": "cbfafe21570ced7402a9001ff4055d2d9c27dd4d35f814d95267315b9a98bde3",
+  "supporting_excerpt": "It is located in Bhatiary, near Chittagong Hill Tracts, in the Chittagong District of south-east Bangladesh, about 13 kilometers north of Chittagong. The academy is situated on the slopes of the Sitakunda hill ranges and the shore of the Bay of Bengal.",
+  "subject_match": true,
+  "predicate_match": true,
+  "object_match": true,
+  "leakage_verdict": "pass",
+  "temporal_field_name": "temporal_evidence_date",
+  "temporal_raw_value": "MediaWiki revision timestamp 2023-04-16",
+  "notes": "Candidate only. Pre-cutoff revision directly supports the academy location; reviewer must confirm the corpus wording 'Bhatiari, Chattogram' is adequately matched by the excerpt's Chittagong/Chattogram naming."
+}

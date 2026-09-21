@@ -1,0 +1,42 @@
+{
+  "record_type": "task2b_smoke_run_manifest",
+  "run_tag": "task2b",
+  "run_started_at": "2026-09-17T20:26:19",
+  "cutoff": "2023-04-19",
+  "seed_file": "bcs_gk_facts_model_b.json",
+  "seed_sha256": "474aae6a69837b1c01f1d7027c727f4de364498be4a8d775da2a1b8924012eff",
+  "seed_release_id": "model-b-seed-2026-09-16",
+  "topic": "Geography",
+  "difficulty": "medium",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "hf_provider": "auto",
+  "prompt_fingerprint": {
+    "challenger": "f465c4f51422dc8a",
+    "reasoner": "cf359314d3556e6c",
+    "judge": "c7a57722e946a679"
+  },
+  "generator_module_sha256": "e2bb121e7663b17b",
+  "finished_at": "2026-09-17T20:29:15",
+  "wall_seconds": 175.8,
+  "facts_offered": 2,
+  "facts_available_at_cutoff": 8,
+  "seed_fact_uids": [
+    "BCSGK-0012",
+    "BCSGK-0013"
+  ],
+  "mcqs_accepted": 4,
+  "overall_score": 0.894,
+  "quality_gate": {
+    "report_id": "RPT_82965e23",
+    "total": 4,
+    "passed": 3,
+    "failed": 1
+  },
+  "rejection_tally": null,
+  "temporal_firewall": {
+    "unversioned_in_batch": 0,
+    "enforced_by": "mcq_generator.generate_from_facts (TemporalGuardViolation)"
+  },
+  "seed_modified": false,
+  "accepted_for_benchmark": false
+}

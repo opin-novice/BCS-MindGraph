@@ -1,0 +1,935 @@
+{
+  "baseline_id": "web_rag_baseline",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "cutoff_date": "2023-04-19",
+  "context_augmentation": true,
+  "web_retrieval_used": true,
+  "knowledge_graph_used": false,
+  "bitemporal_snapshot_used": false,
+  "screener_used": false,
+  "total_mcqs_generated": 36,
+  "benchmark_demand_satisfied": true,
+  "topic_summary": {
+    "Appointments": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution": {
+      "requested": 1,
+      "generated": 1,
+      "elapsed_seconds": 0.0
+    },
+    "Constitution & Law": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Culture": {
+      "requested": 5,
+      "generated": 5,
+      "elapsed_seconds": 0.0
+    },
+    "Economy": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Flora & Fauna": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Geography": {
+      "requested": 2,
+      "generated": 2,
+      "elapsed_seconds": 0.0
+    },
+    "Government": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "History": {
+      "requested": 4,
+      "generated": 4,
+      "elapsed_seconds": 0.0
+    },
+    "Language": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    },
+    "Liberation War": {
+      "requested": 3,
+      "generated": 3,
+      "elapsed_seconds": 0.0
+    }
+  },
+  "mcqs": [
+    {
+      "mcq_id": "WEB_RAG_MOCK_APPO_01",
+      "topic": "Appointments",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Appointments সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Appointments বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569396"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_APPO_02",
+      "topic": "Appointments",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Appointments সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Appointments বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569402"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_APPO_03",
+      "topic": "Appointments",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Appointments সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Appointments বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569405"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_APPO_04",
+      "topic": "Appointments",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Appointments সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Appointments বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569407"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CONS_01",
+      "topic": "Constitution",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Constitution সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Constitution বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Constitution Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569421"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Constitution & Law সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Constitution & Law বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569432"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Constitution & Law সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Constitution & Law বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569434"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Constitution & Law সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Constitution & Law বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569436"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Constitution & Law সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Constitution & Law বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569438"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CULT_01",
+      "topic": "Culture",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Culture সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Culture বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569445"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CULT_02",
+      "topic": "Culture",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Culture সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Culture বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569446"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CULT_03",
+      "topic": "Culture",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Culture সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Culture বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569448"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CULT_04",
+      "topic": "Culture",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Culture সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Culture বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569450"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_CULT_05",
+      "topic": "Culture",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Culture সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Culture বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569452"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_ECON_01",
+      "topic": "Economy",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Economy সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Economy বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569459"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_ECON_02",
+      "topic": "Economy",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Economy সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Economy বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569461"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_ECON_03",
+      "topic": "Economy",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Economy সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Economy বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569463"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_ECON_04",
+      "topic": "Economy",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Economy সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Economy বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569465"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Flora & Fauna সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Flora & Fauna বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569471"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Flora & Fauna সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Flora & Fauna বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569474"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Flora & Fauna সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Flora & Fauna বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569475"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_GEOG_01",
+      "topic": "Geography",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Geography সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Geography বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Geography Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569481"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_GEOG_02",
+      "topic": "Geography",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Geography সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Geography বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Geography Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569483"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_GOVE_01",
+      "topic": "Government",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Government সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Government বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Government Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569495"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_GOVE_02",
+      "topic": "Government",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Government সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Government বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Government Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569497"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_GOVE_03",
+      "topic": "Government",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Government সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Government বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Government Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569498"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_HIST_01",
+      "topic": "History",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "History সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "History বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569505"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_HIST_02",
+      "topic": "History",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "History সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "History বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569507"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_HIST_03",
+      "topic": "History",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "History সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "History বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569509"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_HIST_04",
+      "topic": "History",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "History সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "History বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569512"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LANG_01",
+      "topic": "Language",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Language সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Language বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Language Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569518"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LANG_02",
+      "topic": "Language",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Language সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Language বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Language Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569520"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LANG_03",
+      "topic": "Language",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Language সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Language বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Language Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569521"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Liberation War সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Liberation War বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Liberation War Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569527"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Liberation War সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Liberation War বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Liberation War Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569529"
+    },
+    {
+      "mcq_id": "WEB_RAG_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "baseline": "web_rag",
+      "cutoff_date": "2023-04-19",
+      "temporal_status": "cutoff_compliant",
+      "context_augmentation": true,
+      "web_retrieval_used": true,
+      "retrieved_web_context": [
+        "Liberation War সংক্রান্ত তথ্যপ্রমাণ বাংলাদেশ সরকারের গ্যাজেট ও বাংলাপিডিয়া অনুযায়ী ১৯ এপ্রিল ২০২৩ পর্যন্ত স্বীকৃত।",
+        "Liberation War বিষয়ের সাধারণ জ্ঞান ৪৫তম বিসিএস পরীক্ষার পাঠ্যক্রমভুক্ত।"
+      ],
+      "question": "[Liberation War Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "difficulty": "medium",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "generated_at": "2026-09-18T18:08:00.569531"
+    }
+  ]
+}

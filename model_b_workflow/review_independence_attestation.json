@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-09-16",
+  "batch": "pilot_static_revised_02",
+  "facts": [
+    "BCSGK-0083",
+    "BCSGK-0109"
+  ],
+  "reasons_byte_identical_per_fact": {
+    "BCSGK-0083": true,
+    "BCSGK-0109": true
+  },
+  "review_mode": "two_pass_single_operator",
+  "reviewer_identities": "RA_1 and RA_2 labels operated by the same reviewer",
+  "personnel_independent": false,
+  "independence_level": "procedural separation only; not personnel-independent",
+  "external_second_review_required": true,
+  "merge_eligibility": "blocked pending external second-review confirmation",
+  "evidence_for_this_finding": "The RA_1 and RA_2 decision records for both evidence items carry byte-identical `reason` strings, which is inconsistent with two independently formed judgements."
+}

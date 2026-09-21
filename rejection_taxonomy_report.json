@@ -1,0 +1,77 @@
+{
+  "by_stage": {
+    "fact_quality_gate": {
+      "E-TIME": 0,
+      "E-LEAK": 0,
+      "E-UNSUP": 0,
+      "E-MULTI": 0,
+      "E-DIST": 0,
+      "E-AMB": 0,
+      "E-STYLE": 0,
+      "E-DUP": 0,
+      "E-KG": 0,
+      "E-SRC": 0,
+      "_total_items": 2,
+      "_total_rejections": 0,
+      "_rejection_rate": 0.0
+    },
+    "web_scraping": {
+      "E-TIME": 0,
+      "E-LEAK": 75,
+      "E-UNSUP": 0,
+      "E-MULTI": 0,
+      "E-DIST": 0,
+      "E-AMB": 0,
+      "E-STYLE": 0,
+      "E-DUP": 0,
+      "E-KG": 0,
+      "E-SRC": 0,
+      "_total_items": 75,
+      "_total_rejections": 75,
+      "_rejection_rate": 1.0
+    },
+    "mcq_generation_judge_episodes": {
+      "E-TIME": 0,
+      "E-LEAK": 0,
+      "E-UNSUP": 0,
+      "E-MULTI": 0,
+      "E-DIST": 0,
+      "E-AMB": 0,
+      "E-STYLE": 0,
+      "E-DUP": 1,
+      "E-KG": 0,
+      "E-SRC": 0,
+      "_total_items": 6,
+      "_total_rejections": 1,
+      "_rejection_rate": 0.1667
+    },
+    "mcq_quality_evaluation": {
+      "E-TIME": 20,
+      "E-LEAK": 0,
+      "E-UNSUP": 0,
+      "E-MULTI": 0,
+      "E-DIST": 10,
+      "E-AMB": 0,
+      "E-STYLE": 0,
+      "E-DUP": 0,
+      "E-KG": 0,
+      "E-SRC": 0,
+      "_total_items": 20,
+      "_total_rejections": 30,
+      "_rejection_rate": 1.5
+    }
+  },
+  "combined_code_counts": {
+    "E-TIME": 20,
+    "E-LEAK": 75,
+    "E-UNSUP": 0,
+    "E-MULTI": 0,
+    "E-DIST": 10,
+    "E-AMB": 0,
+    "E-STYLE": 0,
+    "E-DUP": 1,
+    "E-KG": 0,
+    "E-SRC": 0
+  },
+  "combined_total_rejections": 106
+}

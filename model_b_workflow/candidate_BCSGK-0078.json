@@ -1,0 +1,21 @@
+{
+  "fact_id": "BCSGK-0078",
+  "canonical_url": "https://en.wikipedia.org/w/index.php?oldid=1114793972",
+  "source_type": "mediawiki_revision",
+  "source_authority": "reference_or_institutional",
+  "publisher": "Wikipedia revision snapshot",
+  "document_title": "SEA-ME-WE 4",
+  "source_published_at": null,
+  "temporal_evidence_date": "2022-10-08",
+  "archive_capture_timestamp": null,
+  "retrieved_at": "2026-09-16T00:00:00+00:00",
+  "content_hash_sha256": "4656c3627be4e050c838cda0500189fba1a052fabb33eada759955bc60069df8",
+  "supporting_excerpt": "SEA-ME-WE 4 is an optical fibre submarine communications cable system that carries telecommunications between Singapore, Malaysia, Thailand, Bangladesh, India, Sri Lanka, Pakistan, and other countries.",
+  "subject_match": true,
+  "predicate_match": true,
+  "object_match": true,
+  "leakage_verdict": "pass",
+  "temporal_field_name": "temporal_evidence_date",
+  "temporal_raw_value": "MediaWiki revision timestamp 2022-10-08",
+  "notes": "Candidate only. The source supports Bangladesh as a connected country and the cable's telecommunications function; reviewer must confirm whether that is sufficient for the exact bandwidth wording."
+}

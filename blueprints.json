@@ -1,0 +1,280 @@
+[
+  {
+    "raw_question": "বাংলাদেশের রাজধানী কী?",
+    "normalized_text": "বাংলাদেশের রাজধানী কী?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 3,
+    "warnings": [],
+    "normalized_question": "বাংলাদেশের রাজধানী কী?",
+    "intent": "factual_recall",
+    "question_type": "what_question",
+    "topic": "Geography",
+    "sub_topic": "",
+    "entities": [
+      "বাংলাদেশ"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "বাংলাদেশ",
+      "রাজধানী"
+    ],
+    "bangla_query": "বাংলাদেশের রাজধানী কী",
+    "english_query": "What is the capital of Bangladesh",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "পদ্মা সেতুর দৈর্ঘ্য কত কিলোমিটার?",
+    "normalized_text": "পদ্মা সেতুর দৈর্ঘ্য কত কিলোমিটার?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 5,
+    "warnings": [],
+    "normalized_question": "পদ্মা সেতুর দৈর্ঘ্য কত কিলোমিটার?",
+    "intent": "factual_recall",
+    "question_type": "numeric_ranking",
+    "topic": "Infrastructure",
+    "sub_topic": "Bridges",
+    "entities": [
+      "পদ্মা সেতু"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "পদ্মা সেতু",
+      "দৈর্ঘ্য",
+      "কিলোমিটার"
+    ],
+    "bangla_query": "পদ্মা সেতুর দৈর্ঘ্য কত কিলোমিটার",
+    "english_query": "Length of Padma Bridge in kilometers",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "বাংলাদেশের প্রথম রাষ্ট্রপতি কে?",
+    "normalized_text": "বাংলাদেশের প্রথম রাষ্ট্রপতি কে?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 4,
+    "warnings": [],
+    "normalized_question": "বাংলাদেশের প্রথম রাষ্ট্রপতি কে?",
+    "intent": "factual_recall",
+    "question_type": "who_question",
+    "topic": "History",
+    "sub_topic": "Political History",
+    "entities": [
+      "বাংলাদেশ"
+    ],
+    "time_hints": [
+      "১৯৭১"
+    ],
+    "search_keywords": [
+      "বাংলাদেশ",
+      "প্রথম",
+      "রাষ্ট্রপতি"
+    ],
+    "bangla_query": "বাংলাদেশের প্রথম রাষ্ট্রপতি কে",
+    "english_query": "First President of Bangladesh",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "মুক্তিযুদ্ধ কত সালে শুরু হয়?",
+    "normalized_text": "মুক্তিযুদ্ধ কত সালে শুরু হয়?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 5,
+    "warnings": [],
+    "normalized_question": "মুক্তিযুদ্ধ কত সালে শুরু হয়?",
+    "intent": "factual_recall",
+    "question_type": "when_question",
+    "topic": "History",
+    "sub_topic": "Liberation War",
+    "entities": [
+      "মুক্তিযুদ্ধ"
+    ],
+    "time_hints": [
+      "১৯৭১",
+      "মার্চ"
+    ],
+    "search_keywords": [
+      "মুক্তিযুদ্ধ",
+      "শুরু",
+      "সাল"
+    ],
+    "bangla_query": "মুক্তিযুদ্ধ কখন শুরু হয়েছিল",
+    "english_query": "When did the Liberation War start",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "সুন্দরবন কোথায় অবস্থিত?",
+    "normalized_text": "সুন্দরবন কোথায় অবস্থিত?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 3,
+    "warnings": [],
+    "normalized_question": "সুন্দরবন কোথায় অবস্থিত?",
+    "intent": "factual_recall",
+    "question_type": "where_question",
+    "topic": "Geography",
+    "sub_topic": "Forests",
+    "entities": [
+      "সুন্দরবন"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "সুন্দরবন",
+      "অবস্থান"
+    ],
+    "bangla_query": "সুন্দরবন কোথায় অবস্থিত",
+    "english_query": "Where is Sundarbans located",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "বাংলাদেশের মোট জেলা কয়টি?",
+    "normalized_text": "বাংলাদেশের মোট জেলা কয়টি?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 4,
+    "warnings": [],
+    "normalized_question": "বাংলাদেশের মোট জেলা কয়টি?",
+    "intent": "factual_recall",
+    "question_type": "numeric_ranking",
+    "topic": "Geography",
+    "sub_topic": "",
+    "entities": [
+      "বাংলাদেশ"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "বাংলাদেশ",
+      "মোট",
+      "জেলা"
+    ],
+    "bangla_query": "বাংলাদেশের মোট জেলা সংখ্যা",
+    "english_query": "Total number of districts in Bangladesh",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "শেখ মুজিবুর রহমান কবে জন্মগ্রহণ করেন?",
+    "normalized_text": "শেখ মুজিবুর রহমান কবে জন্মগ্রহণ করেন?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 6,
+    "warnings": [],
+    "normalized_question": "শেখ মুজিবুর রহমান কবে জন্মগ্রহণ করেন?",
+    "intent": "factual_recall",
+    "question_type": "when_question",
+    "topic": "History",
+    "sub_topic": "Liberation War",
+    "entities": [
+      "শেখ মুজিবুর রহমান"
+    ],
+    "time_hints": [
+      "1920",
+      "মার্চ"
+    ],
+    "search_keywords": [
+      "শেখ মুজিবুর রহমান",
+      "জন্ম"
+    ],
+    "bangla_query": "শেখ মুজিবুর রহমান কবে জন্মগ্রহণ করেন",
+    "english_query": "When was Sheikh Mujibur Rahman born",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "Bangladesh achieved independence in which year?",
+    "normalized_text": "Bangladesh achieved independence in which year?",
+    "script_type": "english",
+    "detected_language": "en",
+    "has_question_marker": true,
+    "word_count": 6,
+    "warnings": [],
+    "normalized_question": "Bangladesh achieved independence in which year?",
+    "intent": "factual_recall",
+    "question_type": "when_question",
+    "topic": "History",
+    "sub_topic": "Liberation War",
+    "entities": [
+      "Bangladesh"
+    ],
+    "time_hints": [
+      "1971"
+    ],
+    "search_keywords": [
+      "Bangladesh",
+      "independence",
+      "year"
+    ],
+    "bangla_query": "বাংলাদেশ স্বাধীনতা কোন বছর",
+    "english_query": "When did Bangladesh achieve independence",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "জাতিসংঘের সদর দফতর কোথায়?",
+    "normalized_text": "জাতিসংঘের সদর দফতর কোথায়?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 4,
+    "warnings": [],
+    "normalized_question": "জাতিসংঘের সদর দফতর কোথায়?",
+    "intent": "factual_recall",
+    "question_type": "where_question",
+    "topic": "International Relations",
+    "sub_topic": "",
+    "entities": [
+      "জাতিসংঘ"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "জাতিসংঘ",
+      "সদর দফতর"
+    ],
+    "bangla_query": "জাতিসংঘের সদর দফতর কোথায়",
+    "english_query": "Where is the headquarters of the United Nations",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  },
+  {
+    "raw_question": "বাংলাদেশের জিডিপি প্রবৃদ্ধির হার কত?",
+    "normalized_text": "বাংলাদেশের জিডিপি প্রবৃদ্ধির হার কত?",
+    "script_type": "bangla",
+    "detected_language": "bn",
+    "has_question_marker": true,
+    "word_count": 5,
+    "warnings": [],
+    "normalized_question": "বাংলাদেশের জিডিপি প্রবৃদ্ধির হার কত?",
+    "intent": "factual_recall",
+    "question_type": "numeric_ranking",
+    "topic": "Economy",
+    "sub_topic": "",
+    "entities": [
+      "বাংলাদেশ",
+      "জিডিপি"
+    ],
+    "time_hints": [],
+    "search_keywords": [
+      "বাংলাদেশ",
+      "জিডিপি",
+      "প্রবৃদ্ধি",
+      "হার"
+    ],
+    "bangla_query": "বাংলাদেশের জিডিপি প্রবৃদ্ধির হার",
+    "english_query": "Bangladesh GDP growth rate",
+    "confidence": 0.92,
+    "extraction_method": "llm"
+  }
+]

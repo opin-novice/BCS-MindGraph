@@ -1,0 +1,20 @@
+{
+  "fact_id": "BCSGK-0083",
+  "canonical_url": "https://www.bssnews.net/news-flash/115350",
+  "source_type": "government_news_agency_report",
+  "source_authority": "institutional",
+  "publisher": "Bangladesh Sangbad Sangstha (BSS)",
+  "document_title": "Bangladesh makes remarkable progress in sports in 14 years: Hasan",
+  "source_published_at": "2023-03-13",
+  "temporal_evidence_date": "2023-03-13",
+  "retrieved_at": "2026-09-16T00:00:00+00:00",
+  "content_hash_sha256": "0a4bf9acac81975f0bfe40d1c504ea08888bdc391c23f468ffa198644e091f65",
+  "supporting_excerpt": "He said, \"Kabaddi is our national sport and the game has been internationalized.\"",
+  "subject_match": true,
+  "predicate_match": true,
+  "object_match": true,
+  "leakage_verdict": "pass",
+  "temporal_field_name": "source_published_at",
+  "temporal_raw_value": "13 Mar 2023, 20:10; update 13 Mar 2023, 20:48",
+  "notes": "Candidate only. The source is a dated BSS report quoting the Information and Broadcasting Minister; reviewer must assess whether this supports the corpus wording at the required semantic strength."
+}

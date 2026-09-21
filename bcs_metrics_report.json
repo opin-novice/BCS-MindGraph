@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-09-15T07:36:29.004180",
+  "dataset": "bcg_gk_facts_laneA_annotated.json",
+  "total_facts_loaded": 524,
+  "total_mcqs_generated": 20,
+  "cost_estimate_usd": 0.0288,
+  "metrics": {
+    "FQS": 0.7523,
+    "GCS": 0.705,
+    "RRR": 1.0,
+    "TCS": 1.0,
+    "FUS": 0.0307,
+    "MUS": 0.2308,
+    "LES": 0.8462,
+    "RIR": 0.7143,
+    "FE": null,
+    "MSV": 1.0,
+    "GA": 1.0,
+    "DQS": 0.7775,
+    "DCE": 0.0867,
+    "CS": 0.97,
+    "JAS": 0.4545,
+    "SCE": 1.0,
+    "AES": 0.9167,
+    "FEU": null,
+    "TAS": 0.5,
+    "QSS": 0.6466,
+    "DDMS": 0.1405,
+    "CHP": 0.5714,
+    "EESR": 1.0,
+    "CAM": 0.001309,
+    "LSO": 144.96,
+    "AS": 2,
+    "GGLE": 381.944444,
+    "TVR": 0.0,
+    "PCLR": 0.0
+  },
+  "rejection_taxonomy": {
+    "combined_code_counts": {
+      "E-TIME": 20,
+      "E-LEAK": 75,
+      "E-UNSUP": 0,
+      "E-MULTI": 0,
+      "E-DIST": 10,
+      "E-AMB": 0,
+      "E-STYLE": 0,
+      "E-DUP": 1,
+      "E-KG": 0,
+      "E-SRC": 0
+    },
+    "combined_total_rejections": 106
+  }
+}

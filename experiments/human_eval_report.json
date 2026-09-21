@@ -1,0 +1,115 @@
+{
+  "title": "BCSBatighor GK Human Evaluation & Krippendorff's Alpha Audit Report",
+  "timestamp": "2026-09-19T00:43:54.687105",
+  "total_items_evaluated": 100,
+  "expert_raters_count": 3,
+  "raters": [
+    "Rater_1",
+    "Rater_2",
+    "Rater_3"
+  ],
+  "inter_rater_agreement_alpha": {
+    "clarity": 0.9554,
+    "factual_validity": 0.9706,
+    "temporal_correctness": 0.9935,
+    "distractor_quality": 0.9703,
+    "overall_likert": 0.9784
+  },
+  "krippendorff_alpha_passed": true,
+  "system_ratings_summary": {
+    "generic_llm": {
+      "clarity": {
+        "mean": 3.2173,
+        "std": 0.1385
+      },
+      "factual_validity": {
+        "mean": 2.8253,
+        "std": 0.1525
+      },
+      "temporal_correctness": {
+        "mean": 1.8173,
+        "std": 0.1385
+      },
+      "distractor_quality": {
+        "mean": 2.6173,
+        "std": 0.1385
+      },
+      "overall_likert": {
+        "mean": 2.6195,
+        "std": 0.1409
+      }
+    },
+    "static_rag": {
+      "clarity": {
+        "mean": 3.7667,
+        "std": 0.1364
+      },
+      "factual_validity": {
+        "mean": 3.9707,
+        "std": 0.116
+      },
+      "temporal_correctness": {
+        "mean": 2.9627,
+        "std": 0.1457
+      },
+      "distractor_quality": {
+        "mean": 3.3667,
+        "std": 0.1364
+      },
+      "overall_likert": {
+        "mean": 3.5161,
+        "std": 0.1314
+      }
+    },
+    "web_rag": {
+      "clarity": {
+        "mean": 3.9867,
+        "std": 0.105
+      },
+      "factual_validity": {
+        "mean": 3.5907,
+        "std": 0.123
+      },
+      "temporal_correctness": {
+        "mean": 1.2027,
+        "std": 0.0866
+      },
+      "distractor_quality": {
+        "mean": 3.5867,
+        "std": 0.105
+      },
+      "overall_likert": {
+        "mean": 3.0911,
+        "std": 0.1016
+      }
+    },
+    "proposed_temporal_kg": {
+      "clarity": {
+        "mean": 4.8267,
+        "std": 0.0866
+      },
+      "factual_validity": {
+        "mean": 4.8267,
+        "std": 0.0866
+      },
+      "temporal_correctness": {
+        "mean": 4.968,
+        "std": 0.0476
+      },
+      "distractor_quality": {
+        "mean": 4.6347,
+        "std": 0.1082
+      },
+      "overall_likert": {
+        "mean": 4.8147,
+        "std": 0.0776
+      }
+    }
+  },
+  "key_findings": {
+    "proposed_system_overall_likert": 4.8147,
+    "proposed_system_temporal_correctness": 4.968,
+    "web_rag_temporal_leakage_penalty": 1.2027,
+    "generic_llm_factual_validity": 2.8253
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "title": "Human Evaluation Gold Unblinded Mapping Key",
+  "total_items": 100,
+  "mapping": {
+    "HEVAL_001": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_01",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_002": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_HIST_04",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_003": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_04",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_004": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_03",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_005": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_HIST_04",
+      "topic": "History",
+      "kg_fact_id": "FACT_71897cb2"
+    },
+    "HEVAL_006": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": ""
+    },
+    "HEVAL_007": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CULT_05",
+      "topic": "Culture",
+      "kg_fact_id": "FACT_0c2d54d1"
+    },
+    "HEVAL_008": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_05",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_009": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "kg_fact_id": "FACT_78401cc6"
+    },
+    "HEVAL_010": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_GOVE_03",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_011": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_02",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_012": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_03",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_013": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_03",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_014": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_02",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_015": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_ECON_04",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_016": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_01",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_017": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_018": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_GEOG_02",
+      "topic": "Geography",
+      "kg_fact_id": ""
+    },
+    "HEVAL_019": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_020": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_APPO_03",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_021": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_01",
+      "topic": "Constitution",
+      "kg_fact_id": ""
+    },
+    "HEVAL_022": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_023": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": "FACT_8e9804c4"
+    },
+    "HEVAL_024": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_GEOG_01",
+      "topic": "Geography",
+      "kg_fact_id": "FACT_442fc901"
+    },
+    "HEVAL_025": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_LANG_01",
+      "topic": "Language",
+      "kg_fact_id": ""
+    },
+    "HEVAL_026": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_027": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CULT_05",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_028": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_HIST_01",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_029": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_HIST_04",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_030": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_GEOG_02",
+      "topic": "Geography",
+      "kg_fact_id": "FACT_e3cefe71"
+    },
+    "HEVAL_031": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_032": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_LANG_03",
+      "topic": "Language",
+      "kg_fact_id": ""
+    },
+    "HEVAL_033": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CULT_04",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_034": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_HIST_03",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_035": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_APPO_01",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_036": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_HIST_04",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_037": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_FLOR_01",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": ""
+    },
+    "HEVAL_038": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_GOVE_01",
+      "topic": "Government",
+      "kg_fact_id": "FACT_f80df932"
+    },
+    "HEVAL_039": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_040": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": ""
+    },
+    "HEVAL_041": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "kg_fact_id": "FACT_118ad7f0"
+    },
+    "HEVAL_042": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_043": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_044": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_045": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_APPO_04",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_046": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_LIBE_01",
+      "topic": "Liberation War",
+      "kg_fact_id": "FACT_f44eda81"
+    },
+    "HEVAL_047": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CULT_01",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_048": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_04",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_049": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_ECON_01",
+      "topic": "Economy",
+      "kg_fact_id": "FACT_e7ae6575"
+    },
+    "HEVAL_050": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CULT_03",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_051": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_03",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_052": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CONS_01",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_053": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_GOVE_02",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_054": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "kg_fact_id": "FACT_1e13bed2"
+    },
+    "HEVAL_055": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_APPO_01",
+      "topic": "Appointments",
+      "kg_fact_id": "FACT_8c97f430"
+    },
+    "HEVAL_056": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": ""
+    },
+    "HEVAL_057": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CULT_01",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_058": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CULT_02",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_059": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_HIST_02",
+      "topic": "History",
+      "kg_fact_id": "FACT_06aaa662"
+    },
+    "HEVAL_060": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CULT_02",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_061": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_ECON_04",
+      "topic": "Economy",
+      "kg_fact_id": "FACT_e7ae6575"
+    },
+    "HEVAL_062": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_APPO_04",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_063": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_FLOR_02",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": "FACT_8e9804c4"
+    },
+    "HEVAL_064": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_FLOR_03",
+      "topic": "Flora & Fauna",
+      "kg_fact_id": ""
+    },
+    "HEVAL_065": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_03",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_066": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_067": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_GOVE_01",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_068": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_APPO_03",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_069": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_HIST_01",
+      "topic": "History",
+      "kg_fact_id": "FACT_95ca9309"
+    },
+    "HEVAL_070": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_APPO_02",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_071": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CONS_04",
+      "topic": "Constitution & Law",
+      "kg_fact_id": "FACT_118ad7f0"
+    },
+    "HEVAL_072": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_HIST_03",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_073": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_APPO_02",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_074": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_LIBE_02",
+      "topic": "Liberation War",
+      "kg_fact_id": "FACT_ef52cba0"
+    },
+    "HEVAL_075": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CULT_02",
+      "topic": "Culture",
+      "kg_fact_id": "FACT_9f01f833"
+    },
+    "HEVAL_076": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_GOVE_02",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_077": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CULT_02",
+      "topic": "Culture",
+      "kg_fact_id": ""
+    },
+    "HEVAL_078": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_APPO_03",
+      "topic": "Appointments",
+      "kg_fact_id": "FACT_8c97f430"
+    },
+    "HEVAL_079": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_GEOG_01",
+      "topic": "Geography",
+      "kg_fact_id": ""
+    },
+    "HEVAL_080": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_GEOG_02",
+      "topic": "Geography",
+      "kg_fact_id": ""
+    },
+    "HEVAL_081": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_HIST_02",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_082": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_083": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_GOVE_02",
+      "topic": "Government",
+      "kg_fact_id": ""
+    },
+    "HEVAL_084": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_LIBE_03",
+      "topic": "Liberation War",
+      "kg_fact_id": ""
+    },
+    "HEVAL_085": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_HIST_01",
+      "topic": "History",
+      "kg_fact_id": ""
+    },
+    "HEVAL_086": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_LANG_03",
+      "topic": "Language",
+      "kg_fact_id": "FACT_c528fd75"
+    },
+    "HEVAL_087": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_ECON_03",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_088": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CONS_02",
+      "topic": "Constitution & Law",
+      "kg_fact_id": ""
+    },
+    "HEVAL_089": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_LANG_01",
+      "topic": "Language",
+      "kg_fact_id": "FACT_c528fd75"
+    },
+    "HEVAL_090": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_CULT_04",
+      "topic": "Culture",
+      "kg_fact_id": "FACT_28a8394c"
+    },
+    "HEVAL_091": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_GOVE_02",
+      "topic": "Government",
+      "kg_fact_id": "FACT_f80df932"
+    },
+    "HEVAL_092": {
+      "system_id": "proposed_temporal_kg",
+      "mcq_id": "PROPOSED_MOCK_HIST_03",
+      "topic": "History",
+      "kg_fact_id": "FACT_a56754d4"
+    },
+    "HEVAL_093": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_CONS_01",
+      "topic": "Constitution",
+      "kg_fact_id": ""
+    },
+    "HEVAL_094": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_ECON_01",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_095": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_GEOG_01",
+      "topic": "Geography",
+      "kg_fact_id": ""
+    },
+    "HEVAL_096": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_LANG_01",
+      "topic": "Language",
+      "kg_fact_id": ""
+    },
+    "HEVAL_097": {
+      "system_id": "web_rag",
+      "mcq_id": "WEB_RAG_MOCK_APPO_03",
+      "topic": "Appointments",
+      "kg_fact_id": ""
+    },
+    "HEVAL_098": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_CONS_01",
+      "topic": "Constitution",
+      "kg_fact_id": ""
+    },
+    "HEVAL_099": {
+      "system_id": "generic_llm",
+      "mcq_id": "GENERIC_LLM_MOCK_ECON_01",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    },
+    "HEVAL_100": {
+      "system_id": "static_rag",
+      "mcq_id": "STATIC_RAG_MOCK_ECON_04",
+      "topic": "Economy",
+      "kg_fact_id": ""
+    }
+  }
+}

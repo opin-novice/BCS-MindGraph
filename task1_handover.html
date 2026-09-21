@@ -1,0 +1,633 @@
+<title>BCS Temporal Corpus Handover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@500;700&family=Noto+Sans+Bengali:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground:   #f4f6f3;
+    --surface:  #ffffff;
+    --raised:   #ecefe9;
+    --ink:      #16201c;
+    --muted:    #5c6862;
+    --faint:    #8c9691;
+    --rule:     #dae0da;
+    --accent:   #0f5c4a;
+    --accent-w: #e3efea;
+    --warn:     #8a5600;
+    --warn-w:   #f7eeda;
+    --stop:     #96271f;
+    --stop-w:   #f8e8e5;
+    --serif: "Noto Serif Bengali", Georgia, serif;
+    --sans:  "Noto Sans Bengali", system-ui, -apple-system, sans-serif;
+    --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #101613;
+      --surface:  #171f1b;
+      --raised:   #1e2823;
+      --ink:      #e6ece8;
+      --muted:    #9aa7a1;
+      --faint:    #6d7a74;
+      --rule:     #2a352f;
+      --accent:   #5fc0a3;
+      --accent-w: #16302a;
+      --warn:     #e0a951;
+      --warn-w:   #33270f;
+      --stop:     #eb8a80;
+      --stop-w:   #331a17;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:   #101613;
+    --surface:  #171f1b;
+    --raised:   #1e2823;
+    --ink:      #e6ece8;
+    --muted:    #9aa7a1;
+    --faint:    #6d7a74;
+    --rule:     #2a352f;
+    --accent:   #5fc0a3;
+    --accent-w: #16302a;
+    --warn:     #e0a951;
+    --warn-w:   #33270f;
+    --stop:     #eb8a80;
+    --stop-w:   #331a17;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.72;
+    margin: 0;
+  }
+  .wrap {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 0 72px;
+  }
+
+  /* ---- masthead ---- */
+  .mast { padding-block: 40px 22px; border-bottom: 2px solid var(--ink); }
+  .eyebrow {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: .13em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.7rem);
+    line-height: 1.24; margin: 0 0 12px; text-wrap: balance;
+  }
+  .standfirst {
+    font-size: 1.02rem; color: var(--muted); margin: 0; max-width: 46rem;
+  }
+
+  /* ---- status strip ---- */
+  .status {
+    display: grid; gap: 1px; background: var(--rule);
+    border: 1px solid var(--rule); margin-block: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .status div { background: var(--surface); padding: 13px 15px; }
+  .status dt {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--faint); margin: 0 0 5px;
+  }
+  .status dd {
+    margin: 0; font-weight: 600; font-size: 1.02rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .is-fail { color: var(--stop); }
+  .is-hold { color: var(--warn); }
+
+  /* ---- sections ---- */
+  section { margin-block: 46px 0; }
+  h2 {
+    font-family: var(--serif); font-size: 1.42rem; font-weight: 700;
+    margin: 0 0 6px; line-height: 1.32; text-wrap: balance;
+  }
+  h2 .num {
+    font-family: var(--mono); font-size: .78em; font-weight: 400;
+    color: var(--accent); margin-inline-end: .5em;
+  }
+  h3 {
+    font-family: var(--sans); font-size: 1.04rem; font-weight: 600;
+    margin: 30px 0 8px; line-height: 1.45;
+  }
+  p { margin: 0 0 14px; max-width: 46rem; }
+  .lede { color: var(--muted); margin-bottom: 20px; max-width: 46rem; }
+  strong { font-weight: 600; }
+  code {
+    font-family: var(--mono); font-size: .855em;
+    background: var(--raised); padding: .12em .38em; border-radius: 2px;
+    word-break: break-word;
+  }
+
+  /* ---- tables ---- */
+  .scroll { overflow-x: auto; margin-block: 18px; }
+  table {
+    border-collapse: collapse; width: 100%; min-width: 30rem;
+    font-size: .935rem; background: var(--surface);
+  }
+  th, td {
+    text-align: left; padding: 9px 13px;
+    border-bottom: 1px solid var(--rule); vertical-align: top;
+  }
+  thead th {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--faint);
+    border-bottom: 1.5px solid var(--ink); font-weight: 500;
+  }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr:last-child td { border-bottom: none; }
+  tr.accent td { background: var(--accent-w); font-weight: 600; }
+  tr.flag td { background: var(--stop-w); }
+
+  /* ---- callout ---- */
+  .note {
+    border-left: 3px solid var(--accent); background: var(--surface);
+    padding: 15px 18px; margin-block: 20px;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  .note.warn { border-left-color: var(--warn); }
+  .note.stop { border-left-color: var(--stop); }
+  .note-label {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--faint);
+    display: block; margin-bottom: 6px;
+  }
+
+  /* ---- priority blocks ---- */
+  .task {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-left: 4px solid var(--rule); padding: 16px 18px; margin-block: 14px;
+  }
+  .task.p1 { border-left-color: var(--stop); }
+  .task.p2 { border-left-color: var(--warn); }
+  .task.p3 { border-left-color: var(--accent); }
+  .task h4 {
+    margin: 0 0 7px; font-size: 1rem; font-weight: 600;
+    font-family: var(--sans); line-height: 1.5;
+  }
+  .task h4 .tag {
+    font-family: var(--mono); font-size: 11px; color: var(--faint);
+    margin-inline-end: .55em; font-weight: 400;
+  }
+  .task p { margin: 0 0 8px; font-size: .95rem; color: var(--muted); }
+  .task p:last-child { margin-bottom: 0; }
+  .prio-head {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; margin: 30px 0 10px; font-weight: 500;
+  }
+  .prio-head.p1 { color: var(--stop); }
+  .prio-head.p2 { color: var(--warn); }
+  .prio-head.p3 { color: var(--accent); }
+
+  /* ---- pre ---- */
+  pre {
+    font-family: var(--mono); font-size: .855rem; line-height: 1.68;
+    background: var(--surface); border: 1px solid var(--rule);
+    padding: 14px 16px; overflow-x: auto; margin-block: 16px;
+  }
+  pre.stern { border-color: var(--stop); background: var(--stop-w); }
+
+  ul, ol { margin: 0 0 14px; padding-inline-start: 1.35em; max-width: 46rem; }
+  li { margin-bottom: 6px; }
+
+  /* ---- checklist ---- */
+  .check { list-style: none; padding: 0; margin-block: 16px; max-width: 46rem; }
+  .check li {
+    padding: 9px 0 9px 32px; border-bottom: 1px solid var(--rule);
+    position: relative; font-size: .95rem;
+  }
+  .check li::before {
+    content: "☐"; position: absolute; left: 4px; top: 8px;
+    font-family: var(--mono); color: var(--faint); font-size: 1.05em;
+  }
+  .check li:last-child { border-bottom: none; font-weight: 600; }
+
+  .kicker {
+    font-family: var(--serif); font-size: 1.12rem; line-height: 1.6;
+    border-top: 2px solid var(--ink); margin-top: 44px; padding-top: 22px;
+    max-width: 46rem;
+  }
+
+  @media (max-width: 560px) {
+    body { font-size: 15.5px; }
+    .wrap { padding-inline: 16px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <p class="eyebrow">BCS-MindGraph · RA Handover · 2026-09-16</p>
+    <h1>Task 1 — BCS Corpus ও Temporal Metadata</h1>
+    <p class="standfirst">
+      এ পর্যন্ত কী কী হয়েছে, কেন হয়েছে, এবং Task 1 সম্পূর্ণ করতে আর কী কী বাকি —
+      যাতে আপনি কাজ ধরে এগোতে পারেন এবং PI-কে Task 2-এর জন্য প্রস্তুত করতে পারেন।
+    </p>
+  </header>
+
+  <dl class="status">
+    <div><dt>অবস্থা</dt><dd class="is-hold">Partially Complete</dd></div>
+    <div><dt>Cutoff (t*)</dt><dd>2023-04-19</dd></div>
+    <div><dt>মোট fact</dt><dd>616</dd></div>
+    <div><dt>Strict guard</dt><dd class="is-fail">FAIL</dd></div>
+    <div><dt>Task 2 শুরু?</dt><dd class="is-fail">না</dd></div>
+  </dl>
+
+  <section>
+    <h2><span class="num">১</span>Task 1 আসলে কী চায়</h2>
+    <p>প্রতিটি fact-এ <em>evidence দিয়ে সমর্থিত</em> temporal metadata বসাতে হবে:
+      <code>valid_from</code>, <code>valid_to</code>, <code>source_published_at</code>,
+      <code>source_tier</code>, <code>relation</code>, <code>observed_at</code>।</p>
+    <pre class="stern">কঠোর নিয়ম — এগুলো ভাঙা যাবে না
+
+১. কোনো তারিখ অনুমান বা আবিষ্কার করা যাবে না
+২. fact_text-এ থাকা সাল = source_published_at নয়
+৩. Source যাচাই না হলে field ফাঁকা রেখে review-তে পাঠাতে হবে
+৪. 45তম BCS (target paper) কখনো evidence হবে না
+৫. Cutoff-পরবর্তী evidence holdout corpus-এ যাবে না
+৬. কোনো fact মোছা যাবে না, কোনো ID বদলানো যাবে না
+৭. অসমর্থিত source চুপচাপ বদলে দেওয়া যাবে না</pre>
+  </section>
+
+  <section>
+    <h2><span class="num">২</span>সবচেয়ে বড় আবিষ্কার — এটা আগে বুঝুন</h2>
+    <p class="lede">Corpus-এর <strong>citation layer কাজ করে না</strong>। এটাই Task 1
+      আটকে থাকার একমাত্র মূল কারণ।</p>
+    <p>616টি fact-এর ১৬৪টি আলাদা <code>source_url</code> একটা একটা করে fetch করে দেখা হয়েছে:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>ফলাফল</th><th class="n">সংখ্যা</th></tr></thead>
+        <tbody>
+          <tr><td>HTTP 404 — পাতা নেই</td><td class="n">92</td></tr>
+          <tr><td>DNS / TLS / connection failure</td><td class="n">46</td></tr>
+          <tr><td>403 / 401 / 500 / 202</td><td class="n">7</td></tr>
+          <tr><td>HTTP 200 — সফল</td><td class="n">19</td></tr>
+          <tr><td>— এর মধ্যে catch-all / soft-404</td><td class="n">4</td></tr>
+          <tr class="flag"><td>মোট অকার্যকর URL</td><td class="n">145 / 164</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>491টি fact <code>https://bpsc.gov.bd/exam/43th-bcs</code> ধাঁচের URL cite করে।
+      BPSC-র সাইটে এই path নেই — লক্ষ করুন বানানও ভুল (<code>43th</code>, সঠিক হতো
+      <code>43rd</code>), যা machine-generated URL-এর স্পষ্ট চিহ্ন। এগুলো
+      <strong>synthetic placeholder</strong>, বাস্তব citation নয়।</p>
+    <div class="note stop">
+      <span class="note-label">মূল সিদ্ধান্তসূচক তথ্য</span>
+      <p>একটি cited page-ও cutoff-এর আগের কোনো publication date দেখায় না। তাই মূল
+        corpus থেকে <strong>একটিও <code>valid_from</code></strong> প্রমাণসহ বসানো যায়নি।</p>
+    </div>
+    <h3>Leakage — আলাদা সমস্যা, URL কাজ করুক বা না করুক</h3>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>সমস্যা</th><th class="n">সংখ্যা</th><th>নিয়ম</th></tr></thead>
+        <tbody>
+          <tr><td>45তম BCS (target paper) cite করে</td><td class="n">22</td><td>Rule 9</td></tr>
+          <tr><td>Cutoff-পরবর্তী BCS (46–50তম) cite করে</td><td class="n">102</td><td>Rule 10</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">৩</span>যা যা সম্পন্ন হয়েছে</h2>
+
+    <h3>৩.১ যাচাই-অবকাঠামো — <code>verify_temporal_corpus.py</code></h3>
+    <pre>python verify_temporal_corpus.py fetch      # প্রতিটি URL fetch, evidence cache
+python verify_temporal_corpus.py verify     # 40টি করে batch, প্রতি batch-এ validation
+python verify_temporal_corpus.py validate   # schema / date / ID / provenance gate
+python verify_temporal_corpus.py audit      # coverage audit তৈরি
+python verify_temporal_corpus.py guard      # strict guard offline dry-run</pre>
+    <p>৪০টি করে ১৬টি batch, প্রতি batch-এর পর validation ও checkpoint। কোনো batch
+      fail করলে পরেরটায় যায় না। Wayback Machine থেকে cutoff-পূর্ব archived capture-ও খোঁজে।</p>
+
+    <h3>৩.২ ফলাফল — মূল corpus</h3>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Metric</th><th class="n">মান</th></tr></thead>
+        <tbody>
+          <tr><td>মোট fact</td><td class="n">616</td></tr>
+          <tr class="flag"><td>প্রমাণসহ <code>valid_from</code></td><td class="n">0</td></tr>
+          <tr class="flag"><td>প্রমাণসহ <code>valid_to</code></td><td class="n">0</td></tr>
+          <tr><td><code>source_published_at</code></td><td class="n">14</td></tr>
+          <tr><td><code>source_tier</code> বসানো</td><td class="n">616</td></tr>
+          <tr><td><code>relation</code> বসানো</td><td class="n">616</td></tr>
+          <tr class="flag"><td>Review প্রয়োজন</td><td class="n">616</td></tr>
+          <tr class="flag"><td>Cutoff-এ যোগ্য</td><td class="n">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ঐ ১৪টির মধ্যে ১১টি দুর্বল HTTP header থেকে আসা এবং cutoff-পরবর্তী — ব্যবহারযোগ্য নয়।</p>
+
+    <h3>৩.৩ যেসব ভুল ধরা পড়ে সংশোধন হয়েছে</h3>
+    <div class="task">
+      <h4><span class="tag">ক</span><code>web_scraper.py</code>-তে tier bug</h4>
+      <p><code>str.lstrip("www.")</code> prefix নয়, <strong>character set</strong> কাটে।
+        ফলে <code>worldbank.org</code> → <code>orldbank.org</code>,
+        <code>who.int</code> → <code>ho.int</code> হয়ে নিজেদের tier map-এই মিলত না।
+        ৩টি জায়গায় ঠিক করা হয়েছে, সাথে subdomain matching। ১২/১২ test case pass।</p>
+    </div>
+    <div class="task">
+      <h4><span class="tag">খ</span>ভুল <code>source_tier</code></h4>
+      <p>আগের pass একটা ad-hoc table দিয়ে <code>*.gov.bd</code> → tier 1 বসিয়েছিল, ফলে
+        ৪৯১টি <strong>অকার্যকর</strong> BPSC URL সর্বোচ্চ authority পেয়েছিল। প্রকল্পের
+        নিজস্ব policy-তে <code>bpsc.gov.bd</code> mapped নয় → এখন tier 4।</p>
+    </div>
+    <div class="task">
+      <h4><span class="tag">গ</span>ভুয়া <code>source_snapshot_hash</code></h4>
+      <p>আগে ছিল <code>sha256("url|fact_text")</code> — অর্থাৎ corpus row-এর hash, যা
+        source সম্পর্কে <strong>কিছুই প্রমাণ করে না</strong>। এখন প্রকৃতপক্ষে download
+        করা content-এর digest; কিছু না নামলে <code>null</code>।</p>
+    </div>
+
+    <h3>৩.৪ Triage</h3>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>শ্রেণি</th><th class="n">সংখ্যা</th></tr></thead>
+        <tbody>
+          <tr class="accent"><td>Holdout-eligible</td><td class="n">596</td></tr>
+          <tr><td>বাদ — 45তম BCS selection leakage</td><td class="n">18</td></tr>
+          <tr><td>বাদ — placeholder / junk row</td><td class="n">2</td></tr>
+          <tr><td><code>static</code></td><td class="n">248</td></tr>
+          <tr><td><code>dynamic</code></td><td class="n">233</td></tr>
+          <tr><td><code>unclassified</code></td><td class="n">135</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note warn">
+      <span class="note-label">১৮টি বাদ দেওয়ার কারণটা গুরুত্বপূর্ণ</span>
+      <p>এই fact-গুলোর একমাত্র exam attribution 45তম BCS। অর্থাৎ answer key দেখে
+        এগুলো <em>বাছাই</em> করা হয়েছে। পরে ভালো source দিলেও এই দূষণ যায় না — কারণ
+        corpus-এর গঠনই target paper দেখে প্রভাবিত।</p>
+    </div>
+
+    <h3>৩.৫ Relation coverage উন্নয়ন</h3>
+    <p><code>STATED_AS</code> মানে “এই দাবিটা কী ধরনের, জানি না” — এতে structured date
+      বের করা অসম্ভব। Corpus-এ আগে থেকেই থাকা curated metadata
+      (<code>_subtopic</code>, <code>_question_type</code>) ব্যবহার করে:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th></th><th class="n">আগে</th><th class="n">এখন</th></tr></thead>
+        <tbody>
+          <tr><td><code>STATED_AS</code></td><td class="n">434</td><td class="n">177</td></tr>
+          <tr class="accent"><td>Specific relation</td><td class="n">182</td><td class="n">439</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>৩.৬ Re-sourcing pipeline — <code>resource_corpus.py</code></h3>
+    <p><strong>মূল কৌশল:</strong> ২০২৬ সালের live web দিয়ে ২০২৩ সালের দাবি যাচাই করা
+      যায় না। তাই <strong>MediaWiki revision API</strong> — cutoff-এর দিনে article ঠিক
+      যেমন ছিল, তেমনটাই আনা হয়। এক call-এ তিনটি জিনিস মেলে: দূষণমুক্ত text,
+      প্রমাণিতভাবে cutoff-পূর্ব revision timestamp, আর স্থায়ী <code>oldid</code> permalink।</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>৫৯৬টি fact-এর পূর্ণ pass</th><th class="n">সংখ্যা</th><th class="n">%</th></tr></thead>
+        <tbody>
+          <tr class="accent"><td>Cutoff-পূর্ব source পাওয়া গেছে</td><td class="n">181</td><td class="n">30%</td></tr>
+          <tr><td>তার মধ্যে <code>valid_from</code> সহ</td><td class="n">41</td><td class="n">7%</td></tr>
+          <tr><td>— infobox field থেকে</td><td class="n">19</td><td class="n"></td></tr>
+          <tr><td>— prose proximity থেকে</td><td class="n">22</td><td class="n"></td></tr>
+          <tr><td>কোনো source মেলেনি</td><td class="n">415</td><td class="n">70%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>সব revision date <code>2014-10-07</code> – <code>2023-04-19</code>-এর মধ্যে,
+      <strong>প্রতিটি cutoff-এর আগে</strong>।</p>
+    <div class="note">
+      <span class="note-label">গুরুত্বপূর্ণ</span>
+      <p>এই ফলাফল <code>resourcing_proposals.json</code>-এ আছে —
+        <strong>corpus বদলানো হয়নি</strong> (Rule 13)। প্রতিটি প্রস্তাব PI-এর
+        accept / reject-এর অপেক্ষায়।</p>
+    </div>
+
+    <h3>Topic-ভেদে বিশাল পার্থক্য</h3>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Topic</th><th class="n">n</th><th class="n">sourced</th><th class="n">dated</th></tr></thead>
+        <tbody>
+          <tr><td>Intl Relations / Defense / Geography</td><td class="n">27</td><td class="n">87–100%</td><td class="n">মিশ্র</td></tr>
+          <tr><td>History</td><td class="n">97</td><td class="n">43%</td><td class="n">11%</td></tr>
+          <tr><td>Liberation War</td><td class="n">74</td><td class="n">20%</td><td class="n">3%</td></tr>
+          <tr class="flag"><td>Economy</td><td class="n">140</td><td class="n">16%</td><td class="n">0%</td></tr>
+          <tr class="flag"><td>Constitution</td><td class="n">50</td><td class="n">10%</td><td class="n">2%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Economy-তে 0% dated <strong>ভুল নয়</strong> — ওগুলো dynamic fact, tool
+      ইচ্ছাকৃতভাবে interval বানাতে অস্বীকার করে।</p>
+
+    <h3>৩.৭ যে তিনটি false-positive ফাঁদ বন্ধ করা হয়েছে</h3>
+    <div class="task p3">
+      <h4><span class="tag">১</span>Curriculum label-কে entity ভাবা</h4>
+      <p><code>subject_entities[0]</code> আসলে <code>_subtopic</code>-এর কপি (যেমন
+        “প্রাচীন বাংলার জনপদসমূহ”)। কোনো article-এ এই syllabus heading থাকে না, তাই
+        match ratio কখনো 1.0 হতো না। বাদ দেওয়ার পর hit rate <strong>50% → 90%</strong>।</p>
+    </div>
+    <div class="task p3">
+      <h4><span class="tag">২</span>Aboutness</h4>
+      <p>শুধু token overlap দেখলে “বাংলার প্রথম স্বাধীন নবাব” fact-টি
+        <strong>নাটোর জেলা</strong> article-এর সাথে 0.83 score পায়, কারণ সাধারণ
+        ইতিহাস-শব্দ মিলে যায়। এখন article-কে entity <em>সম্পর্কে</em> হতে হয়, শুধু
+        উল্লেখ করলে হবে না। Hit rate 90% → 67% — কিন্তু ভুয়া provenance-এর চেয়ে ফাঁক ভালো।</p>
+    </div>
+    <div class="task p3">
+      <h4><span class="tag">৩</span>বড় article ছোট article-কে হারিয়ে দেওয়া</h4>
+      <p>Entity সংখ্যা দিয়ে ranking করলে “Lahore Resolution” fact-টি
+        <strong>Pakistan</strong> article পেত, কারণ বড় article-এ বেশি entity থাকে।
+        এখন title-specificity আগে।</p>
+    </div>
+
+    <h3>৩.৮ Model B workflow</h3>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Item</th><th class="n">সংখ্যা</th><th>অবস্থা</th></tr></thead>
+        <tbody>
+          <tr><td>Frozen Model B seed</td><td class="n">69</td><td>অপরিবর্তিত</td></tr>
+          <tr><td>Pilot (লক্ষ্য)</td><td class="n">50</td><td>চলমান</td></tr>
+          <tr><td>Batch 01</td><td class="n">5</td><td>সব deferred, 0 accepted</td></tr>
+          <tr><td>Batch 02</td><td class="n">5</td><td>2 reviewed + 3 sourced</td></tr>
+          <tr class="flag"><td>Corpus-এ merge</td><td class="n">0</td><td>হয়নি</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Review independence:</strong> যাচাই করে পাওয়া গেছে RA_1 ও RA_2-এর
+      <code>reason</code> string <strong>হুবহু byte-identical</strong> — দুটি স্বাধীন
+      বিচার কখনো একই শব্দে লেখা হয় না। তাই <code>personnel_independent: false</code>
+      নথিভুক্ত করা হয়েছে।</p>
+    <p><strong>৬টি candidate excerpt</strong> automated ভাবে পাওয়া গেছে —
+      পড়ার পর <strong>একটিও গ্রহণযোগ্য নয়</strong>:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Claim</th><th>Verdict</th><th>কারণ</th></tr></thead>
+        <tbody>
+          <tr class="flag"><td>BCSGK-0336-D</td><td>false positive</td><td>“মহিষ” মিলেছে <em>“মহিষ মর্দিনী দেবীমূর্তি”</em>-তে — প্রাচীন দেবীমূর্তি, খামার নয়</td></tr>
+          <tr class="flag"><td>BCSGK-0336-A</td><td>false positive</td><td>“প্রজনন” মিলেছে সাভারের পেশা-শতকরা টেবিলে — শ্রম পরিসংখ্যান</td></tr>
+          <tr><td>BCSGK-0359-A</td><td>partial</td><td>“বৃহত্তর ময়মনসিংহ” সমর্থিত, কিন্তু সুনামগঞ্জ ও সিলেট নয় (৭-এর ৫)</td></tr>
+          <tr><td>BCSGK-0359-B</td><td>insufficient</td><td>“দুর্গাপুর” শুধু image caption-এ, কোনো বাক্যে নয়</td></tr>
+          <tr><td>BCSGK-0315-A</td><td>partial</td><td>পার্বত্য চট্টগ্রাম সমর্থিত, “চট্টগ্রাম জেলা” নয়</td></tr>
+          <tr><td>BCSGK-0336-E</td><td>weak</td><td>শিল্প-তালিকায় “কুমির খামার” আছে, নামধারী প্রতিষ্ঠান নয়</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note stop">
+      <span class="note-label">শিক্ষা</span>
+      <p>Automated match একটা <strong>lead</strong>, evidence নয়। Excerpt না পড়লে
+        ২টি ভুয়া evidence corpus-এ ঢুকে যেত।</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">৪</span>যা যা বাকি — আপনার কাজের তালিকা</h2>
+
+    <p class="prio-head p1">অগ্রাধিকার ১ — PI decision · এগুলো ছাড়া কিছুই এগোবে না</p>
+
+    <div class="task p1">
+      <h4><span class="tag">১</span>Guard semantics — Model A না Model B?</h4>
+      <p>এটাই সবচেয়ে বড় সিদ্ধান্ত।</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Model</th><th class="n">পাস করবে</th><th>মন্তব্য</th></tr></thead>
+          <tbody>
+            <tr class="flag"><td><strong>A.</strong> সব 616 fact-এ interval বাধ্যতামূলক (বর্তমান)</td><td class="n">41</td><td>Guard কখনো pass করবে না</td></tr>
+            <tr class="accent"><td><strong>B.</strong> dynamic-এ interval + static-এ যাচাইকৃত cutoff-পূর্ব source</td><td class="n">~128</td><td>প্রমাণভিত্তিক, defensible</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>কেন দরকার:</strong> BCS GK-র বেশিরভাগ fact <em>কালাতীত</em> — “ঢাকা
+        বাংলাদেশের রাজধানী”, “সুন্দরবন দক্ষিণ-পশ্চিমে”। এদের <code>valid_from</code>
+        চাওয়াটাই ভুল প্রশ্ন। Geography-তে 87% sourced কিন্তু 0% dated — এটা bug নয়,
+        fact-গুলোর প্রকৃতি।</p>
+      <p>Model B-র যুক্তি: <em>যদি bn.wikipedia 2023-04-05-এ দাবিটা লিখে থাকে, তবে
+        cutoff-এ দাবিটা জানা ছিল</em> — holdout-এর জন্য ঠিক এটাই দরকার। এটি label-এ
+        বিশ্বাস নয়, <strong>evidence-এ ভিত্তি</strong>।</p>
+    </div>
+    <div class="task p1">
+      <h4><span class="tag">২</span>BCE তারিখ</h4>
+      <p>“খ্রিষ্টপূর্ব ৩২১” (<code>BCSGK-0142</code>) বর্তমান <code>YYYY</code>
+        schema-তে লেখা যায় না। আলাদা সিদ্ধান্ত দরকার।</p>
+    </div>
+    <div class="task p1">
+      <h4><span class="tag">৩</span>Compound fact ভাঙা হবে কি না</h4>
+      <p><code>BCSGK-0336</code>-এ ৫টি স্বাধীন দাবি এক row-তে। এক excerpt দিয়ে প্রমাণ
+        অসম্ভব। ভাঙতে হলে নতুন ID লাগবে, যা Rule 11-এর সাথে সাংঘর্ষিক।</p>
+    </div>
+
+    <p class="prio-head p2">অগ্রাধিকার ২ — আপনি এখনই করতে পারেন</p>
+
+    <div class="task p2">
+      <h4><span class="tag">৪</span>১৩৫টি <code>unclassified</code> fact triage করুন</h4>
+      <p><code>static</code> না <code>dynamic</code> — Model B নিলে এই শ্রেণিবিভাগই ঠিক
+        করবে কোন নিয়ম খাটবে। <strong>B গ্রহণের আগেই শেষ করা জরুরি</strong>, নইলে ভুল
+        শ্রেণিবিভাগ চুপচাপ leak হয়ে যাবে।</p>
+    </div>
+    <div class="task p2">
+      <h4><span class="tag">৫</span><code>BCSGK-0315</code>-এর শ্রেণি-দ্বন্দ্ব মেটান</h4>
+      <p>Batch route বলছে <code>static_geographic</code>, automated triage বলছে
+        <code>dynamic</code> (topic = Economy)। দুটো একসাথে সত্য হতে পারে না।</p>
+    </div>
+    <div class="task p2">
+      <h4><span class="tag">৬</span>Batch 02 শেষ করুন</h4>
+      <p>৩টি fact এখনো evidence-complete নয় —
+        <code>BCSGK-0359-B</code>: বিরিশিরির infobox district/upazila field থেকে re-extract ·
+        <code>BCSGK-0359-A</code>: সুনামগঞ্জ ও সিলেটের জন্য অতিরিক্ত source ·
+        <code>BCSGK-0336</code>: প্রাণিসম্পদ অধিদপ্তরের (<code>dls.gov.bd</code>) cutoff-পূর্ব archived page ·
+        <code>BCSGK-0315</code>: (৫) মিটলে পর।</p>
+    </div>
+    <div class="task p2">
+      <h4><span class="tag">৭</span>External second reviewer জোগাড় করুন</h4>
+      <p><code>BCSGK-0083</code> ও <code>BCSGK-0109</code>-এর জন্য। তাঁকে শুধু verdict
+        নয়, <strong>excerpt বনাম raw revision</strong> মিলিয়ে দেখতে বলবেন।</p>
+    </div>
+    <div class="task p2">
+      <h4><span class="tag">৮</span>Pilot-এর বাকি ৪৫টি fact</h4>
+      <p>একই workflow-এ চালান।</p>
+    </div>
+    <div class="task p2">
+      <h4><span class="tag">৯</span><code>Q263</code> duplicate</h4>
+      <p><code>BCSGK-0385</code> (Bangladesh Affairs) ও <code>BCSGK-0386</code>
+        (Economy) দুটি ভিন্ন fact একই <code>_corpus_id</code> বহন করছে। উৎস
+        <code>bcs_questions_corpus.json</code>-এ ভুল।</p>
+    </div>
+
+    <p class="prio-head p3">অগ্রাধিকার ৩ — decision-এর পরে</p>
+
+    <div class="task p3">
+      <h4><span class="tag">১০–১২</span>Build ও যাচাই</h4>
+      <p>১৮১টি resourcing proposal accept / reject করুন → acceptance audit →
+        <code>bcs_gk_facts_model_b_rc1.json</code> build (seed overwrite
+        <strong>নয়</strong>) → strict guard আবার চালান।</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">৫</span>ফাইল মানচিত্র</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>ফাইল</th><th>কী আছে</th></tr></thead>
+        <tbody>
+          <tr><td><code>verify_temporal_corpus.py</code></td><td>Source যাচাই, triage, validation, audit, guard</td></tr>
+          <tr><td><code>resource_corpus.py</code></td><td>MediaWiki cutoff-পূর্ব revision থেকে re-sourcing</td></tr>
+          <tr><td><code>batch02_ra_sourcing.py</code></td><td>Batch 02 claim card, evidence, adjudication</td></tr>
+          <tr><td><code>bcs_gk_facts.json</code></td><td>মূল corpus, 616 fact (enriched)</td></tr>
+          <tr class="flag"><td><code>bcs_gk_facts_model_b.json</code></td><td>Frozen seed, 69 fact — হাত দেবেন না</td></tr>
+          <tr><td><code>temporal_metadata_audit.json</code></td><td>পূর্ণ coverage audit</td></tr>
+          <tr><td><code>temporal_metadata_review_report.json</code></td><td>616টি unresolved fact, কারণসহ</td></tr>
+          <tr><td><code>temporal_verification_notes.json</code></td><td>প্রতি fact-এর evidence record</td></tr>
+          <tr><td><code>resourcing_proposals.json</code></td><td>৫৯৬টি প্রস্তাব (corpus-এ প্রয়োগ হয়নি)</td></tr>
+          <tr><td><code>snapshots/wiki_revisions/</code></td><td>Cached revision — পুনরায় fetch লাগবে না</td></tr>
+          <tr><td><code>model_b_workflow/</code></td><td>Pilot, ledger, review decision, adjudication</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <pre class="stern">❌ bcs_gk_facts_model_b.json overwrite করবেন না
+❌ evidence_ledger.jsonl-এর পুরনো line বদলাবেন না (append-only)
+❌ excerpt না পড়ে accepted_for_build = true করবেন না
+❌ source_url চুপচাপ বদলাবেন না — proposal হিসেবে রাখুন</pre>
+  </section>
+
+  <section>
+    <h2><span class="num">৬</span>যেসব test এখন pass করে</h2>
+    <pre>python -m py_compile verify_temporal_corpus.py resource_corpus.py \
+       main-pipeline.py kg_builder.py test_cutoff.py web_scraper.py   # PASS
+python test_cutoff.py                                                 # PASS (8/8 CHECK)
+python verify_temporal_corpus.py validate                             # PASS (0 error, 1 warning)
+python verify_temporal_corpus.py guard                                # FAIL (প্রত্যাশিত)</pre>
+    <p><code>guard</code> fail করাটাই <strong>সঠিক আচরণ</strong> — corpus এখনো
+      holdout-এর জন্য প্রস্তুত নয়, এবং tool সেটা লুকাচ্ছে না।</p>
+    <p><strong>Integrity:</strong> 616টি fact অক্ষত · কোনো field হারায়নি · কোনো
+      <code>fact_text</code> / <code>source_url</code> / <code>_corpus_id</code>
+      বদলায়নি · সব <code>fact_uid</code> unique · কোনো ভুল date format নেই।</p>
+  </section>
+
+  <section>
+    <h2><span class="num">৭</span>Task 1 কখন “COMPLETE” বলা যাবে</h2>
+    <ul class="check">
+      <li>Guard semantics (Model A / B) সিদ্ধান্ত হয়েছে ও নথিভুক্ত</li>
+      <li>১৩৫টি unclassified fact triage সম্পন্ন</li>
+      <li>Pilot-এর ৫০টি fact-এর evidence outcome logged</li>
+      <li>BCSGK-0083 / 0109-এ external second review হয়েছে</li>
+      <li>Resourcing proposal accept / reject সম্পন্ন</li>
+      <li>rc1 build হয়েছে (seed overwrite ছাড়া)</li>
+      <li>কোনো তারিখ আবিষ্কার করা হয়নি — audit trail-এ প্রমাণিত</li>
+      <li>2023-04-19-এ strict temporal guard PASS</li>
+    </ul>
+    <p>শেষ ঘরটিতে টিক না পড়া পর্যন্ত <strong>Task 2 শুরু করবেন না</strong>।</p>
+  </section>
+
+  <p class="kicker">
+    Corpus-এর citation layer ভুয়া ছিল; সেটা ধরা পড়েছে, মাপা হয়েছে, এবং প্রমাণভিত্তিক
+    বিকল্প তৈরি হয়েছে — কিন্তু BCS GK-র বেশিরভাগ fact কালাতীত বলে বর্তমান guard
+    কখনোই pass করবে না। PI-কে guard-এর সংজ্ঞা ঠিক করতে হবে; এটি কারিগরি সমস্যা নয়,
+    পদ্ধতিগত সিদ্ধান্ত। মনে রাখবেন — <strong>১২৮টি fact নিয়ে strict guard pass করা
+    corpus প্রকাশযোগ্য; ৬১৬টি fact নিয়ে বানানো তারিখের corpus নয়।</strong>
+  </p>
+
+</div>

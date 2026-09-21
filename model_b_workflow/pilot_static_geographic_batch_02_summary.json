@@ -1,0 +1,17 @@
+{
+  "batch": "pilot_static_geographic_02",
+  "fact_count": 5,
+  "fact_ids": ["BCSGK-0083", "BCSGK-0090", "BCSGK-0109", "BCSGK-0120", "BCSGK-0333"],
+  "candidate_sources_found": 0,
+  "candidate_sources_intaked": 0,
+  "pre_cutoff_candidates": 0,
+  "ra1_supported": 0,
+  "ra2_supported": 0,
+  "verified_supported": 0,
+  "deferred": 0,
+  "post_cutoff_rejected": 0,
+  "leakage_flags": 0,
+  "tool_schema_problems": 0,
+  "status": "ready_for_evidence_collection",
+  "model_b_merge_performed": false
+}

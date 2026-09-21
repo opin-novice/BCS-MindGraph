@@ -1,0 +1,16 @@
+{
+  "generated_records": 136,
+  "duplicate_groups": 5,
+  "leakage_suspected": 1,
+  "status_counts": {
+    "unreviewed": 136
+  },
+  "suggested_domain_counts": {
+    "ambiguous": 82,
+    "malformed": 14,
+    "static_geographic": 40
+  },
+  "final_decisions_made": 0,
+  "inputs_unchanged": true,
+  "schema_version": "model_b_workflow_v1"
+}

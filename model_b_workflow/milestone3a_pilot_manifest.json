@@ -1,0 +1,28 @@
+{
+  "milestone": "3A_duplicate_adjudication_and_pilot_lock",
+  "generated_at": "2026-09-16",
+  "reviewer_id": "RA_1",
+  "duplicate_groups": 5,
+  "duplicate_records_reviewed": 21,
+  "duplicate_verdict_counts": {
+    "merge_candidate": 2,
+    "not_duplicate": 19
+  },
+  "unresolved_merge_groups": [
+    "DUP_609a7510fe"
+  ],
+  "pilot_count": 50,
+  "pilot_category_counts": {
+    "static_historical": 24,
+    "static_geographic": 10,
+    "static_institutional": 1,
+    "dynamic_officeholder": 3,
+    "dynamic_policy_legal": 7,
+    "dynamic_statistical": 3,
+    "dynamic_award_or_membership": 2
+  },
+  "pilot_sha256": "64f083978bf0c2d0f7ae3cc5e6a9407dc79c5d90a165c16f2af2e3c078819c65",
+  "evidence_verified": false,
+  "model_b_merge_performed": false,
+  "frozen_seed_modified": false
+}

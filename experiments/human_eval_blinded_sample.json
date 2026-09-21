@@ -1,0 +1,1508 @@
+{
+  "title": "BCSBatighor GK Human Evaluation Blinded Sample (100 MCQs)",
+  "cutoff_date": "2023-04-19",
+  "total_items": 100,
+  "generated_at": "2026-09-19T00:43:54.581776",
+  "items": [
+    {
+      "eval_item_id": "HEVAL_001",
+      "topic": "Government",
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_002",
+      "topic": "History",
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_003",
+      "topic": "Economy",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_004",
+      "topic": "Culture",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_005",
+      "topic": "History",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_006",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Flora & Fauna বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_007",
+      "topic": "Culture",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_008",
+      "topic": "Culture",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_009",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_010",
+      "topic": "Government",
+      "question": "[Government Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_011",
+      "topic": "Economy",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_012",
+      "topic": "History",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_013",
+      "topic": "Government",
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_014",
+      "topic": "Appointments",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_015",
+      "topic": "Economy",
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_016",
+      "topic": "Appointments",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_017",
+      "topic": "Liberation War",
+      "question": "[Liberation War Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_018",
+      "topic": "Geography",
+      "question": "[Geography Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_019",
+      "topic": "Liberation War",
+      "question": "[Liberation War Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_020",
+      "topic": "Appointments",
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_021",
+      "topic": "Constitution",
+      "question": "[Constitution] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Constitution বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_022",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_023",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_024",
+      "topic": "Geography",
+      "question": "[Geography Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_025",
+      "topic": "Language",
+      "question": "[Language Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_026",
+      "topic": "Liberation War",
+      "question": "[Liberation War Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_027",
+      "topic": "Culture",
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #5?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_028",
+      "topic": "History",
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_029",
+      "topic": "History",
+      "question": "[History] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি History বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_030",
+      "topic": "Geography",
+      "question": "[Geography Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_031",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_032",
+      "topic": "Language",
+      "question": "[Language Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_033",
+      "topic": "Culture",
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_034",
+      "topic": "History",
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_035",
+      "topic": "Appointments",
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_036",
+      "topic": "History",
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_037",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_038",
+      "topic": "Government",
+      "question": "[Government Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_039",
+      "topic": "Liberation War",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_040",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_041",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_042",
+      "topic": "Liberation War",
+      "question": "[Liberation War Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_043",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_044",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_045",
+      "topic": "Appointments",
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_046",
+      "topic": "Liberation War",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_047",
+      "topic": "Culture",
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_048",
+      "topic": "Appointments",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_049",
+      "topic": "Economy",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_050",
+      "topic": "Culture",
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_051",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_052",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_053",
+      "topic": "Government",
+      "question": "[Government] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Government বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_054",
+      "topic": "Liberation War",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_055",
+      "topic": "Appointments",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_056",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_057",
+      "topic": "Culture",
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_058",
+      "topic": "Culture",
+      "question": "[Culture] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Culture বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_059",
+      "topic": "History",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_060",
+      "topic": "Culture",
+      "question": "[Culture Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_061",
+      "topic": "Economy",
+      "question": "[Economy Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_062",
+      "topic": "Appointments",
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_063",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Flora & Fauna বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_064",
+      "topic": "Flora & Fauna",
+      "question": "[Flora & Fauna] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Flora & Fauna বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_065",
+      "topic": "Economy",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_066",
+      "topic": "Liberation War",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_067",
+      "topic": "Government",
+      "question": "[Government] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Government বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_068",
+      "topic": "Appointments",
+      "question": "[Appointments] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Appointments বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_069",
+      "topic": "History",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_070",
+      "topic": "Appointments",
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_071",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_072",
+      "topic": "History",
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_073",
+      "topic": "Appointments",
+      "question": "[Appointments Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_074",
+      "topic": "Liberation War",
+      "question": "[Liberation War Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Liberation War বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_075",
+      "topic": "Culture",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_076",
+      "topic": "Government",
+      "question": "[Government Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_077",
+      "topic": "Culture",
+      "question": "[Culture Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_078",
+      "topic": "Appointments",
+      "question": "[Appointments Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_079",
+      "topic": "Geography",
+      "question": "[Geography Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_080",
+      "topic": "Geography",
+      "question": "[Geography Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Geography বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_081",
+      "topic": "History",
+      "question": "[History Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_082",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Constitution & Law বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_083",
+      "topic": "Government",
+      "question": "[Government Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_084",
+      "topic": "Liberation War",
+      "question": "[Liberation War] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Liberation War বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_085",
+      "topic": "History",
+      "question": "[History Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_086",
+      "topic": "Language",
+      "question": "[Language Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_087",
+      "topic": "Economy",
+      "question": "[Economy Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_088",
+      "topic": "Constitution & Law",
+      "question": "[Constitution & Law Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution & Law বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_089",
+      "topic": "Language",
+      "question": "[Language Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_090",
+      "topic": "Culture",
+      "question": "[Culture Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Culture বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_091",
+      "topic": "Government",
+      "question": "[Government Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #2?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক Government বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_092",
+      "topic": "History",
+      "question": "[History Proposed Temporal KG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি bitemporal KG snapshot ভিত্তিক History বিষয়ের 2023-04-19 পর্যন্ত সঠিক ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_093",
+      "topic": "Constitution",
+      "question": "[Constitution Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Constitution বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_094",
+      "topic": "Economy",
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_095",
+      "topic": "Geography",
+      "question": "[Geography] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Geography বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_096",
+      "topic": "Language",
+      "question": "[Language Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Language বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_097",
+      "topic": "Appointments",
+      "question": "[Appointments Web RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #3?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি pre-cutoff web context ভিত্তিক Appointments বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_098",
+      "topic": "Constitution",
+      "question": "[Constitution Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Constitution বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_099",
+      "topic": "Economy",
+      "question": "[Economy] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #1?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি Economy বিষয়ের 2023-04-19 তারিখ পর্যন্ত নির্ভুল ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    },
+    {
+      "eval_item_id": "HEVAL_100",
+      "topic": "Economy",
+      "question": "[Economy Static RAG] ৪৫তম বিসিএস সংক্রান্ত সাধারণ জ্ঞান প্রশ্ন #4?",
+      "options": {
+        "ক": "অপশন ১",
+        "খ": "অপশন ২",
+        "গ": "অপশন ৩",
+        "ঘ": "অপশন ৪"
+      },
+      "correct_answer": "ক",
+      "explanation": "এটি static context ভিত্তিক Economy বিষয়ের 2023-04-19 পর্যন্ত ব্যাখ্যা।",
+      "difficulty": "medium",
+      "cutoff_date": "2023-04-19"
+    }
+  ]
+}

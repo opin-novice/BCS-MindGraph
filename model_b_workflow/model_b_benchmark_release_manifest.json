@@ -1,0 +1,17 @@
+{
+  "release_id": "model-b-benchmark-v1.0-release",
+  "created_at": "2026-09-18T02:03:09",
+  "benchmark_dataset_file": "model_b_workflow/model_b_benchmark_dataset_v1.json",
+  "benchmark_dataset_sha256": "0ce777b2a7e6f9f60576b6cb2d8c9d39f6712efcb3b24a3a03e0926bc8472fb2",
+  "size_bytes": 296115,
+  "cutoff_date": "2023-04-19",
+  "summary": {
+    "verified_seed_facts": 69,
+    "accepted_benchmark_mcqs": 36,
+    "topics_covered": 11,
+    "acceptance_rate_pct": 97.3,
+    "model_id": "Qwen/Qwen2.5-72B-Instruct",
+    "quality_gate_violations": 0,
+    "temporal_guard_violations": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "BCSBatighor GK Question Corpus Inter-Annotator Agreement Report (§5.4)",
+  "total_questions_evaluated": 494,
+  "annotators": [
+    "Annotator 1: Sadia (Primary Human SME)",
+    "Annotator 2: Independent Text-Based Rule Classifier"
+  ],
+  "methodology_notes": "Evaluated independent text classification against manual SME labels. Temporal class achieves almost perfect agreement (kappa = 0.8906), topic achieves substantial agreement (kappa = 0.6238), while difficulty exhibits lower agreement (kappa = 0.1491) reflecting subjective complexity divergence.",
+  "timestamp": "2026-09-19T01:31:25.337914",
+  "agreement_metrics": {
+    "topic": {
+      "cohen_kappa": 0.6238,
+      "fleiss_kappa": 0.6191,
+      "observed_agreement_Po": 0.6437,
+      "expected_agreement_Pe": 0.0529,
+      "agreement_percentage": "64.37%",
+      "interpretation": "Substantial Agreement (0.61 <= kappa < 0.81)"
+    },
+    "difficulty": {
+      "cohen_kappa": 0.1575,
+      "fleiss_kappa": 0.1314,
+      "observed_agreement_Po": 0.5607,
+      "expected_agreement_Pe": 0.4786,
+      "agreement_percentage": "56.07%",
+      "interpretation": "Fair/Slight Agreement"
+    },
+    "temporal_class": {
+      "cohen_kappa": 0.8906,
+      "fleiss_kappa": 0.8906,
+      "observed_agreement_Po": 0.9737,
+      "expected_agreement_Pe": 0.7595,
+      "agreement_percentage": "97.37%",
+      "interpretation": "Almost Perfect Agreement (kappa >= 0.81)"
+    }
+  }
+}

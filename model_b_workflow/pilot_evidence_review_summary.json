@@ -1,0 +1,16 @@
+{
+  "reviewed_evidence_records": 1,
+  "reviewers": [
+    "RA_1",
+    "RA_2"
+  ],
+  "review_decisions": 2,
+  "agreement": true,
+  "supported": 0,
+  "not_enough_admissible_evidence": 2,
+  "deferred": 2,
+  "evidence_verified": false,
+  "model_b_merge_performed": false,
+  "frozen_seed_modified": false,
+  "next_action": "find a source excerpt explicitly supporting international bandwidth and the 2006 qualifier, or retain the fact as deferred"
+}

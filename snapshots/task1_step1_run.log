@@ -1,0 +1,131 @@
+Loaded 616 facts from bcs_gk_facts.json
+Distinct source URLs: 164
+
+== Source evidence pass ==
+Evidence records cached: 164 (catch-all/soft-404 URLs flagged: 4)
+
+== Enrichment pass: 16 batches of up to 40 ==
+  batch  1/16  facts   1- 40  validated + checkpointed
+  batch  2/16  facts  41- 80  validated + checkpointed
+  batch  3/16  facts  81-120  validated + checkpointed
+  batch  4/16  facts 121-160  validated + checkpointed
+  batch  5/16  facts 161-200  validated + checkpointed
+  batch  6/16  facts 201-240  validated + checkpointed
+  batch  7/16  facts 241-280  validated + checkpointed
+  batch  8/16  facts 281-320  validated + checkpointed
+  batch  9/16  facts 321-360  validated + checkpointed
+  batch 10/16  facts 361-400  validated + checkpointed
+  batch 11/16  facts 401-440  validated + checkpointed
+  batch 12/16  facts 441-480  validated + checkpointed
+  batch 13/16  facts 481-520  validated + checkpointed
+  batch 14/16  facts 521-560  validated + checkpointed
+  batch 15/16  facts 561-600  validated + checkpointed
+  batch 16/16  facts 601-616  validated + checkpointed
+
+Wrote temporal_verification_notes.json (616 records)
+{
+  "corpus": "bcs_gk_facts.json",
+  "cutoff_date": "2023-04-19",
+  "generated_at": "2026-09-16",
+  "total_facts": 616,
+  "facts_with_verified_valid_from": 0,
+  "facts_with_verified_valid_to": 0,
+  "facts_with_verified_source_published_at": 14,
+  "source_published_at_by_confidence": {
+    "page_metadata": 3,
+    "http_header": 11
+  },
+  "facts_with_source_tier": 616,
+  "facts_with_relation": 616,
+  "facts_with_specific_relation": 182,
+  "facts_requiring_review": 616,
+  "facts_rejected_source_unverifiable": 613,
+  "post_cutoff_evidence_detected": 13,
+  "target_paper_evidence_detected": 22,
+  "post_cutoff_bcs_exam_sources": 102,
+  "duplicate_ids": {
+    "duplicate_fact_uids": [],
+    "duplicate_corpus_ids": [
+      "Q263"
+    ],
+    "count": 1
+  },
+  "invalid_date_formats": 0,
+  "facts_eligible_for_cutoff": 0,
+  "facts_blocked_from_cutoff": 616,
+  "blocked_reason_counts": {
+    "unversioned: no valid_from/valid_to, so the fact cannot be interval-checked against the cutoff": 616,
+    "cited source is a post-cutoff BCS exam": 102,
+    "evidence is the 45th BCS target paper": 22,
+    "selection leakage: this fact's only exam attribution is the 45th BCS target paper, so including it would let the target paper shape the source corpus (rule 9)": 18,
+    "source published after the cutoff": 13,
+    "placeholder/smoke-test row, not a citable claim": 2,
+    "no source_url to re-source from": 2
+  },
+  "verification_status_counts": {
+    "source_not_found": 549,
+    "source_unreachable": 46,
+    "fetched_unsupported": 12,
+    "source_catch_all_page": 4,
+    "verified_supported": 3,
+    "unverifiable_no_source": 2
+  },
+  "source_tier_counts": {
+    "1": 20,
+    "2": 6,
+    "3": 28,
+    "4": 562
+  },
+  "relation_counts": {
+    "STATED_AS": 434,
+    "founded": 47,
+    "located_in": 24,
+    "holds_position": 23,
+    "declared": 19,
+    "recognized_by": 14,
+    "amended": 14,
+    "known_as": 13,
+    "created_by": 6,
+    "member_of": 6,
+    "ruled": 4,
+    "enacted": 4,
+    "awarded_to": 3,
+    "led_by": 2,
+    "won": 1,
+    "migrated_to": 1,
+    "part_of": 1
+  },
+  "triage": {
+    "holdout_eligible": 596,
+    "holdout_excluded": 20,
+    "excluded_target_paper_selection": 18,
+    "excluded_placeholder_rows": 2,
+    "temporal_class_counts": {
+      "static": 248,
+      "dynamic": 233,
+      "unclassified": 135
+    },
+    "resourcing_candidates": 596
+  },
+  "strict_guard_ready": false,
+  "strict_guard_blockage": {
+    "blocked_fact_count": 616,
+    "root_cause": "The corpus's citation layer does not resolve. Of the 164 distinct cited source_urls, only 19 returned HTTP 200 and 4 of those are catch-all routes serving identical bytes for unrelated paths. No cited page exposes a publication date at or before the cutoff, so no valid_from can be grounded in a source.",
+    "why_assigning_a_date_would_be_unsafe": "The years present in fact_text are exam-answer content, not source publication dates, and rule 2 forbids treating them as such. Promoting them to valid_from would manufacture the very temporal metadata the holdout experiment is meant to test, making any resulting TVR/PCLR score an artifact of the annotation pass rather than a measurement of the system.",
+    "missing_evidence_summary": {
+      "cited_url_returns_no_document": 595,
+      "cited_url_is_catch_all": 4,
+      "page_loads_but_does_not_support_fact": 12,
+      "no_source_url_at_all": 2,
+      "supported_but_no_pre_cutoff_date": 3
+    }
+  },
+  "validation": {
+    "ok": true,
+    "error_count": 0,
+    "errors": [],
+    "warnings": [
+      "duplicate _corpus_id in the INPUT corpus: ['Q263'] -- pre-existing defect; not auto-resolved because rule 11/12 forbid rewriting IDs or deleting facts"
+    ]
+  }
+}

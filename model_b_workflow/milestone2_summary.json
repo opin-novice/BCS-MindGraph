@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-16",
+  "release_id": "model-b-seed-2026-09-16",
+  "raw_count": 616,
+  "accepted_seed_count": 69,
+  "permanently_excluded_count": 20,
+  "recoverable_count": 527,
+  "unclassified_recoverable_count": 136,
+  "triage_decision_rows": 136,
+  "pilot_count": 50,
+  "pilot_category_counts": {
+    "static_historical": 20,
+    "static_institutional": 10,
+    "dynamic_officeholder": 10,
+    "dynamic_policy_legal": 5,
+    "dynamic_statistical": 5
+  },
+  "pilot_shortfall": {},
+  "evidence_ledger_rows": 0,
+  "fact_evidence_link_rows": 0,
+  "seed_merge_performed": false,
+  "reconciliation": "616 = 69 + 20 + 527"
+}

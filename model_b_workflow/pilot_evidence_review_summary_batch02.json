@@ -1,0 +1,16 @@
+{
+  "batch": "pilot_static_revised_02",
+  "facts_reviewed": 2,
+  "reviewers": [
+    "RA_1",
+    "RA_2"
+  ],
+  "review_decisions": 4,
+  "reviewer_agreement": true,
+  "verified_supported": 2,
+  "deferred": 0,
+  "evidence_verified": true,
+  "model_b_merge_performed": false,
+  "frozen_seed_modified": false,
+  "next_action": "PI-controlled acceptance audit before any derived corpus rebuild"
+}

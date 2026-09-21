@@ -1,0 +1,10 @@
+{
+  "last_good_batch": 16,
+  "of": 16,
+  "facts_processed": 616,
+  "validated": true,
+  "warnings": [
+    "duplicate _corpus_id in the INPUT corpus: ['Q263'] -- pre-existing defect; not auto-resolved because rule 11/12 forbid rewriting IDs or deleting facts"
+  ],
+  "checkpointed_at": "2026-09-16T03:14:42+00:00"
+}

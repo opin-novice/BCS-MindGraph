@@ -1,0 +1,11 @@
+python-dotenv
+networkx
+requests
+beautifulsoup4
+huggingface_hub
+gradio>=6.0.0
+plotly>=5.18.0
+pandas>=2.0.0
+pyvis>=0.3.0
+matplotlib>=3.7.0
+scipy

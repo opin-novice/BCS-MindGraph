@@ -1,0 +1,33 @@
+{
+  "reviewer_id": "RA_1",
+  "reviewed_at": "2026-09-16",
+  "total_reviewed": 136,
+  "reviewer_status_counts": {
+    "approved": 111,
+    "needs_second_review": 19,
+    "deferred": 0,
+    "rejected": 6
+  },
+  "final_class_counts": {
+    "ambiguous": 0,
+    "duplicate_candidate": 19,
+    "dynamic_award_or_membership": 5,
+    "dynamic_officeholder": 3,
+    "dynamic_policy_legal": 13,
+    "dynamic_statistical": 9,
+    "holdout_contaminated": 5,
+    "malformed": 1,
+    "static_geographic": 20,
+    "static_historical": 60,
+    "static_institutional": 1
+  },
+  "temporal_class_counts": {
+    "static": 81,
+    "dynamic": 30,
+    "blocked": 6,
+    "needs_clarification": 19
+  },
+  "review_policy_version": "model_b_triage_v1_ra1",
+  "evidence_verified": false,
+  "model_b_merge_performed": false
+}

@@ -1,0 +1,110 @@
+{
+  "record_type": "task2c_pilot_manifest",
+  "run_tag": "task2c_pilot",
+  "run_started_at": "2026-09-18T01:19:20",
+  "cutoff": "2023-04-19",
+  "seed_file": "bcs_gk_facts_model_b.json",
+  "seed_sha256": "474aae6a69837b1c01f1d7027c727f4de364498be4a8d775da2a1b8924012eff",
+  "seed_release_id": "model-b-seed-2026-09-16",
+  "difficulty": "medium",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "hf_provider": "auto",
+  "prompt_fingerprint": {
+    "challenger": "f465c4f51422dc8a",
+    "reasoner": "cf359314d3556e6c",
+    "judge": "c7a57722e946a679"
+  },
+  "generator_module_sha256": "e2bb121e7663b17b",
+  "finished_at": "2026-09-18T01:43:35",
+  "wall_seconds": 1455.3,
+  "total_topics": 11,
+  "facts_offered": 25,
+  "facts_available_at_cutoff": 52,
+  "total_mcqs_generated": 37,
+  "total_mcqs_screener_passed": 36,
+  "acceptance_rate_pct": 97.3,
+  "topic_summaries": {
+    "Appointments": {
+      "facts_used": 2,
+      "mcqs_generated": 4,
+      "screener_passed": 4,
+      "seconds": 125.9
+    },
+    "Constitution": {
+      "facts_used": 1,
+      "mcqs_generated": 1,
+      "screener_passed": 1,
+      "seconds": 53.3
+    },
+    "Constitution & Law": {
+      "facts_used": 3,
+      "mcqs_generated": 4,
+      "screener_passed": 4,
+      "seconds": 198.1
+    },
+    "Culture": {
+      "facts_used": 3,
+      "mcqs_generated": 6,
+      "screener_passed": 5,
+      "seconds": 189.5
+    },
+    "Economy": {
+      "facts_used": 3,
+      "mcqs_generated": 4,
+      "screener_passed": 4,
+      "seconds": 112.9
+    },
+    "Flora & Fauna": {
+      "facts_used": 1,
+      "mcqs_generated": 3,
+      "screener_passed": 3,
+      "seconds": 68.1
+    },
+    "Geography": {
+      "facts_used": 3,
+      "mcqs_generated": 2,
+      "screener_passed": 2,
+      "seconds": 168.3
+    },
+    "Government": {
+      "facts_used": 1,
+      "mcqs_generated": 3,
+      "screener_passed": 3,
+      "seconds": 134.8
+    },
+    "History": {
+      "facts_used": 3,
+      "mcqs_generated": 4,
+      "screener_passed": 4,
+      "seconds": 191.9
+    },
+    "Language": {
+      "facts_used": 2,
+      "mcqs_generated": 3,
+      "screener_passed": 3,
+      "seconds": 110.6
+    },
+    "Liberation War": {
+      "facts_used": 3,
+      "mcqs_generated": 3,
+      "screener_passed": 3,
+      "seconds": 101.4
+    }
+  },
+  "rejection_taxonomy": {
+    "code_counts": {
+      "WEAK_DISTRACTORS": 20,
+      "MISTRANSLATION": 1
+    },
+    "mapped_taxonomy_codes": [
+      "E-DIST",
+      "E-STYLE"
+    ]
+  },
+  "temporal_firewall": {
+    "unversioned_in_batch": 0,
+    "enforced_by": "mcq_generator.generate_from_facts & strict_temporal_guard"
+  },
+  "seed_modified": false,
+  "accepted_for_benchmark": false
+}

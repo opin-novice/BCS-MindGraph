@@ -1,0 +1,3229 @@
+{
+  "generated_at": "2026-09-16",
+  "cutoff_date": "2023-04-19",
+  "input_corpus": "bcs_gk_facts.json",
+  "output_corpus": "bcs_gk_facts_model_b.json",
+  "policy": "Model B static facts require explicit pre-cutoff supported evidence",
+  "accepted_count": 69,
+  "excluded_count": 547,
+  "decisions": [
+    {
+      "fact_uid": "BCSGK-0000",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149097626",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0001",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1148313952",
+      "evidence_date": "2023-04-05"
+    },
+    {
+      "fact_uid": "BCSGK-0002",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1145070342",
+      "evidence_date": "2023-03-17"
+    },
+    {
+      "fact_uid": "BCSGK-0003",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0004",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149919754",
+      "evidence_date": "2023-04-15"
+    },
+    {
+      "fact_uid": "BCSGK-0005",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1117066140",
+      "evidence_date": "2022-10-19"
+    },
+    {
+      "fact_uid": "BCSGK-0006",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149097626",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0007",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149097626",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0008",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150063294",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0009",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150203883",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0010",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1123978179",
+      "evidence_date": "2022-11-26"
+    },
+    {
+      "fact_uid": "BCSGK-0011",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0012",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150483098",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0013",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150483098",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0014",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150733675",
+      "evidence_date": "2023-04-19"
+    },
+    {
+      "fact_uid": "BCSGK-0015",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149089420",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0016",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0017",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150422974",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0018",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0019",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0020",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1146202057",
+      "evidence_date": "2023-03-23"
+    },
+    {
+      "fact_uid": "BCSGK-0021",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149779060",
+      "evidence_date": "2023-04-14"
+    },
+    {
+      "fact_uid": "BCSGK-0022",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0023",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0024",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150495812",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0025",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0026",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0027",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0028",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0029",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1129816419",
+      "evidence_date": "2022-12-27"
+    },
+    {
+      "fact_uid": "BCSGK-0030",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0031",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0032",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0033",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0034",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0035",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0036",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0037",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0038",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1142608885",
+      "evidence_date": "2023-03-03"
+    },
+    {
+      "fact_uid": "BCSGK-0039",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0040",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149263423",
+      "evidence_date": "2023-04-11"
+    },
+    {
+      "fact_uid": "BCSGK-0041",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0042",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1146363654",
+      "evidence_date": "2023-03-24"
+    },
+    {
+      "fact_uid": "BCSGK-0043",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1146363654",
+      "evidence_date": "2023-03-24"
+    },
+    {
+      "fact_uid": "BCSGK-0044",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1138369307",
+      "evidence_date": "2023-02-09"
+    },
+    {
+      "fact_uid": "BCSGK-0045",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0046",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149489950",
+      "evidence_date": "2023-04-12"
+    },
+    {
+      "fact_uid": "BCSGK-0047",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0048",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1146363654",
+      "evidence_date": "2023-03-24"
+    },
+    {
+      "fact_uid": "BCSGK-0049",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0050",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150630734",
+      "evidence_date": "2023-04-19"
+    },
+    {
+      "fact_uid": "BCSGK-0051",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150485481",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0052",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1137570323",
+      "evidence_date": "2023-02-05"
+    },
+    {
+      "fact_uid": "BCSGK-0053",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0054",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150483098",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0055",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149780219",
+      "evidence_date": "2023-04-14"
+    },
+    {
+      "fact_uid": "BCSGK-0056",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149612620",
+      "evidence_date": "2023-04-13"
+    },
+    {
+      "fact_uid": "BCSGK-0057",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1140661034",
+      "evidence_date": "2023-02-21"
+    },
+    {
+      "fact_uid": "BCSGK-0058",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0059",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0060",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0061",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0062",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0063",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0064",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0065",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0066",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0067",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0068",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0069",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0070",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0071",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0072",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0073",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0074",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0075",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0076",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0077",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0078",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0079",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0080",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0081",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0082",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0083",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0084",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0085",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0086",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0087",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0088",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0089",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0090",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0091",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0092",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0093",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0094",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0095",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0096",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0097",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149089420",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0098",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0099",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0100",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1147477972",
+      "evidence_date": "2023-03-31"
+    },
+    {
+      "fact_uid": "BCSGK-0101",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0102",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0103",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150196688",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0104",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150590470",
+      "evidence_date": "2023-04-19"
+    },
+    {
+      "fact_uid": "BCSGK-0105",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0106",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0107",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0108",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0109",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0110",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0111",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0112",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0113",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0114",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0115",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0116",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0117",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1149097626",
+      "evidence_date": "2023-04-10"
+    },
+    {
+      "fact_uid": "BCSGK-0118",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150483098",
+      "evidence_date": "2023-04-18"
+    },
+    {
+      "fact_uid": "BCSGK-0119",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1150063294",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0120",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0121",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://en.wikipedia.org/w/index.php?oldid=1147700074",
+      "evidence_date": "2023-04-01"
+    },
+    {
+      "fact_uid": "BCSGK-0122",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0123",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0124",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0125",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0126",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0127",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0128",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0129",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0130",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0131",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6549534",
+      "evidence_date": "2023-03-16"
+    },
+    {
+      "fact_uid": "BCSGK-0132",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0133",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0134",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0135",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0136",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0137",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0138",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0139",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6134016",
+      "evidence_date": "2022-10-06"
+    },
+    {
+      "fact_uid": "BCSGK-0140",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0141",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6448776",
+      "evidence_date": "2023-01-29"
+    },
+    {
+      "fact_uid": "BCSGK-0142",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6583244",
+      "evidence_date": "2023-04-03"
+    },
+    {
+      "fact_uid": "BCSGK-0143",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6145034",
+      "evidence_date": "2022-10-12"
+    },
+    {
+      "fact_uid": "BCSGK-0144",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0145",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0146",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0147",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=5273727",
+      "evidence_date": "2021-07-21"
+    },
+    {
+      "fact_uid": "BCSGK-0148",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0149",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0150",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0151",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0152",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0153",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0154",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0155",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0156",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0157",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0158",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0159",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0160",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0161",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0162",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0163",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0164",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0165",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0166",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0167",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6237915",
+      "evidence_date": "2022-12-02"
+    },
+    {
+      "fact_uid": "BCSGK-0168",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0169",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6607009",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0170",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0171",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0172",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0173",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6584552",
+      "evidence_date": "2023-04-04"
+    },
+    {
+      "fact_uid": "BCSGK-0174",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0175",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6516639",
+      "evidence_date": "2023-02-28"
+    },
+    {
+      "fact_uid": "BCSGK-0176",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0177",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0178",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0179",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0180",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0181",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=5970833",
+      "evidence_date": "2022-07-10"
+    },
+    {
+      "fact_uid": "BCSGK-0182",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0183",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0184",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0185",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0186",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=5801171",
+      "evidence_date": "2022-04-05"
+    },
+    {
+      "fact_uid": "BCSGK-0187",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6178079",
+      "evidence_date": "2022-11-01"
+    },
+    {
+      "fact_uid": "BCSGK-0188",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0189",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0190",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0191",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0192",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0193",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6417617",
+      "evidence_date": "2023-01-15"
+    },
+    {
+      "fact_uid": "BCSGK-0194",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0195",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0196",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6482723",
+      "evidence_date": "2023-02-16"
+    },
+    {
+      "fact_uid": "BCSGK-0197",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0198",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6288446",
+      "evidence_date": "2022-12-24"
+    },
+    {
+      "fact_uid": "BCSGK-0199",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0200",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0201",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0202",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0203",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0204",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0205",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0206",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0207",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0208",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0209",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0210",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0211",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0212",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0213",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6225381",
+      "evidence_date": "2022-11-24"
+    },
+    {
+      "fact_uid": "BCSGK-0214",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6193027",
+      "evidence_date": "2022-11-08"
+    },
+    {
+      "fact_uid": "BCSGK-0215",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0216",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0217",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0218",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0219",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0220",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0221",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0222",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0223",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0224",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0225",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0226",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6271108",
+      "evidence_date": "2022-12-21"
+    },
+    {
+      "fact_uid": "BCSGK-0227",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0228",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0229",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0230",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0231",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0232",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0233",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0234",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0235",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0236",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0237",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0238",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0239",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0240",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0241",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0242",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0243",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0244",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=5237793",
+      "evidence_date": "2021-07-07"
+    },
+    {
+      "fact_uid": "BCSGK-0245",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0246",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0247",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0248",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0249",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0250",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0251",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0252",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0253",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0254",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0255",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0256",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0257",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0258",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0259",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0260",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0261",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0262",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0263",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0264",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0265",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0266",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0267",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0268",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0269",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0270",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0271",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0272",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0273",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0274",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0275",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0276",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0277",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0278",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0279",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6512884",
+      "evidence_date": "2023-02-27"
+    },
+    {
+      "fact_uid": "BCSGK-0280",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0281",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0282",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0283",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6575049",
+      "evidence_date": "2023-03-30"
+    },
+    {
+      "fact_uid": "BCSGK-0284",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6537021",
+      "evidence_date": "2023-03-11"
+    },
+    {
+      "fact_uid": "BCSGK-0285",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0286",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0287",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0288",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0289",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0290",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0291",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0292",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0293",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0294",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0295",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0296",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0297",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0298",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0299",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0300",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0301",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0302",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0303",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0304",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0305",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0306",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0307",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0308",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0309",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0310",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0311",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0312",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0313",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0314",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0315",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0316",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0317",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0318",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0319",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0320",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0321",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0322",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0323",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0324",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0325",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0326",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0327",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0328",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0329",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=5901442",
+      "evidence_date": "2022-06-03"
+    },
+    {
+      "fact_uid": "BCSGK-0330",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0331",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0332",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0333",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0334",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0335",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0336",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0337",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0338",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0339",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0340",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0341",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0342",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0343",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0344",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0345",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0346",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0347",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0348",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0349",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0350",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0351",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0352",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0353",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0354",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0355",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0356",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0357",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0358",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0359",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0360",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0361",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0362",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0363",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0364",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0365",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0366",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0367",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0368",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0369",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0370",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0371",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0372",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0373",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0374",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0375",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0376",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0377",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0378",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0379",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0380",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0381",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0382",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0383",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0384",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0385",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0386",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0387",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0388",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0389",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0390",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0391",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0392",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0393",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0394",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0395",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0396",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0397",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0398",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0399",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0400",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0401",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0402",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0403",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0404",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0405",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0406",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0407",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0408",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0409",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0410",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0411",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0412",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0413",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0414",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0415",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0416",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0417",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0418",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0419",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0420",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0421",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0422",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0423",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0424",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0425",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0426",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0427",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0428",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0429",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0430",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0431",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0432",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0433",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0434",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0435",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0436",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0437",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0438",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0439",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0440",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0441",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0442",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0443",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0444",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0445",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0446",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0447",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0448",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0449",
+      "accepted": false,
+      "reason": "dynamic fact lacks a verified pre-cutoff valid_from"
+    },
+    {
+      "fact_uid": "BCSGK-0450",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0451",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0452",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0453",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0454",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0455",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0456",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0457",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6562980",
+      "evidence_date": "2023-03-22"
+    },
+    {
+      "fact_uid": "BCSGK-0458",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0459",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0460",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0461",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0462",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0463",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0464",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0465",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0466",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0467",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0468",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0469",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0470",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0471",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0472",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6607009",
+      "evidence_date": "2023-04-16"
+    },
+    {
+      "fact_uid": "BCSGK-0473",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0474",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0475",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0476",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0477",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0478",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0479",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0480",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0481",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0482",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0483",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0484",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0485",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0486",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0487",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0488",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0489",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0490",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0491",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0492",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0493",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0494",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0495",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0496",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0497",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0498",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0499",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0500",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0501",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0502",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0503",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0504",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0505",
+      "accepted": true,
+      "reason": "accepted static fact with verified pre-cutoff source evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6485322",
+      "evidence_date": "2023-02-17"
+    },
+    {
+      "fact_uid": "BCSGK-0506",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0507",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0508",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0509",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0510",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0511",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0512",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0513",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0514",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0515",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0516",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0517",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0518",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0519",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0520",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0521",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0522",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0523",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0524",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0525",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0526",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0527",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0528",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0529",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0530",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0531",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0532",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0533",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0534",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0535",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0536",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0537",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0538",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0539",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0540",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0541",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0542",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0543",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0544",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0545",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0546",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0547",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0548",
+      "accepted": true,
+      "reason": "accepted dynamic fact with verified pre-cutoff validity evidence",
+      "evidence_url": "https://bn.wikipedia.org/w/index.php?oldid=6522966",
+      "evidence_date": "2023-03-03"
+    },
+    {
+      "fact_uid": "BCSGK-0549",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0550",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0551",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0552",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0553",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0554",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0555",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0556",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0557",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0558",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0559",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0560",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0561",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0562",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0563",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0564",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0565",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0566",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0567",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0568",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0569",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0570",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0571",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0572",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0573",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0574",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0575",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0576",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0577",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0578",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0579",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0580",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0581",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0582",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0583",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0584",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0585",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0586",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0587",
+      "accepted": false,
+      "reason": "replacement article has insufficient entity support"
+    },
+    {
+      "fact_uid": "BCSGK-0588",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0589",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0590",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0591",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0592",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0593",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0594",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0595",
+      "accepted": false,
+      "reason": "fact is explicitly excluded from the holdout benchmark"
+    },
+    {
+      "fact_uid": "BCSGK-0596",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0597",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0598",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0599",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0600",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0601",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0602",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    },
+    {
+      "fact_uid": "BCSGK-0603",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0604",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0605",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0606",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0607",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0608",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0609",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0610",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0611",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0612",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0613",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0614",
+      "accepted": false,
+      "reason": "unclassified or invalid temporal class"
+    },
+    {
+      "fact_uid": "BCSGK-0615",
+      "accepted": false,
+      "reason": "proposal has no accepted resourcing outcome"
+    }
+  ]
+}

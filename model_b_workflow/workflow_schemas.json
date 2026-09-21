@@ -1,0 +1,105 @@
+{
+  "schema_version": "model_b_workflow_v1",
+  "fact_work_status": [
+    "unreviewed",
+    "triaged",
+    "source_searching",
+    "candidate_source_found",
+    "under_semantic_review",
+    "under_temporal_review",
+    "accepted_for_build",
+    "deferred",
+    "rejected_permanent"
+  ],
+  "claim_domains": [
+    "static_historical",
+    "static_geographic",
+    "static_institutional",
+    "static_cultural_or_national_symbol",
+    "dynamic_officeholder",
+    "dynamic_policy_legal",
+    "dynamic_statistical",
+    "dynamic_award_or_membership",
+    "ambiguous",
+    "malformed",
+    "duplicate_candidate",
+    "holdout_contaminated"
+  ],
+  "temporal_classes": [
+    "static",
+    "dynamic",
+    "blocked",
+    "needs_clarification"
+  ],
+  "semantic_verdicts": [
+    "supported",
+    "refuted",
+    "ambiguous",
+    "not_enough_evidence"
+  ],
+  "temporal_verdicts": [
+    "admissible_static",
+    "admissible_dynamic",
+    "outside_cutoff",
+    "interval_does_not_cover_cutoff",
+    "missing_validity_interval",
+    "date_unverifiable",
+    "not_applicable"
+  ],
+  "leakage_verdicts": [
+    "pass",
+    "suspected",
+    "confirmed_holdout_leakage",
+    "not_yet_checked"
+  ],
+  "evidence_ledger_fields": [
+    "evidence_id",
+    "evidence_version",
+    "source_type",
+    "source_authority",
+    "publisher",
+    "document_title",
+    "canonical_url",
+    "archive_url",
+    "source_published_at",
+    "temporal_evidence_date",
+    "archive_capture_timestamp",
+    "retrieved_at",
+    "content_hash_sha256",
+    "document_locator",
+    "access_status",
+    "admissibility_status",
+    "notes"
+  ],
+  "fact_evidence_link_fields": [
+    "link_id",
+    "fact_id",
+    "evidence_id",
+    "support_role",
+    "supporting_excerpt",
+    "subject_match",
+    "predicate_match",
+    "object_match",
+    "semantic_verdict",
+    "temporal_field_name",
+    "temporal_raw_value",
+    "valid_from",
+    "valid_to",
+    "temporal_verdict",
+    "leakage_verdict",
+    "review_status",
+    "reviewer_id"
+  ],
+  "source_allowlist": [
+    "dpp.gov.bd",
+    "bdlaws.minlaw.gov.bd",
+    "bbs.gov.bd",
+    "bb.org.bd",
+    "parliament.gov.bd",
+    "relevant ministry gov.bd",
+    "UN/World Bank/UNESCO official source",
+    "pre-cutoff archived or MediaWiki revision",
+    "pre-cutoff official sports or cultural reference"
+  ],
+  "cutoff_date": "2023-04-19"
+}

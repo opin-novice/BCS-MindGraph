@@ -1,0 +1,41 @@
+{
+  "record_type": "task2a_smoke_run_manifest",
+  "run_started_at": "2026-09-17T13:00:58",
+  "cutoff": "2023-04-19",
+  "seed_file": "bcs_gk_facts_model_b.json",
+  "seed_sha256": "474aae6a69837b1c01f1d7027c727f4de364498be4a8d775da2a1b8924012eff",
+  "seed_release_id": "model-b-seed-2026-09-16",
+  "topic": "Culture",
+  "difficulty": "medium",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "hf_provider": "auto",
+  "prompt_fingerprint": {
+    "challenger": "37bd81f7fa799ff7",
+    "reasoner": "cf359314d3556e6c",
+    "judge": "c7a57722e946a679"
+  },
+  "generator_module_sha256": "9af82e06dca72292",
+  "finished_at": "2026-09-17T13:04:01",
+  "wall_seconds": 182.9,
+  "facts_offered": 2,
+  "facts_available_at_cutoff": 6,
+  "seed_fact_uids": [
+    "BCSGK-0051",
+    "BCSGK-0052"
+  ],
+  "mcqs_accepted": 4,
+  "overall_score": 0.938,
+  "quality_gate": {
+    "report_id": "RPT_4bb141e2",
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "rejection_tally": null,
+  "temporal_firewall": {
+    "unversioned_in_batch": 0,
+    "enforced_by": "mcq_generator.generate_from_facts (TemporalGuardViolation)"
+  },
+  "seed_modified": false,
+  "accepted_for_benchmark": false
+}
