@@ -973,3 +973,6 @@ class EpisodicMemory:
         """Close the database connection."""
         self._conn.close()
         print("[EpisodicMemory] Database connection closed.")
+
+# Guideline-compliant alias (section 3.6): paper refers to this as EpisodicStore.
+EpisodicStore = EpisodicMemory

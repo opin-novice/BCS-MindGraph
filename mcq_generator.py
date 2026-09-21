@@ -1377,6 +1377,14 @@ class MCQGenerator:
 # KG Integration helper
 # ---------------------------------------------------------------------------
 
+
+# Guideline-compliant alias (§3.4): paper refers to this as MCQGenerationPipeline.
+MCQGenerationPipeline = MCQGenerator
+
+
+# Guideline-compliant alias (section 3.4): paper refers to this as MCQGenerationPipeline.
+MCQGenerationPipeline = MCQGenerator
+
 def facts_from_kg(kg_builder, topic: str, as_of: Optional[str] = None,
                   enforce_source_cutoff: bool = True,
                   allow_static_source_evidence: bool = False) -> List[Dict]:

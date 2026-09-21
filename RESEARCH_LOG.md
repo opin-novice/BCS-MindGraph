@@ -254,3 +254,71 @@ first live call.
 - Syntax-checked: nothing (no script in command)
 - Uncommitted changes: none
 - GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:31:21
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: kg_builder.py
+- Uncommitted changes: none
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:36:49
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: nothing (no script in command)
+- Uncommitted changes: RESEARCH_LOG.md           | 6 ++++++
+ requirements_snapshot.txt | 8 +++++++-
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:45:05
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: kg_builder.py
+- Uncommitted changes: RESEARCH_LOG.md           | 14 ++++++++++++++
+ requirements_snapshot.txt |  8 +++++++-
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:45:28
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: nothing (no script in command)
+- Uncommitted changes: RESEARCH_LOG.md           | 22 ++++++++++++++++++++++
+ requirements_snapshot.txt |  8 +++++++-
+ 2 files changed, 29 insertions(+), 1 deletion(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:47:40
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: nothing (no script in command)
+- Uncommitted changes: RESEARCH_LOG.md           | 30 ++++++++++++++++++++++++++++++
+ requirements_snapshot.txt |  8 +++++++-
+ 2 files changed, 37 insertions(+), 1 deletion(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 22:48:52
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: nothing (no script in command)
+- Uncommitted changes: RESEARCH_LOG.md           | 38 ++++++++++++++++++++++++++++++++++++++
+ requirements_snapshot.txt |  8 +++++++-
+ 2 files changed, 45 insertions(+), 1 deletion(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 23:02:02
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: test_kg_bitemporal.py
+- Uncommitted changes: RESEARCH_LOG.md           |  46 +++++++
+ episodic_store.py         |   5 +-
+ mcq_generator.py          |   8 ++
+ requirements_snapshot.txt |   8 +-
+ test_excerpt_search.py    | 321 +++++++++++++++++++++++-----------------------
+ 5 files changed, 226 insertions(+), 162 deletions(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
+
+## Pre-run check (PASS) — 2026-09-21 23:03:29
+- Commit: d4eb0d5 (branch: main)
+- Syntax-checked: test_kg_bitemporal.py
+- Uncommitted changes: RESEARCH_LOG.md           |  57 ++++++++
+ episodic_store.py         |   5 +-
+ mcq_generator.py          |   8 ++
+ requirements_snapshot.txt |   8 +-
+ test_excerpt_search.py    | 321 +++++++++++++++++++++++-----------------------
+ 5 files changed, 237 insertions(+), 162 deletions(-)
+- GPU: NVIDIA GeForce RTX 5070, 12227 MiB
